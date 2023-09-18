@@ -52,4 +52,166 @@ table {
   border-spacing: 0;
 }
 
+.bulbizarre__mouth:before, .bulbizarre__mouth, .bulbizarre__eyes, .bulbizarre__top {
+  left: 50%;
+  transform: translateX(-50%) translate3d(0, 0, 0);
+}
+
+:root {
+  --borderRadius: 20px;
+  --pokemonSize: 256;
+  --pokemonSizeUnit: calc(var(--pokemonSize) * 1px);
+}
+
+.pokedex {
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, var(--pokemonSizeUnit));
+}
+
+.pokemon__block {
+  border-radius: var(--borderRadius);
+  padding-top: 100%;
+  position: relative;
+  width: 100%;
+}
+.pokemon__block *,
+.pokemon__block *:before,
+.pokemon__block *:after {
+  position: absolute;
+}
+.pokemon__title {
+  text-align: center;
+}
+
+.bulbizarre {
+  background: #78D9AD;
+}
+.bulbizarre__top {
+  height: calc(25 * 100% / var(--pokemonSize));
+  width: calc(162 * 100% / var(--pokemonSize));
+  background: #75b87e;
+  clip-path: polygon(0 0, 100% 0, 94% 100%, 6% 100%);
+  top: 0;
+}
+.bulbizarre__top:before {
+  width: calc(20 * 100% / 162);
+  background: #639868;
+  content: "";
+  height: 100%;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%) translate3d(0, 0, 0);
+}
+.bulbizarre__spot {
+  height: calc(26 * 100% / var(--pokemonSize));
+  width: calc(54 * 100% / var(--pokemonSize));
+  top: calc(25 * 100% / var(--pokemonSize));
+  background: #3c8a5d;
+  left: 50%;
+}
+.bulbizarre__spot:before {
+  height: calc(18 * 100% / 26);
+  right: calc(72 * 100% / 54);
+  top: calc(22 * 100% / 26);
+  width: calc(18 * 100% / 54);
+  background: inherit;
+  content: "";
+}
+.bulbizarre__spot:after {
+  height: calc(26 * 100% / 26);
+  right: calc(24 * 100% / 54);
+  top: calc(51 * 100% / 26);
+  width: calc(26 * 100% / 54);
+  background: inherit;
+  content: "";
+}
+.bulbizarre__eyes {
+  height: calc(66 * 100% / var(--pokemonSize));
+  top: calc(80 * 100% / var(--pokemonSize));
+  width: calc(220 * 100% / var(--pokemonSize));
+  display: flex;
+  justify-content: space-between;
+}
+.bulbizarre__eye {
+  height: calc(66 * 100% / 66);
+  width: calc(64 * 100% / 220);
+  align-items: flex-end;
+  background: #efefef;
+  display: flex;
+  position: relative;
+}
+.bulbizarre__eye:before {
+  height: calc(66 * 100% / 66);
+  width: calc(48 * 100% / 64);
+  background: linear-gradient(180deg, #bd414f 0%, #bd414f 70%, #d6616d 70%, #d6616d 100%);
+  content: "";
+  position: static;
+}
+.bulbizarre__eye:after {
+  height: calc(30 * 100% / 66);
+  top: calc(21 * 100% / 66);
+  width: calc(16 * 100% / 64);
+  background: #efefef;
+  content: "";
+}
+.bulbizarre__eye.--left {
+  clip-path: polygon(0 0, 78% 0, 100% 100%, 0% 100%);
+  justify-content: flex-end;
+}
+.bulbizarre__eye.--left:after {
+  right: calc(18 * 100% / 64);
+}
+.bulbizarre__eye.--right {
+  clip-path: polygon(22% 0, 100% 0, 100% 100%, 0% 100%);
+}
+.bulbizarre__eye.--right:after {
+  left: calc(18 * 100% / 64);
+}
+.bulbizarre__nose {
+  position: static;
+}
+.bulbizarre__nose:before, .bulbizarre__nose:after {
+  height: calc(10 * 100% / var(--pokemonSize));
+  top: calc(144 * 100% / var(--pokemonSize));
+  width: calc(5 * 100% / var(--pokemonSize));
+  background: #5aa684;
+  content: "";
+}
+.bulbizarre__nose:before {
+  left: calc(116 * 100% / var(--pokemonSize));
+}
+.bulbizarre__nose:after {
+  right: calc(116 * 100% / var(--pokemonSize));
+}
+.bulbizarre__mouth {
+  bottom: calc(56 * 100% / var(--pokemonSize));
+  height: calc(40 * 100% / var(--pokemonSize));
+  width: calc(190 * 100% / var(--pokemonSize));
+  background: #944368;
+}
+.bulbizarre__mouth:before {
+  height: calc(20 * 100% / 40);
+  width: calc(144 * 100% / 190);
+  background: #ce779f;
+  bottom: 0;
+  content: "";
+}
+.bulbizarre__tooth {
+  height: 100%;
+  width: 100%;
+}
+.bulbizarre__tooth:before, .bulbizarre__tooth:after {
+  height: calc(14 * 100% / 40);
+  width: calc(18 * 100% / 190);
+  background: #efefef;
+  content: "";
+}
+.bulbizarre__tooth:before {
+  left: calc(12 * 100% / 190);
+}
+.bulbizarre__tooth:after {
+  right: calc(12 * 100% / 190);
+}
+
 /*# sourceMappingURL=style.css.map */

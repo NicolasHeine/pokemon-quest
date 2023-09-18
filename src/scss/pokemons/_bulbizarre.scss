@@ -1,0 +1,135 @@
+.bulbizarre{
+  background: #78D9AD;
+  &__top{
+    @extend %centerX;
+    @include setSize(height, 25);
+    @include setSize(width, 162);
+    background: #75b87e;
+    clip-path: polygon(0 0, 100% 0, 94% 100%, 6% 100%);
+    top: 0;
+    &:before{
+      @include setSize(width, 20, 162);
+      background: #639868;
+      content: '';
+      height: 100%;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%) translate3d(0, 0, 0);
+    }
+  }
+  &__spot{
+    @include setSize(height, 26);
+    @include setSize(width, 54);
+    @include setSize(top, 25);
+    background: #3c8a5d;
+    left: 50%;
+    &:before{
+      @include setSize(height, 18, 26);
+      @include setSize(right, 72, 54);
+      @include setSize(top, 22, 26);
+      @include setSize(width, 18, 54);
+      background: inherit;
+      content: '';
+    }
+    &:after{
+      @include setSize(height, 26, 26);
+      @include setSize(right, 24, 54);
+      @include setSize(top, 51, 26);
+      @include setSize(width, 26, 54);
+      background: inherit;
+      content: '';
+    }
+  }
+  &__eyes{
+    @extend %centerX;
+    @include setSize(height, 66);
+    @include setSize(top, 80);
+    @include setSize(width, 220);
+    display: flex;
+    justify-content: space-between;
+  }
+  &__eye{
+    @include setSize(height, 66, 66);
+    @include setSize(width, 64, 220);
+    align-items: flex-end;
+    background: #efefef;
+    display: flex;
+    position: relative;
+    &:before{
+      @include setSize(height, 66, 66);
+      @include setSize(width, 48, 64);
+      background: linear-gradient(180deg, #bd414f 0%, #bd414f 70%, #d6616d 70%, #d6616d 100%);
+      content: '';
+      position: static;
+    }
+    &:after{
+      @include setSize(height, 30, 66);
+      @include setSize(top, 21, 66);
+      @include setSize(width, 16, 64);
+      background: #efefef;
+      content: '';
+    }
+    &.--left{
+      clip-path: polygon(0 0, 78% 0, 100% 100%, 0% 100%);
+      justify-content: flex-end;
+      &:after{
+        @include setSize(right, 18, 64);
+      }
+    }
+    &.--right{
+      clip-path: polygon(22% 0, 100% 0, 100% 100%, 0% 100%);
+      &:after{
+        @include setSize(left, 18, 64);
+      }
+    }
+  }
+  &__nose{
+    position: static;
+    &:before,
+    &:after{
+      @include setSize(height, 10);
+      @include setSize(top, 144);
+      @include setSize(width, 5);
+      background: #5aa684;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 116);
+    }
+    &:after{
+      @include setSize(right, 116);
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(bottom, 56);
+    @include setSize(height, 40);
+    @include setSize(width, 190);
+    background: #944368;
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 20, 40);
+      @include setSize(width, 144, 190);
+      background: #ce779f;
+      bottom: 0;
+      content: '';
+    }
+  }
+  &__tooth{
+    height: 100%;
+    width: 100%;
+    &:before,
+    &:after{
+      @include setSize(height, 14, 40);
+      @include setSize(width, 18, 190);
+      background: #efefef;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 12, 190);
+    }
+    &:after{
+      @include setSize(right, 12, 190);
+    }
+  }
+}

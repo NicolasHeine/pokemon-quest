@@ -1,0 +1,28 @@
+:root{
+  --borderRadius: 20px;
+  --pokemonSize: 256;
+  --pokemonSizeUnit: calc(var(--pokemonSize) * 1px);
+}
+
+.pokedex{
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, var(--pokemonSizeUnit));
+}
+
+.pokemon{
+  &__block{
+    border-radius: var(--borderRadius);
+    padding-top: 100%;
+    position: relative;
+    width: 100%;
+    *,
+    *:before,
+    *:after{
+      position: absolute;
+    }
+  }
+  &__title{
+    text-align: center;
+  }
+}
