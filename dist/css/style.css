@@ -52,9 +52,16 @@ table {
   border-spacing: 0;
 }
 
-.bulbizarre__mouth:before, .bulbizarre__mouth, .bulbizarre__eyes, .bulbizarre__top {
+.herbizarre__mouth:after, .herbizarre__mouth:before, .herbizarre__mouth, .herbizarre__eyes, .herbizarre__top:before, .herbizarre__top, .bulbizarre__mouth:before, .bulbizarre__mouth, .bulbizarre__eyes, .bulbizarre__top {
   left: 50%;
   transform: translateX(-50%) translate3d(0, 0, 0);
+}
+
+.herbizarre__tooth, .herbizarre__spot:before, .bulbizarre__tooth {
+  left: 0;
+  height: 100%;
+  top: 0;
+  width: 100%;
 }
 
 :root {
@@ -197,21 +204,149 @@ table {
   bottom: 0;
   content: "";
 }
-.bulbizarre__tooth {
-  height: 100%;
-  width: 100%;
-}
 .bulbizarre__tooth:before, .bulbizarre__tooth:after {
   height: calc(14 * 100% / 40);
   width: calc(18 * 100% / 190);
   background: #efefef;
   content: "";
+  top: 0;
 }
 .bulbizarre__tooth:before {
   left: calc(12 * 100% / 190);
 }
 .bulbizarre__tooth:after {
   right: calc(12 * 100% / 190);
+}
+
+.herbizarre {
+  background: #81bbc6;
+}
+.herbizarre__top {
+  height: calc(30 * 100% / var(--pokemonSize));
+  width: calc(192 * 100% / var(--pokemonSize));
+  background: #d87289;
+  clip-path: polygon(0 0, 100% 0, 89% 100%, 11% 100%);
+  top: 0;
+}
+.herbizarre__top:before {
+  width: calc(124 * 100% / 192);
+  background: #6ba470;
+  content: "";
+  height: 100%;
+  top: 0;
+}
+.herbizarre__spot {
+  height: calc(51 * 100% / var(--pokemonSize));
+  left: calc(103 * 100% / var(--pokemonSize));
+  top: calc(30 * 100% / var(--pokemonSize));
+  width: calc(80 * 100% / var(--pokemonSize));
+}
+.herbizarre__spot:before {
+  background: #317d94;
+  clip-path: polygon(0 0, 100% 0, 67% 100%, 29% 100%);
+  content: "";
+}
+.herbizarre__spot:after {
+  height: calc(22 * 100% / 51);
+  right: calc(72 * 100% / 80);
+  top: calc(43 * 100% / 51);
+  width: calc(24 * 100% / 80);
+  background: #317d94;
+  clip-path: polygon(0 0, 100% 0, 67% 100%, 29% 100%);
+  content: "";
+}
+.herbizarre__eyes {
+  height: calc(52 * 100% / var(--pokemonSize));
+  top: calc(86 * 100% / var(--pokemonSize));
+  width: calc(224 * 100% / var(--pokemonSize));
+  display: flex;
+  justify-content: space-between;
+}
+.herbizarre__eye {
+  width: calc(70 * 100% / 224);
+  background: #efefef;
+  height: 100%;
+  position: relative;
+}
+.herbizarre__eye:before {
+  width: calc(49 * 100% / 70);
+  background: linear-gradient(180deg, #c84652 0%, #c84652 70%, #e14e5a 70%, #e14e5a 100%);
+  content: "";
+  height: 100%;
+}
+.herbizarre__eye:after {
+  height: calc(43 * 100% / 52);
+  width: calc(16 * 100% / 70);
+  background: #3c292b;
+  content: "";
+  top: 0;
+}
+.herbizarre__eye.--left {
+  clip-path: polygon(0 0, 57% 0, 100% 100%, 0 100%);
+}
+.herbizarre__eye.--left:before {
+  right: 0;
+}
+.herbizarre__eye.--left:after {
+  right: calc(16 * 100% / 70);
+}
+.herbizarre__eye.--right {
+  clip-path: polygon(43% 0, 100% 0, 100% 100%, 0 100%);
+}
+.herbizarre__eye.--right:before {
+  left: 0;
+}
+.herbizarre__eye.--right:after {
+  left: calc(16 * 100% / 70);
+}
+.herbizarre__nose {
+  position: static;
+}
+.herbizarre__nose:before, .herbizarre__nose:after {
+  height: calc(10 * 100% / var(--pokemonSize));
+  top: calc(147 * 100% / var(--pokemonSize));
+  width: calc(5 * 100% / var(--pokemonSize));
+  background: #6b9aa5;
+  content: "";
+}
+.herbizarre__nose:before {
+  left: calc(114 * 100% / var(--pokemonSize));
+}
+.herbizarre__nose:after {
+  right: calc(114 * 100% / var(--pokemonSize));
+}
+.herbizarre__mouth {
+  height: calc(43 * 100% / var(--pokemonSize));
+  top: calc(155 * 100% / var(--pokemonSize));
+  width: calc(206 * 100% / var(--pokemonSize));
+  background: #944368;
+}
+.herbizarre__mouth:before {
+  height: calc(19 * 100% / 43);
+  width: calc(150 * 100% / 206);
+  background: #ce779f;
+  bottom: 0;
+  content: "";
+}
+.herbizarre__mouth:after {
+  height: calc(11 * 100% / 43);
+  width: calc(66 * 100% / 206);
+  background: #81bbc6;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+  content: "";
+  top: 0;
+}
+.herbizarre__tooth:before, .herbizarre__tooth:after {
+  height: calc(18 * 100% / 43);
+  width: calc(28 * 100% / 206);
+  background: #efefef;
+  content: "";
+}
+.herbizarre__tooth:before {
+  left: calc(15 * 100% / 206);
+}
+.herbizarre__tooth:after {
+  right: calc(15 * 100% / 206);
 }
 
 /*# sourceMappingURL=style.css.map */

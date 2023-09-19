@@ -1,0 +1,142 @@
+.herbizarre{
+  background: #81bbc6;
+  &__top{
+    @extend %centerX;
+    @include setSize(height, 30);
+    @include setSize(width, 192);
+    background: #d87289;
+    clip-path: polygon(0 0, 100% 0, 89% 100%, 11% 100%);
+    top: 0;
+    &:before{
+      @extend %centerX;
+      @include setSize(width, 124, 192);
+      background: #6ba470;
+      content: '';
+      height: 100%;
+      top: 0;
+    }
+  }
+  &__spot{
+    @include setSize(height, 51);
+    @include setSize(left, 103);
+    @include setSize(top, 30);
+    @include setSize(width, 80);
+    &:before{
+      @extend %full;
+      background: #317d94;
+      clip-path: polygon(0 0, 100% 0, 67% 100%, 29% 100%);
+      content: '';
+    }
+    &:after{
+      @include setSize(height, 22, 51);
+      @include setSize(right, 72, 80);
+      @include setSize(top, 43, 51);
+      @include setSize(width, 24, 80);
+      background: #317d94;
+      clip-path: polygon(0 0, 100% 0, 67% 100%, 29% 100%);
+      content: '';
+    }
+  }
+  &__eyes{
+    @extend %centerX;
+    @include setSize(height, 52);
+    @include setSize(top, 86);
+    @include setSize(width, 224);
+    display: flex;
+    justify-content: space-between;
+  }
+  &__eye{
+    @include setSize(width, 70, 224);
+    background: #efefef;
+    height: 100%;
+    position: relative;
+    &:before{
+      @include setSize(width, 49, 70);
+      background: linear-gradient(180deg, #c84652 0%, #c84652 70%, #e14e5a 70%, #e14e5a 100%);
+      content: '';
+      height: 100%;
+    }
+    &:after{
+      @include setSize(height, 43, 52);
+      @include setSize(width, 16, 70);
+      background: #3c292b;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      clip-path: polygon(0 0, 57% 0, 100% 100%, 0 100%);
+      &:before{
+        right: 0;
+      }
+      &:after{
+        @include setSize(right, 16, 70);
+      }
+    }
+    &.--right{
+      clip-path: polygon(43% 0, 100% 0, 100% 100%, 0 100%);
+      &:before{
+        left: 0;
+      }
+      &:after{
+        @include setSize(left, 16, 70);
+      }
+    }
+  }
+  &__nose{
+    position: static;
+    &:before,
+    &:after{
+      @include setSize(height, 10);
+      @include setSize(top, 147);
+      @include setSize(width, 5);
+      background: #6b9aa5;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 114);
+    }
+    &:after{
+      @include setSize(right, 114);
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 43);
+    @include setSize(top, 155);
+    @include setSize(width, 206);
+    background: #944368;
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 19, 43);
+      @include setSize(width, 150, 206);
+      background: #ce779f;
+      bottom: 0;
+      content: '';
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 11, 43);
+      @include setSize(width, 66, 206);
+      background: #81bbc6;
+      clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+      content: '';
+      top: 0;
+    }
+  }
+  &__tooth{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 18, 43);
+      @include setSize(width, 28, 206);
+      background: #efefef;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 15, 206);
+    }
+    &:after{
+      @include setSize(right, 15, 206);
+    }
+  }
+}

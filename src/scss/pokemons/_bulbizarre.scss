@@ -116,14 +116,14 @@
     }
   }
   &__tooth{
-    height: 100%;
-    width: 100%;
+    @extend %full;
     &:before,
     &:after{
       @include setSize(height, 14, 40);
       @include setSize(width, 18, 190);
       background: #efefef;
       content: '';
+      top: 0;
     }
     &:before{
       @include setSize(left, 12, 190);
