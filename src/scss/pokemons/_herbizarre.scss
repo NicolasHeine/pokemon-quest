@@ -122,21 +122,21 @@
       content: '';
       top: 0;
     }
-  }
-  &__tooth{
-    @extend %full;
-    &:before,
-    &:after{
-      @include setSize(height, 18, 43);
-      @include setSize(width, 28, 206);
-      background: #efefef;
-      content: '';
-    }
-    &:before{
-      @include setSize(left, 15, 206);
-    }
-    &:after{
-      @include setSize(right, 15, 206);
+    &__tooth{
+      @extend %full;
+      &:before,
+      &:after{
+        @include setSize(height, 18, 43);
+        @include setSize(width, 28, 206);
+        background: #efefef;
+        content: '';
+      }
+      &:before{
+        @include setSize(left, 15, 206);
+      }
+      &:after{
+        @include setSize(right, 15, 206);
+      }
     }
   }
 }

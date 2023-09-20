@@ -114,22 +114,22 @@
       bottom: 0;
       content: '';
     }
-  }
-  &__tooth{
-    @extend %full;
-    &:before,
-    &:after{
-      @include setSize(height, 14, 40);
-      @include setSize(width, 18, 190);
-      background: #efefef;
-      content: '';
-      top: 0;
-    }
-    &:before{
-      @include setSize(left, 12, 190);
-    }
-    &:after{
-      @include setSize(right, 12, 190);
+    &__tooth{
+      @extend %full;
+      &:before,
+      &:after{
+        @include setSize(height, 14, 40);
+        @include setSize(width, 18, 190);
+        background: #efefef;
+        content: '';
+        top: 0;
+      }
+      &:before{
+        @include setSize(left, 12, 190);
+      }
+      &:after{
+        @include setSize(right, 12, 190);
+      }
     }
   }
 }
