@@ -52,7 +52,7 @@ table {
   border-spacing: 0;
 }
 
-.salameche__tooth__bottom, .salameche__tooth__top, .salameche__mouth:before, .salameche__mouth, .salameche__eye:before, .florizarre__mouth:after, .florizarre__eye span:before, .florizarre__eye span, .florizarre__flower__base span:after, .florizarre__flower__base span, .florizarre__flower__base:before, .florizarre__flower__tree, .herbizarre__mouth:after, .herbizarre__mouth:before, .herbizarre__mouth, .herbizarre__eyes, .herbizarre__top:before, .herbizarre__top, .bulbizarre__mouth:before, .bulbizarre__mouth, .bulbizarre__eyes, .bulbizarre__top {
+.reptincel__tooth__bottom, .reptincel__tooth__top, .reptincel__mouth:after, .reptincel__mouth:before, .reptincel__mouth, .reptincel__eye span:before, .salameche__tooth__bottom, .salameche__tooth__top, .salameche__mouth:before, .salameche__mouth, .salameche__eye:before, .florizarre__mouth:after, .florizarre__eye span:before, .florizarre__eye span, .florizarre__flower__base span:after, .florizarre__flower__base span, .florizarre__flower__base:before, .florizarre__flower__tree, .herbizarre__mouth:after, .herbizarre__mouth:before, .herbizarre__mouth, .herbizarre__eyes, .herbizarre__top:before, .herbizarre__top, .bulbizarre__mouth:before, .bulbizarre__mouth, .bulbizarre__eyes, .bulbizarre__top {
   left: 50%;
   transform: translateX(-50%) translate3d(0, 0, 0);
 }
@@ -62,7 +62,7 @@ table {
   transform: translateY(-50%) translate3d(0, 0, 0);
 }
 
-.salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
+.reptincel__nose, .reptincel__spots, .reptincel__eyes, .salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
   left: 0;
   height: 100%;
   top: 0;
@@ -709,6 +709,141 @@ table {
   left: 0;
 }
 .salameche__tooth__bottom:after {
+  right: 0;
+}
+
+.reptincel {
+  background: #ef8b78;
+}
+.reptincel__eye {
+  height: calc(61 * 100% / var(--pokemonSize));
+  top: calc(47 * 100% / var(--pokemonSize));
+  width: calc(68 * 100% / var(--pokemonSize));
+  background: #ffffff;
+}
+.reptincel__eye span {
+  width: calc(48 * 100% / 68);
+  background: linear-gradient(180deg, #3c5668 0%, #3c5668 84%, #47657b 84%, #47657b 100%);
+  height: 100%;
+}
+.reptincel__eye span:before {
+  height: calc(54 * 100% / 61);
+  width: calc(17 * 100% / 48);
+  background: #231a1e;
+  content: "";
+  top: 0;
+}
+.reptincel__eye span:after {
+  height: calc(42 * 100% / 61);
+  width: calc(11 * 100% / 48);
+  background: #ffffff;
+  content: "";
+  top: 0;
+}
+.reptincel__eye.--left {
+  left: calc(22 * 100% / var(--pokemonSize));
+  clip-path: polygon(0 0, 100% 100%, 0% 100%);
+}
+.reptincel__eye.--left span {
+  right: 0;
+}
+.reptincel__eye.--left span:after {
+  left: calc(7 * 100% / 48);
+}
+.reptincel__eye.--right {
+  right: calc(22 * 100% / var(--pokemonSize));
+  clip-path: polygon(100% 0, 100% 100%, 0% 100%);
+}
+.reptincel__eye.--right span {
+  left: 0;
+}
+.reptincel__eye.--right span:after {
+  right: calc(7 * 100% / 48);
+}
+.reptincel__spots:before, .reptincel__spots:after {
+  height: calc(32 * 100% / var(--pokemonSize));
+  top: calc(76 * 100% / var(--pokemonSize));
+  width: calc(5 * 100% / var(--pokemonSize));
+  background: #d67d6b;
+  content: "";
+}
+.reptincel__spots:before {
+  left: calc(108 * 100% / var(--pokemonSize));
+}
+.reptincel__spots:after {
+  right: calc(108 * 100% / var(--pokemonSize));
+}
+.reptincel__nose {
+  z-index: 1;
+}
+.reptincel__nose:before, .reptincel__nose:after {
+  height: calc(14 * 100% / var(--pokemonSize));
+  top: calc(146 * 100% / var(--pokemonSize));
+  width: calc(5 * 100% / var(--pokemonSize));
+  background: #d67d6b;
+  content: "";
+}
+.reptincel__nose:before {
+  left: calc(108 * 100% / var(--pokemonSize));
+}
+.reptincel__nose:after {
+  right: calc(108 * 100% / var(--pokemonSize));
+}
+.reptincel__mouth {
+  height: calc(59 * 100% / var(--pokemonSize));
+  top: calc(157 * 100% / var(--pokemonSize));
+  width: calc(218 * 100% / var(--pokemonSize));
+  background: #a26f8e;
+}
+.reptincel__mouth:before {
+  height: calc(29 * 100% / 59);
+  width: calc(175 * 100% / 218);
+  background: #cb98c0;
+  bottom: 0;
+  content: "";
+}
+.reptincel__mouth:after {
+  height: calc(15 * 100% / 59);
+  width: calc(66 * 100% / 218);
+  background: #ef8b78;
+  clip-path: polygon(0 0, 100% 0, 91% 100%, 9% 100%);
+  content: "";
+  top: 0;
+}
+.reptincel__tooth__top {
+  height: calc(19 * 100% / 59);
+  width: calc(194 * 100% / 218);
+  top: 0;
+}
+.reptincel__tooth__top:before, .reptincel__tooth__top:after {
+  width: calc(21 * 100% / 194);
+  background: #f7f5f7;
+  content: "";
+  height: 100%;
+  top: 0;
+}
+.reptincel__tooth__top:before {
+  left: 0;
+}
+.reptincel__tooth__top:after {
+  right: 0;
+}
+.reptincel__tooth__bottom {
+  height: calc(16 * 100% / 59);
+  width: calc(144 * 100% / 218);
+  bottom: 0;
+}
+.reptincel__tooth__bottom:before, .reptincel__tooth__bottom:after {
+  width: calc(16 * 100% / 144);
+  background: #f7f5f7;
+  content: "";
+  height: 100%;
+  top: 0;
+}
+.reptincel__tooth__bottom:before {
+  left: 0;
+}
+.reptincel__tooth__bottom:after {
   right: 0;
 }
 

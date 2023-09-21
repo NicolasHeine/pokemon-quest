@@ -1,0 +1,153 @@
+.reptincel{
+  background: #ef8b78;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 61);
+    @include setSize(top, 47);
+    @include setSize(width, 68);
+    background: #ffffff;
+    span{
+      @include setSize(width, 48, 68);
+      background: linear-gradient(180deg, #3c5668 0%, #3c5668 84%, #47657b 84%, #47657b 100%);
+      height: 100%;
+      &:before{
+        @extend %centerX;
+        @include setSize(height, 54, 61);
+        @include setSize(width, 17, 48);
+        background: #231a1e;
+        content: '';
+        top: 0;
+      }
+      &:after{
+        @include setSize(height, 42, 61);
+        @include setSize(width, 11, 48);
+        background: #ffffff;
+        content: '';
+        top: 0;
+      }
+    }
+    &.--left{
+      @include setSize(left, 22);
+      clip-path: polygon(0 0, 100% 100%, 0% 100%);
+      span{
+        right: 0;
+        &:after{
+          @include setSize(left, 7, 48);
+        }
+      }
+    }
+    &.--right{
+      @include setSize(right, 22);
+      clip-path: polygon(100% 0, 100% 100%, 0% 100%);
+      span{
+        left: 0;
+        &:after{
+          @include setSize(right, 7, 48);
+        }
+      }
+    }
+  }
+  &__spots{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 32);
+      @include setSize(top, 76);
+      @include setSize(width, 5);
+      background: #d67d6b;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 108);
+    }
+    &:after{
+      @include setSize(right, 108);
+    }
+  }
+  &__nose{
+    @extend %full;
+    z-index: 1;
+    &:before,
+    &:after{
+      @include setSize(height, 14);
+      @include setSize(top, 146);
+      @include setSize(width, 5);
+      background: #d67d6b;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 108);
+    }
+    &:after{
+      @include setSize(right, 108);
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 59);
+    @include setSize(top, 157);
+    @include setSize(width, 218);
+    background: #a26f8e;
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 29, 59);
+      @include setSize(width, 175, 218);
+      background: #cb98c0;
+      bottom: 0;
+      content: '';
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 15, 59);
+      @include setSize(width, 66, 218);
+      background: #ef8b78;
+      clip-path: polygon(0 0, 100% 0, 91% 100%, 9% 100%);
+      content: '';
+      top: 0;
+    }
+  }
+  &__tooth{
+    &__top{
+      @extend %centerX;
+      @include setSize(height, 19, 59);
+      @include setSize(width, 194, 218);
+      top: 0;
+      &:before,
+      &:after{
+        @include setSize(width, 21, 194);
+        background: #f7f5f7;
+        content: '';
+        height: 100%;
+        top: 0;
+      }
+      &:before{
+        left: 0;
+      }
+      &:after{
+        right: 0;
+      }
+    }
+    &__bottom{
+      @extend %centerX;
+      @include setSize(height, 16, 59);
+      @include setSize(width, 144, 218);
+      bottom: 0;
+      &:before,
+      &:after{
+        @include setSize(width, 16, 144);
+        background: #f7f5f7;
+        content: '';
+        height: 100%;
+        top: 0;
+      }
+      &:before{
+        left: 0;
+      }
+      &:after{
+        right: 0;
+      }
+    }
+  }
+}
