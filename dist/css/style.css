@@ -52,7 +52,7 @@ table {
   border-spacing: 0;
 }
 
-.florizarre__mouth:after, .florizarre__eye span:before, .florizarre__eye span, .florizarre__flower__base span:after, .florizarre__flower__base span, .florizarre__flower__base:before, .florizarre__flower__tree, .herbizarre__mouth:after, .herbizarre__mouth:before, .herbizarre__mouth, .herbizarre__eyes, .herbizarre__top:before, .herbizarre__top, .bulbizarre__mouth:before, .bulbizarre__mouth, .bulbizarre__eyes, .bulbizarre__top {
+.salameche__tooth__bottom, .salameche__tooth__top, .salameche__mouth:before, .salameche__mouth, .salameche__eye:before, .florizarre__mouth:after, .florizarre__eye span:before, .florizarre__eye span, .florizarre__flower__base span:after, .florizarre__flower__base span, .florizarre__flower__base:before, .florizarre__flower__tree, .herbizarre__mouth:after, .herbizarre__mouth:before, .herbizarre__mouth, .herbizarre__eyes, .herbizarre__top:before, .herbizarre__top, .bulbizarre__mouth:before, .bulbizarre__mouth, .bulbizarre__eyes, .bulbizarre__top {
   left: 50%;
   transform: translateX(-50%) translate3d(0, 0, 0);
 }
@@ -62,7 +62,7 @@ table {
   transform: translateY(-50%) translate3d(0, 0, 0);
 }
 
-.florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
+.salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
   left: 0;
   height: 100%;
   top: 0;
@@ -92,6 +92,7 @@ table {
 .pokemon__block *:before,
 .pokemon__block *:after {
   position: absolute;
+  transition: 0.3s;
 }
 .pokemon__title {
   text-align: center;
@@ -539,6 +540,7 @@ table {
   width: calc(8 * 100% / var(--pokemonSize));
   background: #6b9a99;
   content: "";
+  z-index: 1;
 }
 .florizarre__nose:before {
   left: calc(110 * 100% / var(--pokemonSize));
@@ -611,6 +613,102 @@ table {
   left: 0;
 }
 .florizarre__tooth__bottom span:after {
+  right: 0;
+}
+
+.salameche {
+  background: #efaf84;
+}
+.salameche__eye {
+  height: calc(85 * 100% / var(--pokemonSize));
+  top: calc(33 * 100% / var(--pokemonSize));
+  width: calc(56 * 100% / var(--pokemonSize));
+  background: linear-gradient(180deg, #1e2c31 0%, #1e2c31 73%, #396d7e 73%, #396d7e 100%);
+}
+.salameche__eye:before {
+  height: calc(54 * 100% / 85);
+  top: calc(19 * 100% / 85);
+  width: calc(24 * 100% / 56);
+  background: #182226;
+  content: "";
+}
+.salameche__eye:after {
+  height: calc(32 * 100% / 85);
+  top: calc(4 * 100% / 85);
+  width: calc(21 * 100% / 56);
+  background: #fcfdff;
+  content: "";
+}
+.salameche__eye.--left {
+  left: calc(24 * 100% / var(--pokemonSize));
+}
+.salameche__eye.--left:after {
+  right: calc(7 * 100% / 56);
+}
+.salameche__eye.--right {
+  right: calc(24 * 100% / var(--pokemonSize));
+}
+.salameche__eye.--right:after {
+  left: calc(7 * 100% / 56);
+}
+.salameche__nose:before, .salameche__nose:after {
+  height: calc(16 * 100% / var(--pokemonSize));
+  top: calc(141 * 100% / var(--pokemonSize));
+  width: calc(8 * 100% / var(--pokemonSize));
+  background: #d39873;
+  content: "";
+}
+.salameche__nose:before {
+  left: calc(110 * 100% / var(--pokemonSize));
+}
+.salameche__nose:after {
+  right: calc(110 * 100% / var(--pokemonSize));
+}
+.salameche__mouth {
+  height: calc(62 * 100% / var(--pokemonSize));
+  top: calc(165 * 100% / var(--pokemonSize));
+  width: calc(200 * 100% / var(--pokemonSize));
+  background: #a26f8e;
+}
+.salameche__mouth:before {
+  height: calc(33 * 100% / 62);
+  width: calc(160 * 100% / 200);
+  background: #cb98c0;
+  bottom: 0;
+  content: "";
+}
+.salameche__tooth__top {
+  height: calc(20 * 100% / 62);
+  width: calc(174 * 100% / 200);
+  top: 0;
+}
+.salameche__tooth__top:before, .salameche__tooth__top:after {
+  width: calc(20 * 100% / 174);
+  background: #ffffff;
+  content: "";
+  height: 100%;
+}
+.salameche__tooth__top:before {
+  left: 0;
+}
+.salameche__tooth__top:after {
+  right: 0;
+}
+.salameche__tooth__bottom {
+  height: calc(16 * 100% / 62);
+  width: calc(140 * 100% / 200);
+  bottom: 0;
+}
+.salameche__tooth__bottom:before, .salameche__tooth__bottom:after {
+  width: calc(18 * 100% / 140);
+  background: #ffffff;
+  content: "";
+  height: 100%;
+}
+.salameche__tooth__bottom:before {
+  left: 0;
+}
+.salameche__tooth__bottom:after {
   right: 0;
 }
 

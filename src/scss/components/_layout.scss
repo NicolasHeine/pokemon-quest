@@ -21,6 +21,7 @@
     *:before,
     *:after{
       position: absolute;
+      transition: .3s;
     }
   }
   &__title{

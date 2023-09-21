@@ -194,6 +194,7 @@
       @include setSize(width, 8);
       background: #6b9a99;
       content: '';
+      z-index: 1;
     }
     &:before{
       @include setSize(left, 110);
