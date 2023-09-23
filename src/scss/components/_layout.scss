@@ -11,6 +11,10 @@
 }
 
 .pokemon{
+  &:last-child{
+    grid-column: 3;
+    grid-row: 1;
+  }
   &__block{
     border-radius: var(--borderRadius);
     overflow: hidden;
