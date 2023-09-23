@@ -52,7 +52,7 @@ table {
   border-spacing: 0;
 }
 
-.dracaufeu__tooth__bottom, .dracaufeu__tooth__top, .dracaufeu__mouth:before, .dracaufeu__mouth, .reptincel__tooth__bottom, .reptincel__tooth__top, .reptincel__mouth:after, .reptincel__mouth:before, .reptincel__mouth, .reptincel__eye span:before, .salameche__tooth__bottom, .salameche__tooth__top, .salameche__mouth:before, .salameche__mouth, .salameche__eye:before, .florizarre__mouth:after, .florizarre__eye span:before, .florizarre__eye span, .florizarre__flower__base span:after, .florizarre__flower__base span, .florizarre__flower__base:before, .florizarre__flower__tree, .herbizarre__mouth:after, .herbizarre__mouth:before, .herbizarre__mouth, .herbizarre__eyes, .herbizarre__top:before, .herbizarre__top, .bulbizarre__mouth:before, .bulbizarre__mouth, .bulbizarre__eyes, .bulbizarre__top {
+.carapuce__mouth:after, .carapuce__mouth:before, .carapuce__mouth, .dracaufeu__tooth__bottom, .dracaufeu__tooth__top, .dracaufeu__mouth:before, .dracaufeu__mouth, .reptincel__tooth__bottom, .reptincel__tooth__top, .reptincel__mouth:after, .reptincel__mouth:before, .reptincel__mouth, .reptincel__eye span:before, .salameche__tooth__bottom, .salameche__tooth__top, .salameche__mouth:before, .salameche__mouth, .salameche__eye:before, .florizarre__mouth:after, .florizarre__eye span:before, .florizarre__eye span, .florizarre__flower__base span:after, .florizarre__flower__base span, .florizarre__flower__base:before, .florizarre__flower__tree, .herbizarre__mouth:after, .herbizarre__mouth:before, .herbizarre__mouth, .herbizarre__eyes, .herbizarre__top:before, .herbizarre__top, .bulbizarre__mouth:before, .bulbizarre__mouth, .bulbizarre__eyes, .bulbizarre__top {
   left: 50%;
   transform: translateX(-50%) translate3d(0, 0, 0);
 }
@@ -62,7 +62,7 @@ table {
   transform: translateY(-50%) translate3d(0, 0, 0);
 }
 
-.dracaufeu__nose, .dracaufeu__cernes, .dracaufeu__eyes, .reptincel__nose, .reptincel__spots, .reptincel__eyes, .salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
+.carapuce__nose, .carapuce__eyes, .dracaufeu__nose, .dracaufeu__cernes, .dracaufeu__eyes, .reptincel__nose, .reptincel__spots, .reptincel__eyes, .salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
   left: 0;
   height: 100%;
   top: 0;
@@ -988,6 +988,82 @@ table {
 }
 .dracaufeu__tooth__bottom:after {
   right: 0;
+}
+
+.carapuce {
+  background: #84c5d6;
+}
+.carapuce__eye {
+  height: calc(78 * 100% / var(--pokemonSize));
+  top: calc(59 * 100% / var(--pokemonSize));
+  width: calc(56 * 100% / var(--pokemonSize));
+  background: #ffffff;
+}
+.carapuce__eye:before {
+  width: calc(42 * 100% / 56);
+  background: linear-gradient(180deg, #331e29 0%, #331e29 73%, #91526d 73%, #91526d 100%);
+  content: "";
+  height: 100%;
+  top: 0;
+}
+.carapuce__eye:after {
+  height: calc(62 * 100% / 78);
+  top: calc(4 * 100% / 78);
+  width: calc(20 * 100% / 56);
+  background: linear-gradient(180deg, #ffffff 0%, #ffffff 30%, #151c18 30%, #151c18 100%);
+  content: "";
+}
+.carapuce__eye.--left {
+  left: calc(19 * 100% / var(--pokemonSize));
+}
+.carapuce__eye.--left:before {
+  right: 0;
+}
+.carapuce__eye.--left:after {
+  right: calc(11 * 100% / 56);
+}
+.carapuce__eye.--right {
+  right: calc(19 * 100% / var(--pokemonSize));
+}
+.carapuce__eye.--right:before {
+  left: 0;
+}
+.carapuce__eye.--right:after {
+  left: calc(11 * 100% / 56);
+}
+.carapuce__nose:before, .carapuce__nose:after {
+  height: calc(10 * 100% / var(--pokemonSize));
+  top: calc(155 * 100% / var(--pokemonSize));
+  width: calc(7 * 100% / var(--pokemonSize));
+  background: #70a7b5;
+  content: "";
+}
+.carapuce__nose:before {
+  left: calc(114 * 100% / var(--pokemonSize));
+}
+.carapuce__nose:after {
+  right: calc(114 * 100% / var(--pokemonSize));
+}
+.carapuce__mouth {
+  height: calc(39 * 100% / var(--pokemonSize));
+  top: calc(165 * 100% / var(--pokemonSize));
+  width: calc(222 * 100% / var(--pokemonSize));
+  background: #994b78;
+}
+.carapuce__mouth:before {
+  height: calc(20 * 100% / 39);
+  width: calc(176 * 100% / 222);
+  background: #d084ad;
+  bottom: 0;
+  content: "";
+}
+.carapuce__mouth:after {
+  height: calc(12 * 100% / 39);
+  width: calc(64 * 100% / 222);
+  background: #84c5d6;
+  clip-path: polygon(0 0, 100% 0, 71% 100%, 29% 100%);
+  content: "";
+  top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
