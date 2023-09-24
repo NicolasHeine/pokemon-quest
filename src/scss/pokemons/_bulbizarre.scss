@@ -8,13 +8,12 @@
     clip-path: polygon(0 0, 100% 0, 94% 100%, 6% 100%);
     top: 0;
     &:before{
+      @extend %centerX;
       @include setSize(width, 20, 162);
       background: #639868;
       content: '';
       height: 100%;
-      left: 50%;
       top: 0;
-      transform: translateX(-50%) translate3d(0, 0, 0);
     }
   }
   &__spot{
