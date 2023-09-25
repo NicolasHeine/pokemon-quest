@@ -1,13 +1,11 @@
 :root{
-  --borderRadius: 20px;
   --pokemonSize: 256;
-  --pokemonSizeUnit: calc(var(--pokemonSize) * 1px);
 }
 
 .pokedex{
   gap: 10px;
   display: grid;
-  grid-template-columns: repeat(5, var(--pokemonSizeUnit));
+  grid-template-columns: repeat(5, calc(var(--pokemonSize) * 1px));
 }
 
 .pokemon{
@@ -16,7 +14,7 @@
     grid-row: 1;
   }
   &__block{
-    border-radius: var(--borderRadius);
+    border-radius: 7.8%;
     overflow: hidden;
     padding-top: 100%;
     position: relative;

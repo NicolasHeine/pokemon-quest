@@ -1,6 +1,6 @@
 @mixin setSize($property, $size, $parent: 0){
   @if($parent == 0){
-    #{$property}: calc(#{$size} * 100% / var(--pokemonSize));
+    #{$property}: calc(#{$size} * 100% / 256);
   }@else{
     #{$property}: calc(#{$size} * 100% / #{$parent});
   }

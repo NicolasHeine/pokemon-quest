@@ -52,7 +52,7 @@ table {
   border-spacing: 0;
 }
 
-.carabaffe__shell:before, .carabaffe__mouth:after, .carabaffe__mouth:before, .carabaffe__mouth, .carapuce__mouth:after, .carapuce__mouth:before, .carapuce__mouth, .dracaufeu__tooth__bottom, .dracaufeu__tooth__top, .dracaufeu__mouth:before, .dracaufeu__mouth, .reptincel__tooth__bottom, .reptincel__tooth__top, .reptincel__mouth:after, .reptincel__mouth:before, .reptincel__mouth, .reptincel__eye span:before, .salameche__tooth__bottom, .salameche__tooth__top, .salameche__mouth:before, .salameche__mouth, .salameche__eye:before, .florizarre__mouth:after, .florizarre__eye span:before, .florizarre__eye span, .florizarre__flower__base span:after, .florizarre__flower__base span, .florizarre__flower__base:before, .florizarre__flower__tree, .herbizarre__mouth:after, .herbizarre__mouth:before, .herbizarre__mouth, .herbizarre__eyes, .herbizarre__top:before, .herbizarre__top, .bulbizarre__mouth:before, .bulbizarre__mouth, .bulbizarre__eyes, .bulbizarre__top:before, .bulbizarre__top {
+.tortank__tooth__top, .tortank__mouth:before, .tortank__mouth, .tortank__nose, .tortank__eye span:before, .tortank__top, .carabaffe__shell:before, .carabaffe__mouth:after, .carabaffe__mouth:before, .carabaffe__mouth, .carapuce__mouth:after, .carapuce__mouth:before, .carapuce__mouth, .dracaufeu__tooth__bottom, .dracaufeu__tooth__top, .dracaufeu__mouth:before, .dracaufeu__mouth, .reptincel__tooth__bottom, .reptincel__tooth__top, .reptincel__mouth:after, .reptincel__mouth:before, .reptincel__mouth, .reptincel__eye span:before, .salameche__tooth__bottom, .salameche__tooth__top, .salameche__mouth:before, .salameche__mouth, .salameche__eye:before, .florizarre__mouth:after, .florizarre__eye span:before, .florizarre__eye span, .florizarre__flower__base span:after, .florizarre__flower__base span, .florizarre__flower__base:before, .florizarre__flower__tree, .herbizarre__mouth:after, .herbizarre__mouth:before, .herbizarre__mouth, .herbizarre__eyes, .herbizarre__top:before, .herbizarre__top, .bulbizarre__mouth:before, .bulbizarre__mouth, .bulbizarre__eyes, .bulbizarre__top:before, .bulbizarre__top {
   left: 50%;
   transform: translateX(-50%) translate3d(0, 0, 0);
 }
@@ -62,7 +62,7 @@ table {
   transform: translateY(-50%) translate3d(0, 0, 0);
 }
 
-.carabaffe__tooth, .carabaffe__nose, .carabaffe__cernes, .carabaffe__eyes, .carapuce__nose, .carapuce__eyes, .dracaufeu__nose, .dracaufeu__cernes, .dracaufeu__eyes, .reptincel__nose, .reptincel__spots, .reptincel__eyes, .salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
+.tortank__tooth__bottom, .tortank__tooth, .tortank__cernes, .tortank__eyes, .carabaffe__tooth, .carabaffe__nose, .carabaffe__cernes, .carabaffe__eyes, .carapuce__nose, .carapuce__eyes, .dracaufeu__nose, .dracaufeu__cernes, .dracaufeu__eyes, .reptincel__nose, .reptincel__spots, .reptincel__eyes, .salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
   left: 0;
   height: 100%;
   top: 0;
@@ -70,15 +70,13 @@ table {
 }
 
 :root {
-  --borderRadius: 20px;
   --pokemonSize: 256;
-  --pokemonSizeUnit: calc(var(--pokemonSize) * 1px);
 }
 
 .pokedex {
   gap: 10px;
   display: grid;
-  grid-template-columns: repeat(5, var(--pokemonSizeUnit));
+  grid-template-columns: repeat(5, calc(var(--pokemonSize) * 1px));
 }
 
 .pokemon:last-child {
@@ -86,7 +84,7 @@ table {
   grid-row: 1;
 }
 .pokemon__block {
-  border-radius: var(--borderRadius);
+  border-radius: 7.8%;
   overflow: hidden;
   padding-top: 100%;
   position: relative;
@@ -106,8 +104,8 @@ table {
   background: #78D9AD;
 }
 .bulbizarre__top {
-  height: calc(25 * 100% / var(--pokemonSize));
-  width: calc(162 * 100% / var(--pokemonSize));
+  height: calc(25 * 100% / 256);
+  width: calc(162 * 100% / 256);
   background: #75b87e;
   clip-path: polygon(0 0, 100% 0, 94% 100%, 6% 100%);
   top: 0;
@@ -120,9 +118,9 @@ table {
   top: 0;
 }
 .bulbizarre__spot {
-  height: calc(26 * 100% / var(--pokemonSize));
-  width: calc(54 * 100% / var(--pokemonSize));
-  top: calc(25 * 100% / var(--pokemonSize));
+  height: calc(26 * 100% / 256);
+  width: calc(54 * 100% / 256);
+  top: calc(25 * 100% / 256);
   background: #3c8a5d;
   left: 50%;
 }
@@ -143,9 +141,9 @@ table {
   content: "";
 }
 .bulbizarre__eyes {
-  height: calc(66 * 100% / var(--pokemonSize));
-  top: calc(80 * 100% / var(--pokemonSize));
-  width: calc(220 * 100% / var(--pokemonSize));
+  height: calc(66 * 100% / 256);
+  top: calc(80 * 100% / 256);
+  width: calc(220 * 100% / 256);
   display: flex;
   justify-content: space-between;
 }
@@ -188,22 +186,22 @@ table {
   position: static;
 }
 .bulbizarre__nose:before, .bulbizarre__nose:after {
-  height: calc(10 * 100% / var(--pokemonSize));
-  top: calc(144 * 100% / var(--pokemonSize));
-  width: calc(5 * 100% / var(--pokemonSize));
+  height: calc(10 * 100% / 256);
+  top: calc(144 * 100% / 256);
+  width: calc(5 * 100% / 256);
   background: #5aa684;
   content: "";
 }
 .bulbizarre__nose:before {
-  left: calc(116 * 100% / var(--pokemonSize));
+  left: calc(116 * 100% / 256);
 }
 .bulbizarre__nose:after {
-  right: calc(116 * 100% / var(--pokemonSize));
+  right: calc(116 * 100% / 256);
 }
 .bulbizarre__mouth {
-  bottom: calc(56 * 100% / var(--pokemonSize));
-  height: calc(40 * 100% / var(--pokemonSize));
-  width: calc(190 * 100% / var(--pokemonSize));
+  bottom: calc(56 * 100% / 256);
+  height: calc(40 * 100% / 256);
+  width: calc(190 * 100% / 256);
   background: #944368;
 }
 .bulbizarre__mouth:before {
@@ -231,8 +229,8 @@ table {
   background: #81bbc6;
 }
 .herbizarre__top {
-  height: calc(30 * 100% / var(--pokemonSize));
-  width: calc(192 * 100% / var(--pokemonSize));
+  height: calc(30 * 100% / 256);
+  width: calc(192 * 100% / 256);
   background: #d87289;
   clip-path: polygon(0 0, 100% 0, 89% 100%, 11% 100%);
   top: 0;
@@ -245,10 +243,10 @@ table {
   top: 0;
 }
 .herbizarre__spot {
-  height: calc(51 * 100% / var(--pokemonSize));
-  left: calc(103 * 100% / var(--pokemonSize));
-  top: calc(30 * 100% / var(--pokemonSize));
-  width: calc(80 * 100% / var(--pokemonSize));
+  height: calc(51 * 100% / 256);
+  left: calc(103 * 100% / 256);
+  top: calc(30 * 100% / 256);
+  width: calc(80 * 100% / 256);
 }
 .herbizarre__spot:before {
   background: #317d94;
@@ -265,9 +263,9 @@ table {
   content: "";
 }
 .herbizarre__eyes {
-  height: calc(52 * 100% / var(--pokemonSize));
-  top: calc(86 * 100% / var(--pokemonSize));
-  width: calc(224 * 100% / var(--pokemonSize));
+  height: calc(52 * 100% / 256);
+  top: calc(86 * 100% / 256);
+  width: calc(224 * 100% / 256);
   display: flex;
   justify-content: space-between;
 }
@@ -312,22 +310,22 @@ table {
   position: static;
 }
 .herbizarre__nose:before, .herbizarre__nose:after {
-  height: calc(10 * 100% / var(--pokemonSize));
-  top: calc(147 * 100% / var(--pokemonSize));
-  width: calc(5 * 100% / var(--pokemonSize));
+  height: calc(10 * 100% / 256);
+  top: calc(147 * 100% / 256);
+  width: calc(5 * 100% / 256);
   background: #6b9aa5;
   content: "";
 }
 .herbizarre__nose:before {
-  left: calc(114 * 100% / var(--pokemonSize));
+  left: calc(114 * 100% / 256);
 }
 .herbizarre__nose:after {
-  right: calc(114 * 100% / var(--pokemonSize));
+  right: calc(114 * 100% / 256);
 }
 .herbizarre__mouth {
-  height: calc(43 * 100% / var(--pokemonSize));
-  top: calc(155 * 100% / var(--pokemonSize));
-  width: calc(206 * 100% / var(--pokemonSize));
+  height: calc(43 * 100% / 256);
+  top: calc(155 * 100% / 256);
+  width: calc(206 * 100% / 256);
   background: #944368;
 }
 .herbizarre__mouth:before {
@@ -372,28 +370,28 @@ table {
   background: #f4d3d3;
 }
 .florizarre__flower__spots:before {
-  height: calc(14 * 100% / var(--pokemonSize));
-  left: calc(24 * 100% / var(--pokemonSize));
-  width: calc(15 * 100% / var(--pokemonSize));
+  height: calc(14 * 100% / 256);
+  left: calc(24 * 100% / 256);
+  width: calc(15 * 100% / 256);
   content: "";
   top: 0;
 }
 .florizarre__flower__spots:after {
-  height: calc(20 * 100% / var(--pokemonSize));
-  left: calc(44 * 100% / var(--pokemonSize));
-  top: calc(21 * 100% / var(--pokemonSize));
-  width: calc(20 * 100% / var(--pokemonSize));
+  height: calc(20 * 100% / 256);
+  left: calc(44 * 100% / 256);
+  top: calc(21 * 100% / 256);
+  width: calc(20 * 100% / 256);
   content: "";
 }
 .florizarre__flower__spots span {
-  height: calc(28 * 100% / var(--pokemonSize));
-  right: calc(31 * 100% / var(--pokemonSize));
-  width: calc(28 * 100% / var(--pokemonSize));
+  height: calc(28 * 100% / 256);
+  right: calc(31 * 100% / 256);
+  width: calc(28 * 100% / 256);
   top: 0;
 }
 .florizarre__flower__tree {
-  height: calc(54 * 100% / var(--pokemonSize));
-  width: calc(108 * 100% / var(--pokemonSize));
+  height: calc(54 * 100% / 256);
+  width: calc(108 * 100% / 256);
   background: #8c7152;
   top: 0;
 }
@@ -404,15 +402,15 @@ table {
   width: 100%;
 }
 .florizarre__flower__base {
-  height: calc(20 * 100% / var(--pokemonSize));
-  top: calc(65 * 100% / var(--pokemonSize));
+  height: calc(20 * 100% / 256);
+  top: calc(65 * 100% / 256);
   background: #81a884;
   left: 0;
   width: 100%;
 }
 .florizarre__flower__base:before {
   height: calc(47 * 100% / 20);
-  width: calc(127 * 100% / var(--pokemonSize));
+  width: calc(127 * 100% / 256);
   background: inherit;
   clip-path: polygon(0 0, 100% 0, 100% 79%, 93% 100%, 7% 100%, 0 79%);
   content: "";
@@ -422,7 +420,7 @@ table {
 .florizarre__flower__base span {
   height: calc(51 * 100% / 20);
   top: calc(-11 * 100% / 20);
-  width: calc(140 * 100% / var(--pokemonSize));
+  width: calc(140 * 100% / 256);
   z-index: 2;
 }
 .florizarre__flower__base span:before, .florizarre__flower__base span:after {
@@ -442,9 +440,9 @@ table {
   position: static;
 }
 .florizarre__ear {
-  height: calc(47 * 100% / var(--pokemonSize));
-  top: calc(38 * 100% / var(--pokemonSize));
-  width: calc(39 * 100% / var(--pokemonSize));
+  height: calc(47 * 100% / 256);
+  top: calc(38 * 100% / 256);
+  width: calc(39 * 100% / 256);
   background: #8cc7c3;
 }
 .florizarre__ear:before {
@@ -471,8 +469,8 @@ table {
   right: 0;
 }
 .florizarre__head {
-  height: calc(171 * 100% / var(--pokemonSize));
-  top: calc(85 * 100% / var(--pokemonSize));
+  height: calc(171 * 100% / 256);
+  top: calc(85 * 100% / 256);
   background: #8cc7c3;
   width: 100%;
 }
@@ -480,9 +478,9 @@ table {
   position: static;
 }
 .florizarre__eye {
-  height: calc(50 * 100% / var(--pokemonSize));
-  top: calc(115 * 100% / var(--pokemonSize));
-  width: calc(50 * 100% / var(--pokemonSize));
+  height: calc(50 * 100% / 256);
+  top: calc(115 * 100% / 256);
+  width: calc(50 * 100% / 256);
   background: #ffffff;
 }
 .florizarre__eye:before {
@@ -516,7 +514,7 @@ table {
   content: "";
 }
 .florizarre__eye.--left {
-  left: calc(14 * 100% / var(--pokemonSize));
+  left: calc(14 * 100% / 256);
 }
 .florizarre__eye.--left:before {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 42%);
@@ -525,7 +523,7 @@ table {
   left: 0;
 }
 .florizarre__eye.--right {
-  right: calc(14 * 100% / var(--pokemonSize));
+  right: calc(14 * 100% / 256);
 }
 .florizarre__eye.--right:before {
   clip-path: polygon(0 0, 100% 0, 100% 42%, 0 100%);
@@ -537,22 +535,22 @@ table {
   position: static;
 }
 .florizarre__nose:before, .florizarre__nose:after {
-  height: calc(8 * 100% / var(--pokemonSize));
-  top: calc(173 * 100% / var(--pokemonSize));
-  width: calc(8 * 100% / var(--pokemonSize));
+  height: calc(8 * 100% / 256);
+  top: calc(173 * 100% / 256);
+  width: calc(8 * 100% / 256);
   background: #6b9a99;
   content: "";
   z-index: 1;
 }
 .florizarre__nose:before {
-  left: calc(110 * 100% / var(--pokemonSize));
+  left: calc(110 * 100% / 256);
 }
 .florizarre__nose:after {
-  right: calc(110 * 100% / var(--pokemonSize));
+  right: calc(110 * 100% / 256);
 }
 .florizarre__mouth {
-  height: calc(43 * 100% / var(--pokemonSize));
-  top: calc(177 * 100% / var(--pokemonSize));
+  height: calc(43 * 100% / 256);
+  top: calc(177 * 100% / 256);
   background: #864244;
   left: 0;
   width: 100%;
@@ -567,7 +565,7 @@ table {
 }
 .florizarre__mouth:after {
   height: calc(10 * 100% / 43);
-  width: calc(66 * 100% / var(--pokemonSize));
+  width: calc(66 * 100% / 256);
   background: #8cc7c3;
   clip-path: polygon(0 0, 100% 0, 89% 100%, 11% 100%);
   content: "";
@@ -580,30 +578,30 @@ table {
 }
 .florizarre__tooth__top:before, .florizarre__tooth__top:after {
   height: calc(17 * 100% / 43);
-  width: calc(18 * 100% / var(--pokemonSize));
+  width: calc(18 * 100% / 256);
   background: #ffffff;
   content: "";
   top: 0;
 }
 .florizarre__tooth__top:before {
-  left: calc(12 * 100% / var(--pokemonSize));
+  left: calc(12 * 100% / 256);
 }
 .florizarre__tooth__top:after {
-  right: calc(12 * 100% / var(--pokemonSize));
+  right: calc(12 * 100% / 256);
 }
 .florizarre__tooth__bottom {
   position: static;
 }
 .florizarre__tooth__bottom span {
   height: calc(11 * 100% / 43);
-  width: calc(42 * 100% / var(--pokemonSize));
+  width: calc(42 * 100% / 256);
   bottom: 0;
 }
 .florizarre__tooth__bottom span.--left {
-  left: calc(20 * 100% / var(--pokemonSize));
+  left: calc(20 * 100% / 256);
 }
 .florizarre__tooth__bottom span.--right {
-  right: calc(20 * 100% / var(--pokemonSize));
+  right: calc(20 * 100% / 256);
 }
 .florizarre__tooth__bottom span:before, .florizarre__tooth__bottom span:after {
   width: calc(16 * 100% / 42);
@@ -622,9 +620,9 @@ table {
   background: #efaf84;
 }
 .salameche__eye {
-  height: calc(85 * 100% / var(--pokemonSize));
-  top: calc(33 * 100% / var(--pokemonSize));
-  width: calc(56 * 100% / var(--pokemonSize));
+  height: calc(85 * 100% / 256);
+  top: calc(33 * 100% / 256);
+  width: calc(56 * 100% / 256);
   background: linear-gradient(180deg, #1e2c31 0%, #1e2c31 73%, #396d7e 73%, #396d7e 100%);
 }
 .salameche__eye:before {
@@ -642,34 +640,34 @@ table {
   content: "";
 }
 .salameche__eye.--left {
-  left: calc(24 * 100% / var(--pokemonSize));
+  left: calc(24 * 100% / 256);
 }
 .salameche__eye.--left:after {
   right: calc(7 * 100% / 56);
 }
 .salameche__eye.--right {
-  right: calc(24 * 100% / var(--pokemonSize));
+  right: calc(24 * 100% / 256);
 }
 .salameche__eye.--right:after {
   left: calc(7 * 100% / 56);
 }
 .salameche__nose:before, .salameche__nose:after {
-  height: calc(16 * 100% / var(--pokemonSize));
-  top: calc(141 * 100% / var(--pokemonSize));
-  width: calc(8 * 100% / var(--pokemonSize));
+  height: calc(16 * 100% / 256);
+  top: calc(141 * 100% / 256);
+  width: calc(8 * 100% / 256);
   background: #d39873;
   content: "";
 }
 .salameche__nose:before {
-  left: calc(110 * 100% / var(--pokemonSize));
+  left: calc(110 * 100% / 256);
 }
 .salameche__nose:after {
-  right: calc(110 * 100% / var(--pokemonSize));
+  right: calc(110 * 100% / 256);
 }
 .salameche__mouth {
-  height: calc(62 * 100% / var(--pokemonSize));
-  top: calc(165 * 100% / var(--pokemonSize));
-  width: calc(200 * 100% / var(--pokemonSize));
+  height: calc(62 * 100% / 256);
+  top: calc(165 * 100% / 256);
+  width: calc(200 * 100% / 256);
   background: #a26f8e;
 }
 .salameche__mouth:before {
@@ -718,9 +716,9 @@ table {
   background: #ef8b78;
 }
 .reptincel__eye {
-  height: calc(61 * 100% / var(--pokemonSize));
-  top: calc(47 * 100% / var(--pokemonSize));
-  width: calc(68 * 100% / var(--pokemonSize));
+  height: calc(61 * 100% / 256);
+  top: calc(47 * 100% / 256);
+  width: calc(68 * 100% / 256);
   background: #ffffff;
 }
 .reptincel__eye span {
@@ -743,7 +741,7 @@ table {
   top: 0;
 }
 .reptincel__eye.--left {
-  left: calc(22 * 100% / var(--pokemonSize));
+  left: calc(22 * 100% / 256);
   clip-path: polygon(0 0, 100% 100%, 0% 100%);
 }
 .reptincel__eye.--left span {
@@ -753,7 +751,7 @@ table {
   left: calc(7 * 100% / 48);
 }
 .reptincel__eye.--right {
-  right: calc(22 * 100% / var(--pokemonSize));
+  right: calc(22 * 100% / 256);
   clip-path: polygon(100% 0, 100% 100%, 0% 100%);
 }
 .reptincel__eye.--right span {
@@ -763,38 +761,38 @@ table {
   right: calc(7 * 100% / 48);
 }
 .reptincel__spots:before, .reptincel__spots:after {
-  height: calc(32 * 100% / var(--pokemonSize));
-  top: calc(76 * 100% / var(--pokemonSize));
-  width: calc(5 * 100% / var(--pokemonSize));
+  height: calc(32 * 100% / 256);
+  top: calc(76 * 100% / 256);
+  width: calc(5 * 100% / 256);
   background: #d67d6b;
   content: "";
 }
 .reptincel__spots:before {
-  left: calc(108 * 100% / var(--pokemonSize));
+  left: calc(108 * 100% / 256);
 }
 .reptincel__spots:after {
-  right: calc(108 * 100% / var(--pokemonSize));
+  right: calc(108 * 100% / 256);
 }
 .reptincel__nose {
   z-index: 1;
 }
 .reptincel__nose:before, .reptincel__nose:after {
-  height: calc(14 * 100% / var(--pokemonSize));
-  top: calc(146 * 100% / var(--pokemonSize));
-  width: calc(5 * 100% / var(--pokemonSize));
+  height: calc(14 * 100% / 256);
+  top: calc(146 * 100% / 256);
+  width: calc(5 * 100% / 256);
   background: #d67d6b;
   content: "";
 }
 .reptincel__nose:before {
-  left: calc(108 * 100% / var(--pokemonSize));
+  left: calc(108 * 100% / 256);
 }
 .reptincel__nose:after {
-  right: calc(108 * 100% / var(--pokemonSize));
+  right: calc(108 * 100% / 256);
 }
 .reptincel__mouth {
-  height: calc(59 * 100% / var(--pokemonSize));
-  top: calc(157 * 100% / var(--pokemonSize));
-  width: calc(218 * 100% / var(--pokemonSize));
+  height: calc(59 * 100% / 256);
+  top: calc(157 * 100% / 256);
+  width: calc(218 * 100% / 256);
   background: #a26f8e;
 }
 .reptincel__mouth:before {
@@ -853,29 +851,29 @@ table {
   background: #f4af63;
 }
 .dracaufeu__horns {
-  height: calc(25 * 100% / var(--pokemonSize));
+  height: calc(25 * 100% / 256);
   background: #f1633c;
   left: 0;
   top: 0;
   width: 100%;
 }
 .dracaufeu__horns:before, .dracaufeu__horns:after {
-  width: calc(57 * 100% / var(--pokemonSize));
+  width: calc(57 * 100% / 256);
   background: #f4af63;
   content: "";
   height: 100%;
   top: 0;
 }
 .dracaufeu__horns:before {
-  left: calc(29 * 100% / var(--pokemonSize));
+  left: calc(29 * 100% / 256);
 }
 .dracaufeu__horns:after {
-  right: calc(29 * 100% / var(--pokemonSize));
+  right: calc(29 * 100% / 256);
 }
 .dracaufeu__eye {
-  height: calc(47 * 100% / var(--pokemonSize));
-  top: calc(65 * 100% / var(--pokemonSize));
-  width: calc(70 * 100% / var(--pokemonSize));
+  height: calc(47 * 100% / 256);
+  top: calc(65 * 100% / 256);
+  width: calc(70 * 100% / 256);
   background: #ffffff;
 }
 .dracaufeu__eye:before {
@@ -893,7 +891,7 @@ table {
   top: 0;
 }
 .dracaufeu__eye.--left {
-  left: calc(21 * 100% / var(--pokemonSize));
+  left: calc(21 * 100% / 256);
   clip-path: polygon(0 0, 100% 100%, 0 100%);
 }
 .dracaufeu__eye.--left:before {
@@ -903,7 +901,7 @@ table {
   right: calc(23 * 100% / 70);
 }
 .dracaufeu__eye.--right {
-  right: calc(21 * 100% / var(--pokemonSize));
+  right: calc(21 * 100% / 256);
   clip-path: polygon(100% 0, 100% 100%, 0 100%);
 }
 .dracaufeu__eye.--right:before {
@@ -913,35 +911,35 @@ table {
   left: calc(23 * 100% / 70);
 }
 .dracaufeu__cernes:before, .dracaufeu__cernes:after {
-  height: calc(36 * 100% / var(--pokemonSize));
-  top: calc(76 * 100% / var(--pokemonSize));
-  width: calc(7 * 100% / var(--pokemonSize));
+  height: calc(36 * 100% / 256);
+  top: calc(76 * 100% / 256);
+  width: calc(7 * 100% / 256);
   background: #e7a660;
   content: "";
 }
 .dracaufeu__cernes:before {
-  left: calc(91 * 100% / var(--pokemonSize));
+  left: calc(91 * 100% / 256);
 }
 .dracaufeu__cernes:after {
-  right: calc(91 * 100% / var(--pokemonSize));
+  right: calc(91 * 100% / 256);
 }
 .dracaufeu__nose:before, .dracaufeu__nose:after {
-  height: calc(15 * 100% / var(--pokemonSize));
-  top: calc(112 * 100% / var(--pokemonSize));
-  width: calc(7 * 100% / var(--pokemonSize));
+  height: calc(15 * 100% / 256);
+  top: calc(112 * 100% / 256);
+  width: calc(7 * 100% / 256);
   background: #d09454;
   content: "";
 }
 .dracaufeu__nose:before {
-  left: calc(108 * 100% / var(--pokemonSize));
+  left: calc(108 * 100% / 256);
 }
 .dracaufeu__nose:after {
-  right: calc(108 * 100% / var(--pokemonSize));
+  right: calc(108 * 100% / 256);
 }
 .dracaufeu__mouth {
-  height: calc(62 * 100% / var(--pokemonSize));
-  top: calc(161 * 100% / var(--pokemonSize));
-  width: calc(226 * 100% / var(--pokemonSize));
+  height: calc(62 * 100% / 256);
+  top: calc(161 * 100% / 256);
+  width: calc(226 * 100% / 256);
   background: #a77191;
 }
 .dracaufeu__mouth:before {
@@ -992,9 +990,9 @@ table {
   background: #84c5d6;
 }
 .carapuce__eye {
-  height: calc(78 * 100% / var(--pokemonSize));
-  top: calc(59 * 100% / var(--pokemonSize));
-  width: calc(56 * 100% / var(--pokemonSize));
+  height: calc(78 * 100% / 256);
+  top: calc(59 * 100% / 256);
+  width: calc(56 * 100% / 256);
   background: #ffffff;
 }
 .carapuce__eye:before {
@@ -1012,7 +1010,7 @@ table {
   content: "";
 }
 .carapuce__eye.--left {
-  left: calc(19 * 100% / var(--pokemonSize));
+  left: calc(19 * 100% / 256);
 }
 .carapuce__eye.--left:before {
   right: 0;
@@ -1021,7 +1019,7 @@ table {
   right: calc(11 * 100% / 56);
 }
 .carapuce__eye.--right {
-  right: calc(19 * 100% / var(--pokemonSize));
+  right: calc(19 * 100% / 256);
 }
 .carapuce__eye.--right:before {
   left: 0;
@@ -1030,22 +1028,22 @@ table {
   left: calc(11 * 100% / 56);
 }
 .carapuce__nose:before, .carapuce__nose:after {
-  height: calc(10 * 100% / var(--pokemonSize));
-  top: calc(155 * 100% / var(--pokemonSize));
-  width: calc(7 * 100% / var(--pokemonSize));
+  height: calc(10 * 100% / 256);
+  top: calc(155 * 100% / 256);
+  width: calc(7 * 100% / 256);
   background: #70a7b5;
   content: "";
 }
 .carapuce__nose:before {
-  left: calc(114 * 100% / var(--pokemonSize));
+  left: calc(114 * 100% / 256);
 }
 .carapuce__nose:after {
-  right: calc(114 * 100% / var(--pokemonSize));
+  right: calc(114 * 100% / 256);
 }
 .carapuce__mouth {
-  height: calc(39 * 100% / var(--pokemonSize));
-  top: calc(165 * 100% / var(--pokemonSize));
-  width: calc(222 * 100% / var(--pokemonSize));
+  height: calc(39 * 100% / 256);
+  top: calc(165 * 100% / 256);
+  width: calc(222 * 100% / 256);
   background: #994b78;
 }
 .carapuce__mouth:before {
@@ -1068,9 +1066,9 @@ table {
   background: #75a4db;
 }
 .carabaffe__eye {
-  height: calc(80 * 100% / var(--pokemonSize));
-  top: calc(66 * 100% / var(--pokemonSize));
-  width: calc(68 * 100% / var(--pokemonSize));
+  height: calc(80 * 100% / 256);
+  top: calc(66 * 100% / 256);
+  width: calc(68 * 100% / 256);
   background: #ffffff;
 }
 .carabaffe__eye:after {
@@ -1094,7 +1092,7 @@ table {
   content: "";
 }
 .carabaffe__eye.--left {
-  left: calc(21 * 100% / var(--pokemonSize));
+  left: calc(21 * 100% / 256);
   clip-path: polygon(0 0, 69% 0, 100% 100%, 0 100%);
 }
 .carabaffe__eye.--left:after {
@@ -1107,7 +1105,7 @@ table {
   right: calc(11 * 100% / 47);
 }
 .carabaffe__eye.--right {
-  right: calc(21 * 100% / var(--pokemonSize));
+  right: calc(21 * 100% / 256);
   clip-path: polygon(31% 0, 100% 0, 100% 100%, 0 100%);
 }
 .carabaffe__eye.--right:after {
@@ -1120,9 +1118,9 @@ table {
   left: calc(11 * 100% / 47);
 }
 .carabaffe__cernes:before, .carabaffe__cernes:after {
-  height: calc(15 * 100% / var(--pokemonSize));
-  top: calc(131 * 100% / var(--pokemonSize));
-  width: calc(20 * 100% / var(--pokemonSize));
+  height: calc(15 * 100% / 256);
+  top: calc(131 * 100% / 256);
+  width: calc(20 * 100% / 256);
   background: #6892c3;
   content: "";
 }
@@ -1133,22 +1131,22 @@ table {
   right: 0;
 }
 .carabaffe__nose:before, .carabaffe__nose:after {
-  height: calc(11 * 100% / var(--pokemonSize));
-  top: calc(157 * 100% / var(--pokemonSize));
-  width: calc(7 * 100% / var(--pokemonSize));
+  height: calc(11 * 100% / 256);
+  top: calc(157 * 100% / 256);
+  width: calc(7 * 100% / 256);
   background: #638ebd;
   content: "";
 }
 .carabaffe__nose:before {
-  left: calc(116 * 100% / var(--pokemonSize));
+  left: calc(116 * 100% / 256);
 }
 .carabaffe__nose:after {
-  right: calc(116 * 100% / var(--pokemonSize));
+  right: calc(116 * 100% / 256);
 }
 .carabaffe__mouth {
-  height: calc(35 * 100% / var(--pokemonSize));
-  top: calc(170 * 100% / var(--pokemonSize));
-  width: calc(202 * 100% / var(--pokemonSize));
+  height: calc(35 * 100% / 256);
+  top: calc(170 * 100% / 256);
+  width: calc(202 * 100% / 256);
   background: #994b78;
 }
 .carabaffe__mouth:before {
@@ -1180,18 +1178,180 @@ table {
   right: calc(8 * 100% / 202);
 }
 .carabaffe__shell {
-  height: calc(26 * 100% / var(--pokemonSize));
+  height: calc(26 * 100% / 256);
   background: #e1d1af;
   bottom: 0;
   left: 0;
   width: 100%;
 }
 .carabaffe__shell:before {
-  width: calc(154 * 100% / var(--pokemonSize));
+  width: calc(154 * 100% / 256);
   background: #546165;
   clip-path: polygon(0 0, 100% 0, 93.5% 100%, 6.5% 100%);
   content: "";
   height: 100%;
+}
+
+.tortank {
+  background: #94b7e1;
+}
+.tortank__top {
+  height: calc(21 * 100% / 256);
+  width: calc(132 * 100% / 256);
+  background: #a58b6d;
+  clip-path: polygon(0 0, 100% 0, 95.5% 100%, 4.5% 100%);
+  top: 0;
+}
+.tortank__eye {
+  height: calc(55 * 100% / 256);
+  top: calc(58 * 100% / 256);
+  width: calc(75 * 100% / 256);
+  background: #ffffff;
+}
+.tortank__eye:after {
+  height: calc(35 * 100% / 55);
+  width: calc(9 * 100% / 75);
+  background: #ffffff;
+  content: "";
+  top: 0;
+}
+.tortank__eye span {
+  width: calc(28 * 100% / 75);
+  background: linear-gradient(180deg, #635142 0%, #635142 82%, #7b6552 82%, #7b6552 100%);
+  height: 100%;
+  top: 0;
+}
+.tortank__eye span:before {
+  height: calc(50 * 100% / 55);
+  width: calc(13 * 100% / 28);
+  background: #312921;
+  content: "";
+  top: 0;
+}
+.tortank__eye.--left {
+  left: calc(20 * 100% / 256);
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+.tortank__eye.--left:after {
+  right: calc(32 * 100% / 75);
+}
+.tortank__eye.--left span {
+  right: calc(18 * 100% / 75);
+}
+.tortank__eye.--right {
+  right: calc(20 * 100% / 256);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+.tortank__eye.--right:after {
+  left: calc(32 * 100% / 75);
+}
+.tortank__eye.--right span {
+  left: calc(18 * 100% / 75);
+}
+.tortank__cernes:before, .tortank__cernes:after {
+  height: calc(31 * 100% / 256);
+  top: calc(82 * 100% / 256);
+  width: calc(8 * 100% / 256);
+  background: #89acd3;
+  content: "";
+}
+.tortank__cernes:before {
+  left: calc(95 * 100% / 256);
+}
+.tortank__cernes:after {
+  right: calc(95 * 100% / 256);
+}
+.tortank__nose {
+  height: calc(6 * 100% / 256);
+  top: calc(152 * 100% / 256);
+  width: calc(54 * 100% / 256);
+  background: #84a4c8;
+}
+.tortank__nose:before, .tortank__nose:after {
+  height: calc(6 * 100% / 6);
+  width: calc(13 * 100% / 54);
+  background: #7b9abd;
+  bottom: 100%;
+  content: "";
+}
+.tortank__nose:before {
+  left: calc(-7 * 100% / 54);
+}
+.tortank__nose:after {
+  right: calc(-7 * 100% / 54);
+}
+.tortank__mouth {
+  height: calc(45 * 100% / 256);
+  top: calc(178 * 100% / 256);
+  width: calc(228 * 100% / 256);
+  background: #6b4b4a;
+  z-index: 2;
+}
+.tortank__mouth:before {
+  height: calc(22 * 100% / 45);
+  width: calc(174 * 100% / 228);
+  background: #b76b7e;
+  bottom: 0;
+  content: "";
+}
+.tortank__tooth__top {
+  height: calc(14 * 100% / 45);
+  width: calc(174 * 100% / 228);
+}
+.tortank__tooth__top:before, .tortank__tooth__top:after {
+  width: calc(24 * 100% / 176);
+  background: #ffffff;
+  content: "";
+  height: 100%;
+  top: 0;
+}
+.tortank__tooth__top:before {
+  left: 0;
+}
+.tortank__tooth__top:after {
+  right: 0;
+}
+.tortank__tooth__bottom span {
+  height: calc(11 * 100% / 45);
+  width: calc(50 * 100% / 228);
+  bottom: 0;
+}
+.tortank__tooth__bottom span:before, .tortank__tooth__bottom span:after {
+  background: #ffffff;
+  content: "";
+  height: 100%;
+  top: 0;
+}
+.tortank__tooth__bottom span:before {
+  left: 0;
+}
+.tortank__tooth__bottom span:after {
+  right: 0;
+}
+.tortank__tooth__bottom span.--left {
+  left: 0;
+}
+.tortank__tooth__bottom span.--left:before {
+  width: calc(14 * 100% / 50);
+}
+.tortank__tooth__bottom span.--left:after {
+  width: calc(23 * 100% / 50);
+}
+.tortank__tooth__bottom span.--right {
+  right: 0;
+}
+.tortank__tooth__bottom span.--right:before {
+  width: calc(23 * 100% / 50);
+}
+.tortank__tooth__bottom span.--right:after {
+  width: calc(14 * 100% / 50);
+}
+.tortank__shell {
+  height: calc(66 * 100% / 256);
+  background: #e1d1af;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
