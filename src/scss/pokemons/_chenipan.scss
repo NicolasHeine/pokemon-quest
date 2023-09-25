@@ -1,0 +1,62 @@
+.chenipan{
+  background: #639039;
+  &__head{
+    @include setSize(height, 230);
+    @include setSize(width, 156);
+    background: #8cc56b;
+    bottom: 0;
+    right: 0;
+  }
+  &__side{
+    @include setSize(height, 200);
+    @include setSize(right, 156);
+    @include setSize(top, 26);
+    @include setSize(width, 43);
+    background: #8cc56b;
+    clip-path: polygon(23% 0, 100% 0, 100% 100%, 23% 100%, 0 95%, 0 5%);
+  }
+  &__button{
+    @include setSize(height, 61);
+    @include setSize(right, 199);
+    @include setSize(top, 40);
+    @include setSize(width, 22);
+    background: #ef7d4a;
+  }
+  &__nose{
+    @include setSize(height, 104);
+    @include setSize(right, 199);
+    @include setSize(top, 112);
+    @include setSize(width, 37);
+    background: #8cc56b;
+    &:before{
+      @include setSize(width, 13, 37);
+      background: #709e54;
+      content: '';
+      height: 100%;
+      right: 0;
+      top: 0;
+    }
+  }
+  &__eye{
+    @include setSize(height, 112);
+    @include setSize(right, 50);
+    @include setSize(top, 62);
+    @include setSize(width, 112);
+    background: #ffeb9f;
+    &:before{
+      @extend %center;
+      @include setSize(height, 82, 112);
+      @include setSize(width, 82, 112);
+      background: #2b2a29;
+      content: '';
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 46, 112);
+      @include setSize(top, 20, 112);
+      @include setSize(width, 46, 112);
+      background: #757775;
+      content: '';
+    }
+  }
+}
