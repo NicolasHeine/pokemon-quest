@@ -58,7 +58,7 @@ table {
   transform: translate(-50%, -50%) translate3d(0, 0, 0);
 }
 
-.chrysacier__eye:before, .chenipan__eye:after, .tortank__tooth__top, .tortank__mouth:before, .tortank__mouth, .tortank__nose, .tortank__eye span:before, .tortank__top, .carabaffe__shell:before, .carabaffe__mouth:after, .carabaffe__mouth:before, .carabaffe__mouth, .carapuce__mouth:after, .carapuce__mouth:before, .carapuce__mouth, .dracaufeu__tooth__bottom, .dracaufeu__tooth__top, .dracaufeu__mouth:before, .dracaufeu__mouth, .reptincel__tooth__bottom, .reptincel__tooth__top, .reptincel__mouth:after, .reptincel__mouth:before, .reptincel__mouth, .reptincel__eye span:before, .salameche__tooth__bottom, .salameche__tooth__top, .salameche__mouth:before, .salameche__mouth, .salameche__eye:before, .florizarre__mouth:after, .florizarre__eye span:before, .florizarre__eye span, .florizarre__flower__base span:after, .florizarre__flower__base span, .florizarre__flower__base:before, .florizarre__flower__tree, .herbizarre__mouth:after, .herbizarre__mouth:before, .herbizarre__mouth, .herbizarre__eyes, .herbizarre__top:before, .herbizarre__top, .bulbizarre__mouth:before, .bulbizarre__mouth, .bulbizarre__eyes, .bulbizarre__top:before, .bulbizarre__top {
+.papillusion__nose, .chrysacier__eye:before, .chenipan__eye:after, .tortank__tooth__top, .tortank__mouth:before, .tortank__mouth, .tortank__nose, .tortank__eye span:before, .tortank__top, .carabaffe__shell:before, .carabaffe__mouth:after, .carabaffe__mouth:before, .carabaffe__mouth, .carapuce__mouth:after, .carapuce__mouth:before, .carapuce__mouth, .dracaufeu__tooth__bottom, .dracaufeu__tooth__top, .dracaufeu__mouth:before, .dracaufeu__mouth, .reptincel__tooth__bottom, .reptincel__tooth__top, .reptincel__mouth:after, .reptincel__mouth:before, .reptincel__mouth, .reptincel__eye span:before, .salameche__tooth__bottom, .salameche__tooth__top, .salameche__mouth:before, .salameche__mouth, .salameche__eye:before, .florizarre__mouth:after, .florizarre__eye span:before, .florizarre__eye span, .florizarre__flower__base span:after, .florizarre__flower__base span, .florizarre__flower__base:before, .florizarre__flower__tree, .herbizarre__mouth:after, .herbizarre__mouth:before, .herbizarre__mouth, .herbizarre__eyes, .herbizarre__top:before, .herbizarre__top, .bulbizarre__mouth:before, .bulbizarre__mouth, .bulbizarre__eyes, .bulbizarre__top:before, .bulbizarre__top {
   left: 50%;
   transform: translateX(-50%) translate3d(0, 0, 0);
 }
@@ -68,7 +68,7 @@ table {
   transform: translateY(-50%) translate3d(0, 0, 0);
 }
 
-.chrysacier__side, .tortank__tooth__bottom, .tortank__tooth, .tortank__cernes, .tortank__eyes, .carabaffe__tooth, .carabaffe__nose, .carabaffe__cernes, .carabaffe__eyes, .carapuce__nose, .carapuce__eyes, .dracaufeu__nose, .dracaufeu__cernes, .dracaufeu__eyes, .reptincel__nose, .reptincel__spots, .reptincel__eyes, .salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
+.papillusion__wings, .papillusion__paws, .papillusion__eyes, .chrysacier__side, .tortank__tooth__bottom, .tortank__tooth, .tortank__cernes, .tortank__eyes, .carabaffe__tooth, .carabaffe__nose, .carabaffe__cernes, .carabaffe__eyes, .carapuce__nose, .carapuce__eyes, .dracaufeu__nose, .dracaufeu__cernes, .dracaufeu__eyes, .reptincel__nose, .reptincel__spots, .reptincel__eyes, .salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
   left: 0;
   height: 100%;
   top: 0;
@@ -1503,6 +1503,95 @@ table {
   height: 100%;
   left: 0;
   top: 0;
+}
+
+.papillusion {
+  background: #756f89;
+}
+.papillusion__eye {
+  height: calc(110 * 100% / 256);
+  top: calc(30 * 100% / 256);
+  width: calc(84 * 100% / 256);
+  background: #db7570;
+}
+.papillusion__eye:before {
+  height: calc(68 * 100% / 110);
+  width: calc(63 * 100% / 84);
+  background: #ec7d78;
+  content: "";
+  top: 0;
+}
+.papillusion__eye:after {
+  height: calc(36 * 100% / 110);
+  top: calc(6 * 100% / 110);
+  width: calc(34 * 100% / 84);
+  background: #ecbcba;
+  content: "";
+}
+.papillusion__eye.--left {
+  left: calc(16 * 100% / 256);
+}
+.papillusion__eye.--left:before {
+  right: 0;
+}
+.papillusion__eye.--left:after {
+  right: calc(10 * 100% / 84);
+}
+.papillusion__eye.--right {
+  right: calc(16 * 100% / 256);
+}
+.papillusion__eye.--right:before {
+  left: 0;
+}
+.papillusion__eye.--right:after {
+  left: calc(10 * 100% / 84);
+}
+.papillusion__nose {
+  height: calc(30 * 100% / 256);
+  top: calc(146 * 100% / 256);
+  width: calc(54 * 100% / 256);
+  background: #5d8fa5;
+}
+.papillusion__nose:before, .papillusion__nose:after {
+  height: calc(11 * 100% / 30);
+  width: calc(12 * 100% / 54);
+  background: #e9f1f9;
+  content: "";
+  top: 100%;
+}
+.papillusion__nose:before {
+  left: 0;
+}
+.papillusion__nose:after {
+  right: 0;
+}
+.papillusion__paws:before, .papillusion__paws:after {
+  height: calc(31 * 100% / 256);
+  width: calc(38 * 100% / 256);
+  background: #5d90a5;
+  bottom: 0;
+  content: "";
+}
+.papillusion__paws:before {
+  left: calc(66 * 100% / 256);
+  clip-path: polygon(10.5% 0, 84.2% 0, 100% 16%, 100% 100%, 0% 100%, 0 9.6%);
+}
+.papillusion__paws:after {
+  right: calc(66 * 100% / 256);
+  clip-path: polygon(15.8% 0, 89.5% 0, 100% 9.6%, 100% 100%, 0% 100%, 0 16%);
+}
+.papillusion__wings:before, .papillusion__wings:after {
+  height: calc(60 * 100% / 256);
+  width: calc(29 * 100% / 256);
+  background: linear-gradient(180deg, #e9f1f9 0%, #e9f1f9 63%, #605f60 63%, #605f60 100%);
+  bottom: 0;
+  content: "";
+}
+.papillusion__wings:before {
+  left: 0;
+}
+.papillusion__wings:after {
+  right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

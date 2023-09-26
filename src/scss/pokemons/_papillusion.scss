@@ -1,0 +1,101 @@
+.papillusion{
+  background: #756f89;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 110);
+    @include setSize(top, 30);
+    @include setSize(width, 84);
+    background: #db7570;
+    &:before{
+      @include setSize(height, 68, 110);
+      @include setSize(width, 63, 84);
+      background: #ec7d78;
+      content: '';
+      top: 0;
+    }
+    &:after{
+      @include setSize(height, 36, 110);
+      @include setSize(top, 6, 110);
+      @include setSize(width, 34, 84);
+      background: #ecbcba;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 16);
+      &:before{
+        right: 0;
+      }
+      &:after{
+        @include setSize(right, 10, 84);
+      }
+    }
+    &.--right{
+      @include setSize(right, 16);
+      &:before{
+        left: 0;
+      }
+      &:after{
+        @include setSize(left, 10, 84);
+      }
+    }
+  }
+  &__nose{
+    @extend %centerX;
+    @include setSize(height, 30);
+    @include setSize(top, 146);
+    @include setSize(width, 54);
+    background: #5d8fa5;
+    &:before,
+    &:after{
+      @include setSize(height, 11, 30);
+      @include setSize(width, 12, 54);
+      background: #e9f1f9;
+      content: '';
+      top: 100%;
+    }
+    &:before{
+      left: 0;
+    }
+    &:after{
+      right: 0;
+    }
+  }
+  &__paws{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 31);
+      @include setSize(width, 38);
+      background: #5d90a5;
+      bottom: 0;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 66);
+      clip-path: polygon(10.5% 0, 84.2% 0, 100% 16%, 100% 100%, 0% 100%, 0 9.6%);
+    }
+    &:after{
+      @include setSize(right, 66);
+      clip-path: polygon(15.8% 0, 89.5% 0, 100% 9.6%, 100% 100%, 0% 100%, 0 16%);
+    }
+  }
+  &__wings{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 60);
+      @include setSize(width, 29);
+      background: linear-gradient(180deg, #e9f1f9 0%, #e9f1f9 63%, #605f60 63%, #605f60 100%);
+      bottom: 0;
+      content: '';
+    }
+    &:before{
+      left: 0;
+    }
+    &:after{
+      right: 0;
+    }
+  }
+}
