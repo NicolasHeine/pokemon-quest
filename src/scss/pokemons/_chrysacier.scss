@@ -1,0 +1,89 @@
+.chrysacier{
+  background: #639039;
+  &__body{
+    @include setSize(height, 225);
+    @include setSize(width, 192);
+    background: #b5d575;
+    bottom: 0;
+    clip-path: polygon(0 0, 93.75% 0, 100% 5.78%, 100% 100%, 0 100%);
+    left: 0;
+    &:before,
+    &:after{
+      content: '';
+    }
+    &:before{
+      @include setSize(bottom, 70, 225);
+      @include setSize(left, 19, 192);
+      @include setSize(height, 73, 225);
+      @include setSize(width, 59, 192);
+      background: #a5c36b;
+      clip-path: polygon(0 0, 100% 0, 100% 32.8%, 40.6% 32.8%, 40.6% 100%, 0 100%);
+    }
+    &:after{
+      @include setSize(height, 70, 225);
+      @include setSize(width, 76, 192);
+      background: #a5c36b;
+      bottom: 0;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 71.4% 100%, 71.4% 35.5%, 0 35.5%);
+      left: 0;
+    }
+  }
+  &__side{
+    @extend %full;
+    &:before,
+    &:after{
+      background: #b5d575;
+      content: '';
+    }
+    &:before{
+      @include setSize(height, 31);
+      @include setSize(left, 41);
+      @include setSize(width, 114);
+      top: 0;
+    }
+    &:after{
+      @include setSize(height, 86);
+      @include setSize(left, 192);
+      @include setSize(top, 133);
+      @include setSize(width, 42);
+    }
+  }
+  &__eye{
+    @include setSize(height, 67);
+    @include setSize(left, 78);
+    @include setSize(top, 78);
+    @include setSize(width, 67);
+    background: #eff0ef;
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 50, 67);
+      @include setSize(width, 29, 67);
+      background: #3c3c3c;
+      content: '';
+      top: 0;
+    }
+    &:after{
+      @include setSize(height, 31, 67);
+      background: #adcb70;
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+  }
+  &__tail{
+    @include setSize(height, 15);
+    @include setSize(width, 64);
+    background: #b5d575;
+    bottom: 0;
+    right: 0;
+    &:before{
+      @include setSize(width, 22, 64);
+      background: #a5c36b;
+      content: '';
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+  }
+}
