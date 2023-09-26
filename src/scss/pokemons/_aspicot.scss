@@ -1,0 +1,62 @@
+.aspicot{
+  background: #e4b370;
+  &__horn{
+    @include setSize(height, 44);
+    background: #639039;
+    left: 0;
+    top: 0;
+    width: 100%;
+    &:before{
+      @extend %centerX;
+      @include setSize(width, 78);
+      background: #eff1f1;
+      content: '';
+      height: 100%;
+      top: 0;
+    }
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 34);
+    @include setSize(top, 106);
+    @include setSize(width, 35);
+    background: #423a36;
+    &:before{
+      @include setSize(height, 13, 34);
+      @include setSize(top, 2, 34);
+      @include setSize(width, 13, 35);
+      background: #fffcff;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 39);
+      &:before{
+        @include setSize(right, 9, 35);
+      }
+    }
+    &.--right{
+      @include setSize(right, 39);
+      &:before{
+        @include setSize(left, 9, 35);
+      }
+    }
+  }
+  &__nose{
+    @extend %centerX;
+    @include setSize(height, 91);
+    @include setSize(top, 151);
+    @include setSize(width, 136);
+    background: #de90ba;
+    clip-path: polygon(4.4% 0, 95.6% 0, 100% 6.6%, 100% 90.9%, 95.6% 100%, 4.4% 100%, 0 90.9%, 0 6.6%);
+    &:before{
+      @include setSize(height, 24, 91);
+      @include setSize(left, 39, 136);
+      @include setSize(top, 10, 91);
+      @include setSize(width, 26, 136);
+      background: #ecbbd6;
+      content: '';
+    }
+  }
+}
