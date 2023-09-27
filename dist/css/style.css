@@ -68,7 +68,7 @@ table {
   transform: translateY(-50%) translate3d(0, 0, 0);
 }
 
-.coconfort__side, .coconfort__eyes, .aspicot__eyes, .papillusion__wings, .papillusion__paws, .papillusion__eyes, .chrysacier__side, .tortank__tooth__bottom, .tortank__tooth, .tortank__cernes, .tortank__eyes, .carabaffe__tooth, .carabaffe__nose, .carabaffe__cernes, .carabaffe__eyes, .carapuce__nose, .carapuce__eyes, .dracaufeu__nose, .dracaufeu__cernes, .dracaufeu__eyes, .reptincel__nose, .reptincel__spots, .reptincel__eyes, .salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
+.dardargnan__eyes, .dardargnan__antenna, .coconfort__side, .coconfort__eyes, .aspicot__eyes, .papillusion__wings, .papillusion__paws, .papillusion__eyes, .chrysacier__side, .tortank__tooth__bottom, .tortank__tooth, .tortank__cernes, .tortank__eyes, .carabaffe__tooth, .carabaffe__nose, .carabaffe__cernes, .carabaffe__eyes, .carapuce__nose, .carapuce__eyes, .dracaufeu__nose, .dracaufeu__cernes, .dracaufeu__eyes, .reptincel__nose, .reptincel__spots, .reptincel__eyes, .salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
   left: 0;
   height: 100%;
   top: 0;
@@ -1729,6 +1729,63 @@ table {
 }
 .coconfort__side.--right:before, .coconfort__side.--right:after {
   right: 0;
+}
+
+.dardargnan {
+  background: #f1db63;
+}
+.dardargnan__antenna:before, .dardargnan__antenna:after {
+  height: calc(62 * 100% / 256);
+  width: calc(26 * 100% / 256);
+  background: #a2a3b5;
+  content: "";
+  top: 0;
+}
+.dardargnan__antenna:before {
+  left: calc(50 * 100% / 256);
+}
+.dardargnan__antenna:after {
+  right: calc(50 * 100% / 256);
+}
+.dardargnan__eye {
+  height: calc(66 * 100% / 256);
+  top: calc(103 * 100% / 256);
+  width: calc(84 * 100% / 256);
+  background: #bd535d;
+}
+.dardargnan__eye:before {
+  height: calc(17 * 100% / 66);
+  top: calc(3 * 100% / 66);
+  width: calc(31 * 100% / 84);
+  background: #ecd5d8;
+  content: "";
+}
+.dardargnan__eye:after {
+  height: calc(18 * 100% / 66);
+  width: calc(56 * 100% / 84);
+  background: #e7a484;
+  bottom: 0;
+  content: "";
+}
+.dardargnan__eye.--left {
+  left: calc(17 * 100% / 256);
+  clip-path: polygon(0 0, 69% 0, 100% 100%, 0 100%);
+}
+.dardargnan__eye.--left:before {
+  left: calc(23 * 100% / 84);
+}
+.dardargnan__eye.--left:after {
+  left: calc(13 * 100% / 84);
+}
+.dardargnan__eye.--right {
+  right: calc(17 * 100% / 256);
+  clip-path: polygon(31% 0, 100% 0, 100% 100%, 0 100%);
+}
+.dardargnan__eye.--right:before {
+  right: calc(23 * 100% / 84);
+}
+.dardargnan__eye.--right:after {
+  right: calc(13 * 100% / 84);
 }
 
 /*# sourceMappingURL=style.css.map */

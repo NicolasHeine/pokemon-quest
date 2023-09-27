@@ -1,0 +1,63 @@
+.dardargnan{
+  background: #f1db63;
+  &__antenna{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 62);
+      @include setSize(width, 26);
+      background: #a2a3b5;
+      content: '';
+      top: 0;
+    }
+    &:before{
+      @include setSize(left, 50);
+    }
+    &:after{
+      @include setSize(right, 50);
+    }
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 66);
+    @include setSize(top, 103);
+    @include setSize(width, 84);
+    background: #bd535d;
+    &:before{
+      @include setSize(height, 17, 66);
+      @include setSize(top, 3, 66);
+      @include setSize(width, 31, 84);
+      background: #ecd5d8;
+      content: '';
+    }
+    &:after{
+      @include setSize(height, 18, 66);
+      @include setSize(width, 56, 84);
+      background: #e7a484;
+      bottom: 0;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 17);
+      clip-path: polygon(0 0, 69% 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(left, 23, 84);
+      }
+      &:after{
+        @include setSize(left, 13, 84);
+      }
+    }
+    &.--right{
+      @include setSize(right, 17);
+      clip-path: polygon(31% 0, 100% 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(right, 23, 84);
+      }
+      &:after{
+        @include setSize(right, 13, 84);
+      }
+    }
+  }
+}
