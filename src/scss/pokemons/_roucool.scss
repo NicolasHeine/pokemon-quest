@@ -1,0 +1,108 @@
+.roucool{
+  background: #f7ecb7;
+  &__top{
+    @include setSize(height, 98);
+    background: linear-gradient(180deg, #c69e68 0%, #c69e68 29%, #392e26 29%, #392e26 100%);
+    left: 0;
+    top: 0;
+    width: 100%;
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 82, 98);
+      @include setSize(width, 226);
+      background: #f7ecb7;
+      content: '';
+      clip-path: polygon(0 0, 100% 0, 68% 100%, 32% 100%);
+      top: 0;
+      z-index: 3;
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 105, 98);
+      @include setSize(width, 82);
+      background: #c69e68;
+      content: '';
+      top: 0;
+      z-index: 4;
+    }
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    $re: &;
+    @include setSize(height, 65);
+    @include setSize(top, 41);
+    @include setSize(width, 60);
+    background: #efefef;
+    z-index: 2;
+    &.--left{
+      @include setSize(left, 27);
+      #{$re}__pupil{
+        right: 0;
+        &:before{
+          left: 0;
+        }
+        &:after{
+          @include setSize(left, 18, 45);
+        }
+      }
+    }
+    &.--right{
+      @include setSize(right, 27);
+      #{$re}__pupil{
+        left: 0;
+        &:before{
+          right: 0;
+        }
+        &:after{
+          @include setSize(right, 18, 45);
+        }
+      }
+    }
+    &__pupil{
+      @include setSize(height, 42, 65);
+      @include setSize(top, 11, 65);
+      @include setSize(width, 45, 60);
+      background: #392e26;
+      &:before{
+        @include setSize(height, 19, 42);
+        @include setSize(width, 27, 45);
+        background: #473d36;
+        bottom: 0;
+        content: '';
+      }
+      &:after{
+        @include setSize(height, 22, 42);
+        @include setSize(top, 10, 42);
+        @include setSize(width, 17, 45);
+        background: #efefef;
+        content: '';
+      }
+    }
+  }
+  &__beak{
+    @extend %centerX;
+    @include setSize(height, 130);
+    @include setSize(top, 105);
+    @include setSize(width, 120);
+    background: #cea7b2;
+    z-index: 5;
+    &:before{
+      @extend %centerX;
+      @include setSize(bottom, 38, 130);
+      @include setSize(height, 40, 130);
+      @include setSize(width, 98, 120);
+      background: #91737b;
+      content: '';
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(bottom, 38, 130);
+      @include setSize(height, 26, 130);
+      @include setSize(width, 72, 120);
+      background: #b78291;
+      content: '';
+    }
+  }
+}
