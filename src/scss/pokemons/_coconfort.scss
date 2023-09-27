@@ -1,0 +1,93 @@
+.coconfort{
+  background: #dec968;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 48);
+    @include setSize(top, 46);
+    @include setSize(width, 76);
+    background: linear-gradient(180deg, #2b2c29 0%, #2b2c29 71%, #47413f 71%, #47413f 100%);;
+    &:before{
+      @include setSize(height, 19, 48);
+      @include setSize(top, 19, 48);
+      @include setSize(width, 41, 76);
+      background: #fffffc;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 20);
+      clip-path: polygon(0 0, 42% 0, 100% 100%, 0 100%);
+      &:before{
+        right: 0;
+      }
+    }
+    &.--right{
+      @include setSize(right, 20);
+      clip-path: polygon(58% 0, 100% 0, 100% 100%, 0 100%);
+      &:before{
+        left: 0;
+      }
+    }
+  }
+  &__body{
+    @include setSize(height, 126);
+    background: #c8b65d;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    &:before,
+    &:after{
+      @extend %centerX;
+      background: #dec968;
+      content: '';
+    }
+    &:before{
+      @include setSize(height, 61, 126);
+      @include setSize(top, 17, 126);
+      @include setSize(width, 90);
+      clip-path: polygon(0 0, 100% 0, 71% 100%, 29% 100%);
+    }
+    &:after{
+      @include setSize(height, 34, 126);
+      @include setSize(width, 56);
+      bottom: 0;
+    }
+  }
+  &__side{
+    @extend %full;
+    &:before,
+    &:after{
+      background: #dec968;
+      content: '';
+    }
+    &:before{
+      @include setSize(height, 36, 126);
+      @include setSize(top, 17, 126);
+      @include setSize(width, 83);
+    }
+    &:after{
+      @include setSize(height, 58, 126);
+      @include setSize(width, 90);
+      bottom: 0;
+    }
+    &.--left{
+      &:before{
+        clip-path: polygon(0 0, 83% 0, 100% 100%, 0 100%);
+      }
+      &:before,
+      &:after{
+        left: 0;
+      }
+    }
+    &.--right{
+      &:before{
+        clip-path: polygon(17% 0, 100% 0, 100% 100%, 0 100%);
+      }
+      &:before,
+      &:after{
+        right: 0;
+      }
+    }
+  }
+}

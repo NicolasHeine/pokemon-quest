@@ -58,7 +58,7 @@ table {
   transform: translate(-50%, -50%) translate3d(0, 0, 0);
 }
 
-.aspicot__nose, .aspicot__horn:before, .papillusion__nose, .chrysacier__eye:before, .chenipan__eye:after, .tortank__tooth__top, .tortank__mouth:before, .tortank__mouth, .tortank__nose, .tortank__eye span:before, .tortank__top, .carabaffe__shell:before, .carabaffe__mouth:after, .carabaffe__mouth:before, .carabaffe__mouth, .carapuce__mouth:after, .carapuce__mouth:before, .carapuce__mouth, .dracaufeu__tooth__bottom, .dracaufeu__tooth__top, .dracaufeu__mouth:before, .dracaufeu__mouth, .reptincel__tooth__bottom, .reptincel__tooth__top, .reptincel__mouth:after, .reptincel__mouth:before, .reptincel__mouth, .reptincel__eye span:before, .salameche__tooth__bottom, .salameche__tooth__top, .salameche__mouth:before, .salameche__mouth, .salameche__eye:before, .florizarre__mouth:after, .florizarre__eye span:before, .florizarre__eye span, .florizarre__flower__base span:after, .florizarre__flower__base span, .florizarre__flower__base:before, .florizarre__flower__tree, .herbizarre__mouth:after, .herbizarre__mouth:before, .herbizarre__mouth, .herbizarre__eyes, .herbizarre__top:before, .herbizarre__top, .bulbizarre__mouth:before, .bulbizarre__mouth, .bulbizarre__eyes, .bulbizarre__top:before, .bulbizarre__top {
+.coconfort__body:before, .coconfort__body:after, .aspicot__nose, .aspicot__horn:before, .papillusion__nose, .chrysacier__eye:before, .chenipan__eye:after, .tortank__tooth__top, .tortank__mouth:before, .tortank__mouth, .tortank__nose, .tortank__eye span:before, .tortank__top, .carabaffe__shell:before, .carabaffe__mouth:after, .carabaffe__mouth:before, .carabaffe__mouth, .carapuce__mouth:after, .carapuce__mouth:before, .carapuce__mouth, .dracaufeu__tooth__bottom, .dracaufeu__tooth__top, .dracaufeu__mouth:before, .dracaufeu__mouth, .reptincel__tooth__bottom, .reptincel__tooth__top, .reptincel__mouth:after, .reptincel__mouth:before, .reptincel__mouth, .reptincel__eye span:before, .salameche__tooth__bottom, .salameche__tooth__top, .salameche__mouth:before, .salameche__mouth, .salameche__eye:before, .florizarre__mouth:after, .florizarre__eye span:before, .florizarre__eye span, .florizarre__flower__base span:after, .florizarre__flower__base span, .florizarre__flower__base:before, .florizarre__flower__tree, .herbizarre__mouth:after, .herbizarre__mouth:before, .herbizarre__mouth, .herbizarre__eyes, .herbizarre__top:before, .herbizarre__top, .bulbizarre__mouth:before, .bulbizarre__mouth, .bulbizarre__eyes, .bulbizarre__top:before, .bulbizarre__top {
   left: 50%;
   transform: translateX(-50%) translate3d(0, 0, 0);
 }
@@ -68,7 +68,7 @@ table {
   transform: translateY(-50%) translate3d(0, 0, 0);
 }
 
-.aspicot__eyes, .papillusion__wings, .papillusion__paws, .papillusion__eyes, .chrysacier__side, .tortank__tooth__bottom, .tortank__tooth, .tortank__cernes, .tortank__eyes, .carabaffe__tooth, .carabaffe__nose, .carabaffe__cernes, .carabaffe__eyes, .carapuce__nose, .carapuce__eyes, .dracaufeu__nose, .dracaufeu__cernes, .dracaufeu__eyes, .reptincel__nose, .reptincel__spots, .reptincel__eyes, .salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
+.coconfort__side, .coconfort__eyes, .aspicot__eyes, .papillusion__wings, .papillusion__paws, .papillusion__eyes, .chrysacier__side, .tortank__tooth__bottom, .tortank__tooth, .tortank__cernes, .tortank__eyes, .carabaffe__tooth, .carabaffe__nose, .carabaffe__cernes, .carabaffe__eyes, .carapuce__nose, .carapuce__eyes, .dracaufeu__nose, .dracaufeu__cernes, .dracaufeu__eyes, .reptincel__nose, .reptincel__spots, .reptincel__eyes, .salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
   left: 0;
   height: 100%;
   top: 0;
@@ -1650,6 +1650,85 @@ table {
   width: calc(26 * 100% / 136);
   background: #ecbbd6;
   content: "";
+}
+
+.coconfort {
+  background: #dec968;
+}
+.coconfort__eye {
+  height: calc(48 * 100% / 256);
+  top: calc(46 * 100% / 256);
+  width: calc(76 * 100% / 256);
+  background: linear-gradient(180deg, #2b2c29 0%, #2b2c29 71%, #47413f 71%, #47413f 100%);
+}
+.coconfort__eye:before {
+  height: calc(19 * 100% / 48);
+  top: calc(19 * 100% / 48);
+  width: calc(41 * 100% / 76);
+  background: #fffffc;
+  content: "";
+}
+.coconfort__eye.--left {
+  left: calc(20 * 100% / 256);
+  clip-path: polygon(0 0, 42% 0, 100% 100%, 0 100%);
+}
+.coconfort__eye.--left:before {
+  right: 0;
+}
+.coconfort__eye.--right {
+  right: calc(20 * 100% / 256);
+  clip-path: polygon(58% 0, 100% 0, 100% 100%, 0 100%);
+}
+.coconfort__eye.--right:before {
+  left: 0;
+}
+.coconfort__body {
+  height: calc(126 * 100% / 256);
+  background: #c8b65d;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.coconfort__body:before, .coconfort__body:after {
+  background: #dec968;
+  content: "";
+}
+.coconfort__body:before {
+  height: calc(61 * 100% / 126);
+  top: calc(17 * 100% / 126);
+  width: calc(90 * 100% / 256);
+  clip-path: polygon(0 0, 100% 0, 71% 100%, 29% 100%);
+}
+.coconfort__body:after {
+  height: calc(34 * 100% / 126);
+  width: calc(56 * 100% / 256);
+  bottom: 0;
+}
+.coconfort__side:before, .coconfort__side:after {
+  background: #dec968;
+  content: "";
+}
+.coconfort__side:before {
+  height: calc(36 * 100% / 126);
+  top: calc(17 * 100% / 126);
+  width: calc(83 * 100% / 256);
+}
+.coconfort__side:after {
+  height: calc(58 * 100% / 126);
+  width: calc(90 * 100% / 256);
+  bottom: 0;
+}
+.coconfort__side.--left:before {
+  clip-path: polygon(0 0, 83% 0, 100% 100%, 0 100%);
+}
+.coconfort__side.--left:before, .coconfort__side.--left:after {
+  left: 0;
+}
+.coconfort__side.--right:before {
+  clip-path: polygon(17% 0, 100% 0, 100% 100%, 0 100%);
+}
+.coconfort__side.--right:before, .coconfort__side.--right:after {
+  right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
