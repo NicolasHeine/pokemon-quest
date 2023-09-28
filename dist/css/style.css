@@ -58,7 +58,7 @@ table {
   transform: translate(-50%, -50%) translate3d(0, 0, 0);
 }
 
-.roucoups__beak:after, .roucoups__beak:before, .roucoups__beak, .roucool__beak:after, .roucool__beak:before, .roucool__beak, .roucool__top:after, .roucool__top:before, .coconfort__body:before, .coconfort__body:after, .aspicot__nose, .aspicot__horn:before, .papillusion__nose, .chrysacier__eye:before, .chenipan__eye:after, .tortank__tooth__top, .tortank__mouth:before, .tortank__mouth, .tortank__nose, .tortank__eye span:before, .tortank__top, .carabaffe__shell:before, .carabaffe__mouth:after, .carabaffe__mouth:before, .carabaffe__mouth, .carapuce__mouth:after, .carapuce__mouth:before, .carapuce__mouth, .dracaufeu__tooth__bottom, .dracaufeu__tooth__top, .dracaufeu__mouth:before, .dracaufeu__mouth, .reptincel__tooth__bottom, .reptincel__tooth__top, .reptincel__mouth:after, .reptincel__mouth:before, .reptincel__mouth, .reptincel__eye span:before, .salameche__tooth__bottom, .salameche__tooth__top, .salameche__mouth:before, .salameche__mouth, .salameche__eye:before, .florizarre__mouth:after, .florizarre__eye span:before, .florizarre__eye span, .florizarre__flower__base span:after, .florizarre__flower__base span, .florizarre__flower__base:before, .florizarre__flower__tree, .herbizarre__mouth:after, .herbizarre__mouth:before, .herbizarre__mouth, .herbizarre__eyes, .herbizarre__top:before, .herbizarre__top, .bulbizarre__mouth:before, .bulbizarre__mouth, .bulbizarre__eyes, .bulbizarre__top:before, .bulbizarre__top {
+.roucarnage__beak:after, .roucarnage__beak:before, .roucarnage__beak, .roucoups__beak:after, .roucoups__beak:before, .roucoups__beak, .roucool__beak:after, .roucool__beak:before, .roucool__beak, .roucool__top:after, .roucool__top:before, .coconfort__body:before, .coconfort__body:after, .aspicot__nose, .aspicot__horn:before, .papillusion__nose, .chrysacier__eye:before, .chenipan__eye:after, .tortank__tooth__top, .tortank__mouth:before, .tortank__mouth, .tortank__nose, .tortank__eye span:before, .tortank__top, .carabaffe__shell:before, .carabaffe__mouth:after, .carabaffe__mouth:before, .carabaffe__mouth, .carapuce__mouth:after, .carapuce__mouth:before, .carapuce__mouth, .dracaufeu__tooth__bottom, .dracaufeu__tooth__top, .dracaufeu__mouth:before, .dracaufeu__mouth, .reptincel__tooth__bottom, .reptincel__tooth__top, .reptincel__mouth:after, .reptincel__mouth:before, .reptincel__mouth, .reptincel__eye span:before, .salameche__tooth__bottom, .salameche__tooth__top, .salameche__mouth:before, .salameche__mouth, .salameche__eye:before, .florizarre__mouth:after, .florizarre__eye span:before, .florizarre__eye span, .florizarre__flower__base span:after, .florizarre__flower__base span, .florizarre__flower__base:before, .florizarre__flower__tree, .herbizarre__mouth:after, .herbizarre__mouth:before, .herbizarre__mouth, .herbizarre__eyes, .herbizarre__top:before, .herbizarre__top, .bulbizarre__mouth:before, .bulbizarre__mouth, .bulbizarre__eyes, .bulbizarre__top:before, .bulbizarre__top {
   left: 50%;
   transform: translateX(-50%) translate3d(0, 0, 0);
 }
@@ -68,7 +68,7 @@ table {
   transform: translateY(-50%) translate3d(0, 0, 0);
 }
 
-.roucoups__side, .roucoups__eyes, .roucool__eyes, .dardargnan__eyes, .dardargnan__antenna, .coconfort__side, .coconfort__eyes, .aspicot__eyes, .papillusion__wings, .papillusion__paws, .papillusion__eyes, .chrysacier__side, .tortank__tooth__bottom, .tortank__tooth, .tortank__cernes, .tortank__eyes, .carabaffe__tooth, .carabaffe__nose, .carabaffe__cernes, .carabaffe__eyes, .carapuce__nose, .carapuce__eyes, .dracaufeu__nose, .dracaufeu__cernes, .dracaufeu__eyes, .reptincel__nose, .reptincel__spots, .reptincel__eyes, .salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
+.roucarnage__side, .roucarnage__eyes, .roucoups__side, .roucoups__eyes, .roucool__eyes, .dardargnan__eyes, .dardargnan__antenna, .coconfort__side, .coconfort__eyes, .aspicot__eyes, .papillusion__wings, .papillusion__paws, .papillusion__eyes, .chrysacier__side, .tortank__tooth__bottom, .tortank__tooth, .tortank__cernes, .tortank__eyes, .carabaffe__tooth, .carabaffe__nose, .carabaffe__cernes, .carabaffe__eyes, .carapuce__nose, .carapuce__eyes, .dracaufeu__nose, .dracaufeu__cernes, .dracaufeu__eyes, .reptincel__nose, .reptincel__spots, .reptincel__eyes, .salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
   left: 0;
   height: 100%;
   top: 0;
@@ -1985,6 +1985,105 @@ table {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+
+.roucarnage {
+  background: #f4edc0;
+}
+.roucarnage__feather {
+  height: calc(111 * 100% / 256);
+  background: #fccd42;
+  clip-path: polygon(0 0, 100% 0, 100% 49.5%, 61% 93.7%, 61% 100%, 39% 100%, 39% 93.7%, 0 49.5%);
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.roucarnage__feather:before, .roucarnage__feather:after {
+  height: calc(98 * 100% / 120);
+  width: calc(117 * 100% / 256);
+  background: #e46239;
+  bottom: 0;
+  content: "";
+}
+.roucarnage__feather:before {
+  clip-path: polygon(0 0, 100% 75.5%, 100% 100%, 0 100%);
+  left: 0;
+}
+.roucarnage__feather:after {
+  clip-path: polygon(0 75.5%, 100% 0, 100% 100%, 0 100%);
+  right: 0;
+}
+.roucarnage__eye {
+  height: calc(38 * 100% / 256);
+  top: calc(67 * 100% / 256);
+  width: calc(76 * 100% / 256);
+  background: #f4f5f9;
+}
+.roucarnage__eye:before {
+  width: calc(28 * 100% / 76);
+  background: linear-gradient(180deg, #2b2829 0%, #2b2829 75%, #3e3936 75%, #3e3936 100%);
+  content: "";
+  height: 100%;
+  top: 0;
+}
+.roucarnage__eye:after {
+  height: calc(32 * 100% / 36);
+  width: calc(9 * 100% / 76);
+  background: #f4f5f9;
+  content: "";
+  top: 0;
+}
+.roucarnage__eye.--left {
+  left: calc(24 * 100% / 256);
+}
+.roucarnage__eye.--left:before {
+  left: calc(27 * 100% / 76);
+}
+.roucarnage__eye.--left:after {
+  left: calc(37 * 100% / 76);
+}
+.roucarnage__eye.--right {
+  right: calc(24 * 100% / 256);
+}
+.roucarnage__eye.--right:before {
+  right: calc(27 * 100% / 76);
+}
+.roucarnage__eye.--right:after {
+  right: calc(37 * 100% / 76);
+}
+.roucarnage__beak {
+  height: calc(107 * 100% / 256);
+  top: calc(111 * 100% / 256);
+  width: calc(100 * 100% / 256);
+  background: #e7bbc8;
+}
+.roucarnage__beak:before {
+  bottom: calc(25 * 100% / 107);
+  height: calc(22 * 100% / 107);
+  width: calc(82 * 100% / 100);
+  background: #9f7b78;
+  content: "";
+}
+.roucarnage__beak:after {
+  bottom: calc(25 * 100% / 107);
+  height: calc(12 * 100% / 107);
+  width: calc(50 * 100% / 100);
+  background: #c897af;
+  content: "";
+}
+.roucarnage__side:before, .roucarnage__side:after {
+  width: calc(24 * 100% / 256);
+  background: linear-gradient(180deg, #3c3a39 0%, #3c3a39 91%, #c6a057 91%, #c6a057 100%);
+  content: "";
+  height: 100%;
+  top: 0;
+}
+.roucarnage__side:before {
+  left: 0;
+}
+.roucarnage__side:after {
+  right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
