@@ -58,7 +58,7 @@ table {
   transform: translate(-50%, -50%) translate3d(0, 0, 0);
 }
 
-.roucarnage__beak:after, .roucarnage__beak:before, .roucarnage__beak, .roucoups__beak:after, .roucoups__beak:before, .roucoups__beak, .roucool__beak:after, .roucool__beak:before, .roucool__beak, .roucool__top:after, .roucool__top:before, .coconfort__body:before, .coconfort__body:after, .aspicot__nose, .aspicot__horn:before, .papillusion__nose, .chrysacier__eye:before, .chenipan__eye:after, .tortank__tooth__top, .tortank__mouth:before, .tortank__mouth, .tortank__nose, .tortank__eye span:before, .tortank__top, .carabaffe__shell:before, .carabaffe__mouth:after, .carabaffe__mouth:before, .carabaffe__mouth, .carapuce__mouth:after, .carapuce__mouth:before, .carapuce__mouth, .dracaufeu__tooth__bottom, .dracaufeu__tooth__top, .dracaufeu__mouth:before, .dracaufeu__mouth, .reptincel__tooth__bottom, .reptincel__tooth__top, .reptincel__mouth:after, .reptincel__mouth:before, .reptincel__mouth, .reptincel__eye span:before, .salameche__tooth__bottom, .salameche__tooth__top, .salameche__mouth:before, .salameche__mouth, .salameche__eye:before, .florizarre__mouth:after, .florizarre__eye span:before, .florizarre__eye span, .florizarre__flower__base span:after, .florizarre__flower__base span, .florizarre__flower__base:before, .florizarre__flower__tree, .herbizarre__mouth:after, .herbizarre__mouth:before, .herbizarre__mouth, .herbizarre__eyes, .herbizarre__top:before, .herbizarre__top, .bulbizarre__mouth:before, .bulbizarre__mouth, .bulbizarre__eyes, .bulbizarre__top:before, .bulbizarre__top {
+.rattata__tooth:before, .rattata__tooth, .rattata__mouth:after, .rattata__mouth:before, .roucarnage__beak:after, .roucarnage__beak:before, .roucarnage__beak, .roucoups__beak:after, .roucoups__beak:before, .roucoups__beak, .roucool__beak:after, .roucool__beak:before, .roucool__beak, .roucool__top:after, .roucool__top:before, .coconfort__body:before, .coconfort__body:after, .aspicot__nose, .aspicot__horn:before, .papillusion__nose, .chrysacier__eye:before, .chenipan__eye:after, .tortank__tooth__top, .tortank__mouth:before, .tortank__mouth, .tortank__nose, .tortank__eye span:before, .tortank__top, .carabaffe__shell:before, .carabaffe__mouth:after, .carabaffe__mouth:before, .carabaffe__mouth, .carapuce__mouth:after, .carapuce__mouth:before, .carapuce__mouth, .dracaufeu__tooth__bottom, .dracaufeu__tooth__top, .dracaufeu__mouth:before, .dracaufeu__mouth, .reptincel__tooth__bottom, .reptincel__tooth__top, .reptincel__mouth:after, .reptincel__mouth:before, .reptincel__mouth, .reptincel__eye span:before, .salameche__tooth__bottom, .salameche__tooth__top, .salameche__mouth:before, .salameche__mouth, .salameche__eye:before, .florizarre__mouth:after, .florizarre__eye span:before, .florizarre__eye span, .florizarre__flower__base span:after, .florizarre__flower__base span, .florizarre__flower__base:before, .florizarre__flower__tree, .herbizarre__mouth:after, .herbizarre__mouth:before, .herbizarre__mouth, .herbizarre__eyes, .herbizarre__top:before, .herbizarre__top, .bulbizarre__mouth:before, .bulbizarre__mouth, .bulbizarre__eyes, .bulbizarre__top:before, .bulbizarre__top {
   left: 50%;
   transform: translateX(-50%) translate3d(0, 0, 0);
 }
@@ -68,7 +68,7 @@ table {
   transform: translateY(-50%) translate3d(0, 0, 0);
 }
 
-.roucarnage__side, .roucarnage__eyes, .roucoups__side, .roucoups__eyes, .roucool__eyes, .dardargnan__eyes, .dardargnan__antenna, .coconfort__side, .coconfort__eyes, .aspicot__eyes, .papillusion__wings, .papillusion__paws, .papillusion__eyes, .chrysacier__side, .tortank__tooth__bottom, .tortank__tooth, .tortank__cernes, .tortank__eyes, .carabaffe__tooth, .carabaffe__nose, .carabaffe__cernes, .carabaffe__eyes, .carapuce__nose, .carapuce__eyes, .dracaufeu__nose, .dracaufeu__cernes, .dracaufeu__eyes, .reptincel__nose, .reptincel__spots, .reptincel__eyes, .salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
+.rattata__nose, .rattata__eyes, .roucarnage__side, .roucarnage__eyes, .roucoups__side, .roucoups__eyes, .roucool__eyes, .dardargnan__eyes, .dardargnan__antenna, .coconfort__side, .coconfort__eyes, .aspicot__eyes, .papillusion__wings, .papillusion__paws, .papillusion__eyes, .chrysacier__side, .tortank__tooth__bottom, .tortank__tooth, .tortank__cernes, .tortank__eyes, .carabaffe__tooth, .carabaffe__nose, .carabaffe__cernes, .carabaffe__eyes, .carapuce__nose, .carapuce__eyes, .dracaufeu__nose, .dracaufeu__cernes, .dracaufeu__eyes, .reptincel__nose, .reptincel__spots, .reptincel__eyes, .salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
   left: 0;
   height: 100%;
   top: 0;
@@ -82,11 +82,11 @@ table {
 .pokedex {
   gap: 10px;
   display: grid;
-  grid-template-columns: repeat(5, calc(var(--pokemonSize) * 1px));
+  grid-template-columns: repeat(7, calc(var(--pokemonSize) * 1px));
 }
 
 .pokemon:last-child {
-  grid-column: 3;
+  grid-column: 4;
   grid-row: 1;
 }
 .pokemon__block {
@@ -2028,7 +2028,7 @@ table {
   top: 0;
 }
 .roucarnage__eye:after {
-  height: calc(32 * 100% / 36);
+  height: calc(31 * 100% / 36);
   width: calc(9 * 100% / 76);
   background: #f4f5f9;
   content: "";
@@ -2084,6 +2084,109 @@ table {
 }
 .roucarnage__side:after {
   right: 0;
+}
+
+.rattata {
+  background: #aa8bbd;
+}
+.rattata__eye {
+  height: calc(55 * 100% / 256);
+  top: calc(34 * 100% / 256);
+  width: calc(73 * 100% / 256);
+  background: #fff5ff;
+}
+.rattata__eye.--left {
+  left: calc(19 * 100% / 256);
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+.rattata__eye.--left .rattata__eye__pupil {
+  right: 0;
+}
+.rattata__eye.--left .rattata__eye__pupil:before {
+  left: 0;
+}
+.rattata__eye.--left .rattata__eye__pupil:after {
+  left: calc(18 * 100% / 52);
+}
+.rattata__eye.--right {
+  right: calc(19 * 100% / 256);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+.rattata__eye.--right .rattata__eye__pupil {
+  left: 0;
+}
+.rattata__eye.--right .rattata__eye__pupil:before {
+  right: 0;
+}
+.rattata__eye.--right .rattata__eye__pupil:after {
+  right: calc(18 * 100% / 52);
+}
+.rattata__eye__pupil {
+  width: calc(52 * 100% / 73);
+  background: #a24e54;
+  height: 100%;
+  top: 0;
+}
+.rattata__eye__pupil:before {
+  height: calc(10 * 100% / 55);
+  width: calc(27 * 100% / 52);
+  background: #b75960;
+  bottom: 0;
+  content: "";
+}
+.rattata__eye__pupil:after {
+  height: calc(46 * 100% / 55);
+  width: calc(12 * 100% / 52);
+  background: #fff5ff;
+  content: "";
+  top: 0;
+}
+.rattata__nose:before, .rattata__nose:after {
+  height: calc(11 * 100% / 256);
+  top: calc(114 * 100% / 256);
+  width: calc(7 * 100% / 256);
+  background: #6b5573;
+  content: "";
+}
+.rattata__nose:before {
+  left: calc(116 * 100% / 256);
+}
+.rattata__nose:after {
+  right: calc(116 * 100% / 256);
+}
+.rattata__mouth {
+  height: calc(131 * 100% / 256);
+  background: #e4d7ba;
+  bottom: 0;
+  width: 100%;
+}
+.rattata__mouth:before {
+  height: calc(85 * 100% / 131);
+  top: calc(27 * 100% / 131);
+  width: calc(128 * 100% / 256);
+  background: #996e84;
+  content: "";
+}
+.rattata__mouth:after {
+  height: calc(44 * 100% / 131);
+  top: calc(68 * 100% / 131);
+  width: calc(116 * 100% / 256);
+  background: #d0abb2;
+  content: "";
+}
+.rattata__tooth {
+  height: calc(51 * 100% / 131);
+  top: calc(27 * 100% / 131);
+  width: calc(71 * 100% / 256);
+  background: #f7fcf7;
+  z-index: 1;
+}
+.rattata__tooth:before {
+  height: calc(33 * 100% / 51);
+  width: calc(10 * 100% / 51);
+  background: #e4e7e1;
+  bottom: 0;
+  content: "";
 }
 
 /*# sourceMappingURL=style.css.map */

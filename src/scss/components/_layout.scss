@@ -5,12 +5,12 @@
 .pokedex{
   gap: 10px;
   display: grid;
-  grid-template-columns: repeat(5, calc(var(--pokemonSize) * 1px));
+  grid-template-columns: repeat(7, calc(var(--pokemonSize) * 1px));
 }
 
 .pokemon{
   &:last-child{
-    grid-column: 3;
+    grid-column: 4;
     grid-row: 1;
   }
   &__block{

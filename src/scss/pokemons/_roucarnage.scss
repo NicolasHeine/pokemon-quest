@@ -41,7 +41,7 @@
       top: 0;
     }
     &:after{
-      @include setSize(height, 32, 36);
+      @include setSize(height, 31, 36);
       @include setSize(width, 9, 76);
       background: #f4f5f9;
       content: '';
