@@ -1,0 +1,129 @@
+.rattatac{
+  background: #ce9b42;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    $re: &;
+    @include setSize(height, 37);
+    @include setSize(top, 21);
+    @include setSize(width, 62);
+    background: #ffffff;
+    &.--left{
+      @include setSize(left, 21);
+      clip-path: polygon(0 0, 100% 100%, 0 100%);
+      #{$re}__pupil{
+        right: 0;
+        &:before{
+          left: 0;
+        }
+        &:after{
+          @include setSize(left, 14, 37);
+        }
+      }
+    }
+    &.--right{
+      @include setSize(right, 21);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%);
+      #{$re}__pupil{
+        left: 0;
+        &:before{
+          right: 0;
+        }
+        &:after{
+          @include setSize(right, 14, 37);
+        }
+      }
+    }
+    &__pupil{
+      @include setSize(width, 37, 62);
+      background: #443c3c;
+      height: 100%;
+      top: 0;
+      &:before{
+        @include setSize(height, 8, 37);
+        @include setSize(width, 18, 37);
+        background: #5a4f4f;
+        bottom: 0;
+        content: '';
+      }
+      &:after{
+        @include setSize(height, 33, 37);
+        @include setSize(width, 10, 37);
+        background: #ffffff;
+        content: '';
+        top: 0;
+      }
+    }
+  }
+  &__nose{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 12);
+      @include setSize(top, 73);
+      @include setSize(width, 6);
+      background: #c6b89c;
+      content: '';
+      z-index: 1;
+    }
+    &:before{
+      @include setSize(left, 116);
+    }
+    &:after{
+      @include setSize(right, 116);
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 190);
+    @include setSize(width, 206);
+    background: #ecddbd;
+    bottom: 0;
+    clip-path: polygon(0 4.7%, 28.6% 4.7%, 28.6% 0, 71.4% 0, 71.4% 4.7%, 100% 4.7%, 100% 100%, 0 100%);
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 149, 190);
+      @include setSize(top, 22, 190);
+      @include setSize(width, 128, 206);
+      background: #a5828e;
+      content: '';
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 95, 190);
+      @include setSize(top, 76, 190);
+      @include setSize(width, 106, 206);
+      background: #c694b2;
+      content: '';
+    }
+  }
+  &__tooth{
+    @extend %centerX;
+    @include setSize(width, 74, 206);
+    background: #f7fcf7;
+    z-index: 1;
+    &:before{
+      @extend %centerX;
+      @include setSize(width, 8, 74);
+      background: #e4e7e1;
+      content: '';
+    }
+    &.--top{
+      @include setSize(height, 72, 190);
+      @include setSize(top, 22, 190);
+      &:before{
+        @include setSize(height, 31, 72);
+        bottom: 0;
+      }
+    }
+    &.--bottom{
+      @include setSize(height, 70, 190);
+      @include setSize(top, 101, 190);
+      &:before{
+        @include setSize(height, 31, 70);
+        top: 0;
+      }
+    }
+  }
+}
