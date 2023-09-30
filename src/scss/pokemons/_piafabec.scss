@@ -1,0 +1,77 @@
+.piafabec{
+  background: #ba845a;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 49);
+    @include setSize(top, 51);
+    @include setSize(width, 68);
+    background: #f7f7fc;
+    &:before{
+      @include setSize(width, 39, 68);
+      background: linear-gradient(180deg, #2e2a2b 0%, #2e2a2b 77.6%, #524a4a 77.6%, #524a4a 100%);
+      content: '';
+      height: 100%;
+      top: 0;
+    }
+    &:after{
+      @include setSize(height, 38, 49);
+      @include setSize(width, 10, 68);
+      background: #e1e1e4;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 20);
+      clip-path: polygon(0 0, 100% 42.8%, 100% 100%, 0 100%);
+      &:before{
+        right: 0;
+      }
+      &:after{
+        @include setSize(right, 14, 68);
+      }
+    }
+    &.--right{
+      @include setSize(right, 20);
+      clip-path: polygon(0 42.8%, 100% 0, 100% 100%, 0 100%);
+      &:before{
+        left: 0;
+      }
+      &:after{
+        @include setSize(left, 14, 68);
+      }
+    }
+  }
+  &__beak{
+    @extend %centerX;
+    @include setSize(height, 107);
+    @include setSize(top, 84);
+    @include setSize(width, 104);
+    background: #f1d1d6;
+    clip-path: polygon(0 22.4%, 28.8% 22.4%, 28.8% 0, 71.2% 0, 71.2% 22.4%, 100% 22.4%, 100% 100%, 0 100%);
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 28, 107);
+      @include setSize(bottom, 15, 107);
+      @include setSize(width, 88, 104);
+      background: #ad7d8c;
+      content: '';
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 16, 107);
+      @include setSize(bottom, 15, 107);
+      @include setSize(width, 50, 104);
+      background: #c3969c;
+      content: '';
+    }
+  }
+  &__feather{
+    @include setSize(height, 40);
+    background: linear-gradient(90deg, #fcefd6 0%, #fcefd6 15.6%, #ba845a 15.6%, #ba845a 31.2%, #fcefd6 31.2%, #fcefd6 39.8%, #ba845a 39.8%, #ba845a 60.2%, #fcefd6 60.2%, #fcefd6 68.8%, #ba845a 68.8%, #ba845a 84.4%, #fcefd6 84.4%, #fcefd6 100%);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
