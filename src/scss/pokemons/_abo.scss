@@ -1,0 +1,57 @@
+.abo{
+  background: #8e4694;
+  &__head{
+    @include setSize(height, 116);
+    background: #bd8cc0;
+    clip-path: polygon(0 39.6%, 14% 39.6%, 14% 0, 100% 0, 100% 100%, 0 100%);
+    left: 0;
+    top: 0;
+    width: 100%;
+    &:before{
+      @include setSize(height, 22, 116);
+      @include setSize(top, 24, 116);
+      @include setSize(width, 144);
+      background: #ad80af;
+      content: '';
+      left: 0;
+    }
+  }
+  &__eye{
+    @include setSize(height, 72);
+    @include setSize(left, 144);
+    @include setSize(top, 22);
+    @include setSize(width, 72);
+    background: #f1dfaa;
+    &:before{
+      @include setSize(height, 53, 72);
+      @include setSize(left, 28, 72);
+      @include setSize(width, 13, 72);
+      background: #3c3421;
+      content: '';
+      top: 0;
+    }
+  }
+  &__mouth{
+    @include setSize(height, 140);
+    @include setSize(width, 205);
+    background: #bd8cc0;
+    bottom: 0;
+    right: 0;
+    &:before{
+      @include setSize(height, 107, 140);
+      @include setSize(width, 115, 205);
+      background: #8e4694;
+      content: '';
+      left: 0;
+      top: 0;
+    }
+    &:after{
+      @include setSize(height, 55, 140);
+      @include setSize(left, 30, 205);
+      @include setSize(top, 52, 140);
+      @include setSize(width, 85, 205);
+      background: #d39ca2;
+      content: '';
+    }
+  }
+}

@@ -2435,4 +2435,62 @@ table {
   bottom: 0;
 }
 
+.abo {
+  background: #8e4694;
+}
+.abo__head {
+  height: calc(116 * 100% / 256);
+  background: #bd8cc0;
+  clip-path: polygon(0 39.6%, 14% 39.6%, 14% 0, 100% 0, 100% 100%, 0 100%);
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.abo__head:before {
+  height: calc(22 * 100% / 116);
+  top: calc(24 * 100% / 116);
+  width: calc(144 * 100% / 256);
+  background: #ad80af;
+  content: "";
+  left: 0;
+}
+.abo__eye {
+  height: calc(72 * 100% / 256);
+  left: calc(144 * 100% / 256);
+  top: calc(22 * 100% / 256);
+  width: calc(72 * 100% / 256);
+  background: #f1dfaa;
+}
+.abo__eye:before {
+  height: calc(53 * 100% / 72);
+  left: calc(28 * 100% / 72);
+  width: calc(13 * 100% / 72);
+  background: #3c3421;
+  content: "";
+  top: 0;
+}
+.abo__mouth {
+  height: calc(140 * 100% / 256);
+  width: calc(205 * 100% / 256);
+  background: #bd8cc0;
+  bottom: 0;
+  right: 0;
+}
+.abo__mouth:before {
+  height: calc(107 * 100% / 140);
+  width: calc(115 * 100% / 205);
+  background: #8e4694;
+  content: "";
+  left: 0;
+  top: 0;
+}
+.abo__mouth:after {
+  height: calc(55 * 100% / 140);
+  left: calc(30 * 100% / 205);
+  top: calc(52 * 100% / 140);
+  width: calc(85 * 100% / 205);
+  background: #d39ca2;
+  content: "";
+}
+
 /*# sourceMappingURL=style.css.map */
