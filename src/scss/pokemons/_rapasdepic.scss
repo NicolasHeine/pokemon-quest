@@ -1,0 +1,61 @@
+.rapasdepic{
+  background: #bd864f;
+  &__feather{
+    @include setSize(height, 181);
+    background: #db7663;
+    clip-path: polygon(0 0, 100% 0, 100% 47.5%, 91% 47.5%, 58.2% 100%, 41.8% 100%, 9% 47.5%, 0 47.5%);
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    &:before,
+    &:after{
+      @include setSize(height, 46, 181);
+      @include setSize(width, 101);
+      background: #b5f9ff;
+      content: '';
+      top: 0;
+    }
+    &:before{
+      left: 0;
+    }
+    &:after{
+      right: 0;
+    }
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 95);
+    @include setSize(top, 86);
+    @include setSize(width, 95);
+    background: #ecebec;
+    &:before{
+      @include setSize(height, 74, 95);
+      @include setSize(width, 17, 95);
+      background: #313031;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 22);
+      &:before{
+        @include setSize(left, 41, 95);
+      }
+    }
+    &.--right{
+      @include setSize(right, 22);
+      &:before{
+        @include setSize(right, 41, 95);
+      }
+    }
+  }
+  &__beak{
+    @extend %centerX;
+    @include setSize(height, 75);
+    @include setSize(width, 109);
+    background: #efcdd8;
+    bottom: 0;
+  }
+}
