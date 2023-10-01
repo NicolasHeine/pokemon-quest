@@ -1,0 +1,79 @@
+.raichu{
+  background: #f4c95a;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 52);
+    @include setSize(top, 60);
+    @include setSize(width, 42);
+    background: #1b110d;
+    &:before{
+      @include setSize(height, 8, 52);
+      background: #4a3f33;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    &:after{
+      @include setSize(height, 17, 52);
+      @include setSize(top, 3, 52);
+      @include setSize(width, 19, 42);
+      background: #ffffff;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 43);
+      &:after{
+        @include setSize(left, 15, 42);
+      }
+    }
+    &.--right{
+      @include setSize(right, 43);
+      &:after{
+        @include setSize(right, 15, 42);
+      }
+    }
+  }
+  &__nose{
+    @extend %centerX;
+    @include setSize(height, 13);
+    @include setSize(top, 113);
+    @include setSize(width, 22);
+    background: #312a26;
+  }
+  &__jowl{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 69);
+      @include setSize(top, 128);
+      @include setSize(width, 58);
+      background: #ffe984;
+      content: '';
+    }
+    &:before{
+      left: 0;
+    }
+    &:after{
+      right: 0;
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 53);
+    @include setSize(top, 132);
+    @include setSize(width, 98);
+    background: #945f6d;
+    clip-path: polygon(0 24.5%, 37.7% 24.5%, 50% 0, 62.3% 24.5%, 100% 24.5%, 100% 100%, 0 100%);
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 22, 53);
+      @include setSize(width, 68, 98);
+      background: #d69bb5;
+      bottom: 0;
+      content: '';
+    }
+  }
+}
