@@ -1,0 +1,58 @@
+.arbok{
+  background: #a594c0;
+  &__top{
+    @extend %centerX;
+    @include setSize(height, 57);
+    @include setSize(top, 14);
+    @include setSize(width, 74);
+    background: #4a4747;
+    clip-path: polygon(0 31.6%, 18.9% 31.6%, 18.9% 71.9%, 36.9% 71.9%, 36.9% 0, 63.1% 0, 63.1% 71.9%, 81.1% 71.9%, 81.1% 31.6%, 100% 31.6%, 100% 100%, 0 100%);
+  }
+  &__spots{
+    @extend %full;
+  }
+  &__spot{
+    @include setSize(height, 109);
+    @include setSize(top, 46);
+    @include setSize(width, 87);
+    background: #4a4747;
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 86, 109);
+      @include setSize(top, 13, 109);
+      @include setSize(width, 65, 87);
+      background: #c86e65;
+      content: '';
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 31, 109);
+      @include setSize(top, 57, 109);
+      @include setSize(width, 40, 87);
+      background: #c8ba5d;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 26);
+      clip-path: polygon(0 0, 60.9% 0, 60.9% 33%, 100% 33%, 100% 100%, 0 100%);
+      &:before{
+        clip-path: polygon(0 0, 44.6% 0, 44.6% 37.2%, 100% 37.2%, 100% 100%, 0 100%);
+      }
+    }
+    &.--right{
+      @include setSize(right, 26);
+      clip-path: polygon(0 33%, 39.1% 33%, 39.1% 0, 100% 0, 100% 100%, 0 100%);
+      &:before{
+        clip-path: polygon(0 37.5%, 55.4% 37.5%, 55.4% 0, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+  }
+  &__bottom{
+    @extend %centerX;
+    @include setSize(height, 74);
+    @include setSize(top, 168);
+    @include setSize(width, 228);
+    background: #4a4747;
+    clip-path: polygon(0 0, 7.9% 0, 7.9% 16.2%, 38.6% 16.2%, 38.6% 0, 61.4% 0, 61.4% 16.2%, 92.1% 16.2%, 92.1% 0, 100% 0, 100% 74.3%, 56.1% 74.3%, 56.1% 100%, 43.9% 100%, 43.9% 74.3%, 0 74.3%);
+  }
+}
