@@ -1,0 +1,79 @@
+.pikachu{
+  background: #fce47e;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 50);
+    @include setSize(top, 60);
+    @include setSize(width, 43);
+    background: #181212;
+    &:before{
+      @include setSize(height, 10, 50);
+      background: #3c3126;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    &:after{
+      @include setSize(height, 18, 50);
+      @include setSize(top, 3, 50);
+      @include setSize(width, 18, 43);
+      background: #ffffff;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 42);
+      &:after{
+        @include setSize(left, 16, 43);
+      }
+    }
+    &.--right{
+      @include setSize(right, 42);
+      &:after{
+        @include setSize(right, 16, 43);
+      }
+    }
+  }
+  &__nose{
+    @extend %centerX;
+    @include setSize(height, 10);
+    @include setSize(top, 114);
+    @include setSize(width, 18);
+    background: #181212;
+  }
+  &__jowl{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 58);
+      @include setSize(top, 132);
+      @include setSize(width, 50);
+      background: #de6b52;
+      content: '';
+    }
+    &:before{
+      left: 0;
+    }
+    &:after{
+      right: 0;
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 68);
+    @include setSize(top, 130);
+    @include setSize(width, 96);
+    background: #945f6d;
+    clip-path: polygon(0 25%, 36.4% 25%, 50% 0, 63.6% 25%, 100% 25%, 100% 100%, 0 100%);
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 23, 68);
+      @include setSize(width, 70, 96);
+      background: #d69bb5;
+      bottom: 0;
+      content: '';
+    }
+  }
+}
