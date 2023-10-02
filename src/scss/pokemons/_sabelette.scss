@@ -1,0 +1,97 @@
+.sabelette{
+  background: #ecd168;
+  &__top{
+    @extend %centerX;
+    @include setSize(height, 151);
+    @include setSize(width, 180);
+    background: linear-gradient(90deg, #dec360 0%, #dec360 8.3%, #ecd168 8.3%, #ecd168 91.7%, #dec360 91.7%, #dec360 100%);
+    top: 0;
+    &:before{
+      @include setSize(height, 55, 151);
+      background: linear-gradient(90deg, #ecd168 0%, #ecd168 15%, #dec360 15%, #dec360 23.3%, #ecd168 23.3%, #ecd168 76.7%, #dec360 76.7%, #dec360 85%, #ecd168 85%, #ecd168 100%);
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+    &:after{
+      @include setSize(height, 96, 151);
+      @include setSize(top, 55, 151);
+      background: #dec360;
+      clip-path: polygon(0 0, 100% 0, 100% 16.7%, 53.9% 16.7%, 53.9% 68.7%, 73.3% 68.7%, 73.3% 100%, 66.7% 100%, 66.7% 83.3%, 33.3% 83.3%, 33.3% 100%, 26.7% 100%, 26.7% 68.7%, 46.1% 68.7%, 46.1% 16.7%, 0 16.7%);
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 66);
+    @include setSize(top, 111);
+    @include setSize(width, 57);
+    background: #021a2b;
+    z-index: 2;
+    &:before{
+      @include setSize(height, 25, 66);
+      @include setSize(width, 22, 57);
+      background: #fffffc;
+      content: '';
+      top: 0;
+    }
+    &:after{
+      @include setSize(height, 20, 66);
+      @include setSize(width, 31, 57);
+      background: #004978;
+      bottom: 0;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 22);
+      &:before{
+        @include setSize(right, 7, 57);
+      }
+      &:after{
+        right: 0;
+      }
+    }
+    &.--right{
+      @include setSize(right, 22);
+      &:before{
+        @include setSize(left, 7, 57);
+      }
+      &:after{
+        left: 0;
+      }
+    }
+  }
+  &__nose{
+    @extend %centerX;
+    @include setSize(height, 105);
+    @include setSize(width, 180);
+    background: #efecd6;
+    bottom: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 64.7%, 77.2% 64.7%, 73.3% 72.4%, 73.3% 100%, 26.7% 100%, 26.7% 72.4%, 22.8% 64.7%, 0 64.7%);
+    z-index: 1;
+  }
+  &__bottom{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 45);
+      @include setSize(width, 49);
+      background: #dec360;
+      bottom: 0;
+      content: '';
+    }
+    &:before{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 57.1% 100%, 57.1% 28.9%, 0 28.9%);
+      left: 0;
+    }
+    &:after{
+      clip-path: polygon(0 0, 100% 0, 100% 28.9%, 42.9% 28.9%, 42.9% 100%, 0 100%);
+      right: 0;
+    }
+  }
+}

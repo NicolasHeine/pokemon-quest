@@ -58,7 +58,7 @@ table {
   transform: translate(-50%, -50%) translate3d(0, 0, 0);
 }
 
-.raichu__mouth:before, .raichu__mouth, .raichu__nose, .pikachu__mouth:before, .pikachu__mouth, .pikachu__nose, .arbok__bottom, .arbok__spot:after, .arbok__spot:before, .arbok__top, .rapasdepic__beak, .piafabec__beak:after, .piafabec__beak:before, .piafabec__beak, .rattatac__tooth:before, .rattatac__tooth, .rattatac__mouth:after, .rattatac__mouth:before, .rattatac__mouth, .rattata__tooth:before, .rattata__tooth, .rattata__mouth:after, .rattata__mouth:before, .roucarnage__beak:after, .roucarnage__beak:before, .roucarnage__beak, .roucoups__beak:after, .roucoups__beak:before, .roucoups__beak, .roucool__beak:after, .roucool__beak:before, .roucool__beak, .roucool__top:after, .roucool__top:before, .coconfort__body:before, .coconfort__body:after, .aspicot__nose, .aspicot__horn:before, .papillusion__nose, .chrysacier__eye:before, .chenipan__eye:after, .tortank__tooth__top, .tortank__mouth:before, .tortank__mouth, .tortank__nose, .tortank__eye span:before, .tortank__top, .carabaffe__shell:before, .carabaffe__mouth:after, .carabaffe__mouth:before, .carabaffe__mouth, .carapuce__mouth:after, .carapuce__mouth:before, .carapuce__mouth, .dracaufeu__tooth__bottom, .dracaufeu__tooth__top, .dracaufeu__mouth:before, .dracaufeu__mouth, .reptincel__tooth__bottom, .reptincel__tooth__top, .reptincel__mouth:after, .reptincel__mouth:before, .reptincel__mouth, .reptincel__eye span:before, .salameche__tooth__bottom, .salameche__tooth__top, .salameche__mouth:before, .salameche__mouth, .salameche__eye:before, .florizarre__mouth:after, .florizarre__eye span:before, .florizarre__eye span, .florizarre__flower__base span:after, .florizarre__flower__base span, .florizarre__flower__base:before, .florizarre__flower__tree, .herbizarre__mouth:after, .herbizarre__mouth:before, .herbizarre__mouth, .herbizarre__eyes, .herbizarre__top:before, .herbizarre__top, .bulbizarre__mouth:before, .bulbizarre__mouth, .bulbizarre__eyes, .bulbizarre__top:before, .bulbizarre__top {
+.sabelette__nose, .sabelette__top, .raichu__mouth:before, .raichu__mouth, .raichu__nose, .pikachu__mouth:before, .pikachu__mouth, .pikachu__nose, .arbok__bottom, .arbok__spot:after, .arbok__spot:before, .arbok__top, .rapasdepic__beak, .piafabec__beak:after, .piafabec__beak:before, .piafabec__beak, .rattatac__tooth:before, .rattatac__tooth, .rattatac__mouth:after, .rattatac__mouth:before, .rattatac__mouth, .rattata__tooth:before, .rattata__tooth, .rattata__mouth:after, .rattata__mouth:before, .roucarnage__beak:after, .roucarnage__beak:before, .roucarnage__beak, .roucoups__beak:after, .roucoups__beak:before, .roucoups__beak, .roucool__beak:after, .roucool__beak:before, .roucool__beak, .roucool__top:after, .roucool__top:before, .coconfort__body:before, .coconfort__body:after, .aspicot__nose, .aspicot__horn:before, .papillusion__nose, .chrysacier__eye:before, .chenipan__eye:after, .tortank__tooth__top, .tortank__mouth:before, .tortank__mouth, .tortank__nose, .tortank__eye span:before, .tortank__top, .carabaffe__shell:before, .carabaffe__mouth:after, .carabaffe__mouth:before, .carabaffe__mouth, .carapuce__mouth:after, .carapuce__mouth:before, .carapuce__mouth, .dracaufeu__tooth__bottom, .dracaufeu__tooth__top, .dracaufeu__mouth:before, .dracaufeu__mouth, .reptincel__tooth__bottom, .reptincel__tooth__top, .reptincel__mouth:after, .reptincel__mouth:before, .reptincel__mouth, .reptincel__eye span:before, .salameche__tooth__bottom, .salameche__tooth__top, .salameche__mouth:before, .salameche__mouth, .salameche__eye:before, .florizarre__mouth:after, .florizarre__eye span:before, .florizarre__eye span, .florizarre__flower__base span:after, .florizarre__flower__base span, .florizarre__flower__base:before, .florizarre__flower__tree, .herbizarre__mouth:after, .herbizarre__mouth:before, .herbizarre__mouth, .herbizarre__eyes, .herbizarre__top:before, .herbizarre__top, .bulbizarre__mouth:before, .bulbizarre__mouth, .bulbizarre__eyes, .bulbizarre__top:before, .bulbizarre__top {
   left: 50%;
   transform: translateX(-50%) translate3d(0, 0, 0);
 }
@@ -68,7 +68,7 @@ table {
   transform: translateY(-50%) translate3d(0, 0, 0);
 }
 
-.raichu__jowl, .raichu__eyes, .pikachu__jowl, .pikachu__eyes, .arbok__spots, .rapasdepic__eyes, .piafabec__eyes, .rattatac__nose, .rattatac__eyes, .rattata__nose, .rattata__eyes, .roucarnage__side, .roucarnage__eyes, .roucoups__side, .roucoups__eyes, .roucool__eyes, .dardargnan__eyes, .dardargnan__antenna, .coconfort__side, .coconfort__eyes, .aspicot__eyes, .papillusion__wings, .papillusion__paws, .papillusion__eyes, .chrysacier__side, .tortank__tooth__bottom, .tortank__tooth, .tortank__cernes, .tortank__eyes, .carabaffe__tooth, .carabaffe__nose, .carabaffe__cernes, .carabaffe__eyes, .carapuce__nose, .carapuce__eyes, .dracaufeu__nose, .dracaufeu__cernes, .dracaufeu__eyes, .reptincel__nose, .reptincel__spots, .reptincel__eyes, .salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
+.sabelette__bottom, .sabelette__eyes, .raichu__jowl, .raichu__eyes, .pikachu__jowl, .pikachu__eyes, .arbok__spots, .rapasdepic__eyes, .piafabec__eyes, .rattatac__nose, .rattatac__eyes, .rattata__nose, .rattata__eyes, .roucarnage__side, .roucarnage__eyes, .roucoups__side, .roucoups__eyes, .roucool__eyes, .dardargnan__eyes, .dardargnan__antenna, .coconfort__side, .coconfort__eyes, .aspicot__eyes, .papillusion__wings, .papillusion__paws, .papillusion__eyes, .chrysacier__side, .tortank__tooth__bottom, .tortank__tooth, .tortank__cernes, .tortank__eyes, .carabaffe__tooth, .carabaffe__nose, .carabaffe__cernes, .carabaffe__eyes, .carapuce__nose, .carapuce__eyes, .dracaufeu__nose, .dracaufeu__cernes, .dracaufeu__eyes, .reptincel__nose, .reptincel__spots, .reptincel__eyes, .salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
   left: 0;
   height: 100%;
   top: 0;
@@ -2683,6 +2683,95 @@ table {
   background: #d69bb5;
   bottom: 0;
   content: "";
+}
+
+.sabelette {
+  background: #ecd168;
+}
+.sabelette__top {
+  height: calc(151 * 100% / 256);
+  width: calc(180 * 100% / 256);
+  background: linear-gradient(90deg, #dec360 0%, #dec360 8.3%, #ecd168 8.3%, #ecd168 91.7%, #dec360 91.7%, #dec360 100%);
+  top: 0;
+}
+.sabelette__top:before {
+  height: calc(55 * 100% / 151);
+  background: linear-gradient(90deg, #ecd168 0%, #ecd168 15%, #dec360 15%, #dec360 23.3%, #ecd168 23.3%, #ecd168 76.7%, #dec360 76.7%, #dec360 85%, #ecd168 85%, #ecd168 100%);
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.sabelette__top:after {
+  height: calc(96 * 100% / 151);
+  top: calc(55 * 100% / 151);
+  background: #dec360;
+  clip-path: polygon(0 0, 100% 0, 100% 16.7%, 53.9% 16.7%, 53.9% 68.7%, 73.3% 68.7%, 73.3% 100%, 66.7% 100%, 66.7% 83.3%, 33.3% 83.3%, 33.3% 100%, 26.7% 100%, 26.7% 68.7%, 46.1% 68.7%, 46.1% 16.7%, 0 16.7%);
+  content: "";
+  left: 0;
+  width: 100%;
+}
+.sabelette__eye {
+  height: calc(66 * 100% / 256);
+  top: calc(111 * 100% / 256);
+  width: calc(57 * 100% / 256);
+  background: #021a2b;
+  z-index: 2;
+}
+.sabelette__eye:before {
+  height: calc(25 * 100% / 66);
+  width: calc(22 * 100% / 57);
+  background: #fffffc;
+  content: "";
+  top: 0;
+}
+.sabelette__eye:after {
+  height: calc(20 * 100% / 66);
+  width: calc(31 * 100% / 57);
+  background: #004978;
+  bottom: 0;
+  content: "";
+}
+.sabelette__eye.--left {
+  left: calc(22 * 100% / 256);
+}
+.sabelette__eye.--left:before {
+  right: calc(7 * 100% / 57);
+}
+.sabelette__eye.--left:after {
+  right: 0;
+}
+.sabelette__eye.--right {
+  right: calc(22 * 100% / 256);
+}
+.sabelette__eye.--right:before {
+  left: calc(7 * 100% / 57);
+}
+.sabelette__eye.--right:after {
+  left: 0;
+}
+.sabelette__nose {
+  height: calc(105 * 100% / 256);
+  width: calc(180 * 100% / 256);
+  background: #efecd6;
+  bottom: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 64.7%, 77.2% 64.7%, 73.3% 72.4%, 73.3% 100%, 26.7% 100%, 26.7% 72.4%, 22.8% 64.7%, 0 64.7%);
+  z-index: 1;
+}
+.sabelette__bottom:before, .sabelette__bottom:after {
+  height: calc(45 * 100% / 256);
+  width: calc(49 * 100% / 256);
+  background: #dec360;
+  bottom: 0;
+  content: "";
+}
+.sabelette__bottom:before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 57.1% 100%, 57.1% 28.9%, 0 28.9%);
+  left: 0;
+}
+.sabelette__bottom:after {
+  clip-path: polygon(0 0, 100% 0, 100% 28.9%, 42.9% 28.9%, 42.9% 100%, 0 100%);
+  right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
