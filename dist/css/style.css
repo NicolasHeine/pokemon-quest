@@ -68,7 +68,7 @@ table {
   transform: translateY(-50%) translate3d(0, 0, 0);
 }
 
-.sabelette__bottom, .sabelette__eyes, .raichu__jowl, .raichu__eyes, .pikachu__jowl, .pikachu__eyes, .arbok__spots, .rapasdepic__eyes, .piafabec__eyes, .rattatac__nose, .rattatac__eyes, .rattata__nose, .rattata__eyes, .roucarnage__side, .roucarnage__eyes, .roucoups__side, .roucoups__eyes, .roucool__eyes, .dardargnan__eyes, .dardargnan__antenna, .coconfort__side, .coconfort__eyes, .aspicot__eyes, .papillusion__wings, .papillusion__paws, .papillusion__eyes, .chrysacier__side, .tortank__tooth__bottom, .tortank__tooth, .tortank__cernes, .tortank__eyes, .carabaffe__tooth, .carabaffe__nose, .carabaffe__cernes, .carabaffe__eyes, .carapuce__nose, .carapuce__eyes, .dracaufeu__nose, .dracaufeu__cernes, .dracaufeu__eyes, .reptincel__nose, .reptincel__spots, .reptincel__eyes, .salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
+.sablaireau__eyes, .sablaireau__ears, .sabelette__bottom, .sabelette__eyes, .raichu__jowl, .raichu__eyes, .pikachu__jowl, .pikachu__eyes, .arbok__spots, .rapasdepic__eyes, .piafabec__eyes, .rattatac__nose, .rattatac__eyes, .rattata__nose, .rattata__eyes, .roucarnage__side, .roucarnage__eyes, .roucoups__side, .roucoups__eyes, .roucool__eyes, .dardargnan__eyes, .dardargnan__antenna, .coconfort__side, .coconfort__eyes, .aspicot__eyes, .papillusion__wings, .papillusion__paws, .papillusion__eyes, .chrysacier__side, .tortank__tooth__bottom, .tortank__tooth, .tortank__cernes, .tortank__eyes, .carabaffe__tooth, .carabaffe__nose, .carabaffe__cernes, .carabaffe__eyes, .carapuce__nose, .carapuce__eyes, .dracaufeu__nose, .dracaufeu__cernes, .dracaufeu__eyes, .reptincel__nose, .reptincel__spots, .reptincel__eyes, .salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
   left: 0;
   height: 100%;
   top: 0;
@@ -2772,6 +2772,74 @@ table {
 .sabelette__bottom:after {
   clip-path: polygon(0 0, 100% 0, 100% 28.9%, 42.9% 28.9%, 42.9% 100%, 0 100%);
   right: 0;
+}
+
+.sablaireau {
+  background: #f1d170;
+}
+.sablaireau__ears:before, .sablaireau__ears:after {
+  height: calc(49 * 100% / 256);
+  width: calc(68 * 100% / 256);
+  background: #aa7b2e;
+  content: "";
+  top: 0;
+}
+.sablaireau__ears:before {
+  left: calc(30 * 100% / 256);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 35.3% 100%);
+}
+.sablaireau__ears:after {
+  right: calc(30 * 100% / 256);
+  clip-path: polygon(0 0, 100% 0, 64.7% 100%, 0 100%);
+}
+.sablaireau__eye {
+  height: calc(54 * 100% / 256);
+  top: calc(121 * 100% / 256);
+  width: calc(76 * 100% / 256);
+  background: #021a2b;
+  z-index: 1;
+}
+.sablaireau__eye:before {
+  height: calc(16 * 100% / 54);
+  top: calc(7 * 100% / 54);
+  width: calc(18 * 100% / 76);
+  background: #ffffff;
+  content: "";
+}
+.sablaireau__eye:after {
+  height: calc(17 * 100% / 54);
+  width: calc(36 * 100% / 76);
+  background: #002d4a;
+  bottom: 0;
+  content: "";
+}
+.sablaireau__eye.--left {
+  left: calc(17 * 100% / 256);
+  clip-path: polygon(0 0, 81.6% 0, 100% 100%, 21.1% 100%);
+}
+.sablaireau__eye.--left:before {
+  right: calc(17 * 100% / 76);
+}
+.sablaireau__eye.--left:after {
+  right: calc(13 * 100% / 76);
+}
+.sablaireau__eye.--right {
+  right: calc(17 * 100% / 256);
+  clip-path: polygon(18.4% 0, 100% 0, 78.9% 100%, 0 100%);
+}
+.sablaireau__eye.--right:before {
+  left: calc(17 * 100% / 76);
+}
+.sablaireau__eye.--right:after {
+  left: calc(13 * 100% / 76);
+}
+.sablaireau__nose {
+  height: calc(120 * 100% / 256);
+  background: #f1e5ce;
+  bottom: 0;
+  clip-path: polygon(0 0, 23% 0, 36.3% 31.7%, 36.3% 79.1%, 63.7% 79.1%, 63.7% 31.7%, 77% 0, 100% 0, 100% 100%, 0 100%);
+  left: 0;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

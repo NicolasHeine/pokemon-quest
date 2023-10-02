@@ -1,0 +1,74 @@
+.sablaireau{
+  background: #f1d170;
+  &__ears{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 49);
+      @include setSize(width, 68);
+      background: #aa7b2e;
+      content: '';
+      top: 0;
+    }
+    &:before{
+      @include setSize(left, 30);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 35.3% 100%);
+    }
+    &:after{
+      @include setSize(right, 30);
+      clip-path: polygon(0 0, 100% 0, 64.7% 100%, 0 100%);
+    }
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 54);
+    @include setSize(top, 121);
+    @include setSize(width, 76);
+    background: #021a2b;
+    z-index: 1;
+    &:before{
+      @include setSize(height, 16, 54);
+      @include setSize(top, 7, 54);
+      @include setSize(width, 18, 76);
+      background: #ffffff;
+      content: '';
+    }
+    &:after{
+      @include setSize(height, 17, 54);
+      @include setSize(width, 36, 76);
+      background: #002d4a;
+      bottom: 0;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 17);
+      clip-path: polygon(0 0, 81.6% 0, 100% 100%, 21.1% 100%);
+      &:before{
+        @include setSize(right, 17, 76);
+      }
+      &:after{
+        @include setSize(right, 13, 76);
+      }
+    }
+    &.--right{
+      @include setSize(right, 17);
+      clip-path: polygon(18.4% 0, 100% 0, 78.9% 100%, 0 100%);
+      &:before{
+        @include setSize(left , 17, 76);
+      }
+      &:after{
+        @include setSize(left, 13, 76);
+      }
+    }
+  }
+  &__nose{
+    @include setSize(height, 120);
+    background: #f1e5ce;
+    bottom: 0;
+    clip-path: polygon(0 0, 23% 0, 36.3% 31.7%, 36.3% 79.1%, 63.7% 79.1%, 63.7% 31.7%, 77% 0, 100% 0, 100% 100%, 0 100%);
+    left: 0;
+    width: 100%;
+  }
+}
