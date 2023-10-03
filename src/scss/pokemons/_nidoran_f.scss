@@ -1,0 +1,86 @@
+.nidoranf{
+  background: #cbd5ec;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 54);
+    @include setSize(top, 48);
+    @include setSize(width, 73);
+    background: #ffffff;
+    &:before{
+      @include setSize(width, 52, 73);
+      background: linear-gradient(180deg, #9f362b 0%, #9f362b 81.5%, #cb4d39 81.5%, #cb4d39 100%);
+      content: '';
+      height: 100%;
+      top: 0;
+    }
+    &:after{
+      @include setSize(height, 45, 54);
+      @include setSize(width, 14, 73);
+      background: #ffffff;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 19);
+      clip-path: polygon(0 0, 100% 100%, 0 100%);
+      &:before{
+        right: 0;
+      }
+      &:after{
+        @include setSize(right, 22, 73);
+      }
+    }
+    &.--right{
+      @include setSize(right, 19);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%);
+      &:before{
+        left: 0;
+      }
+      &:after{
+        @include setSize(left, 22, 73);
+      }
+    }
+  }
+  &__nose{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 10);
+      @include setSize(top, 107);
+      @include setSize(width, 4);
+      background: #a5aebd;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 115);
+    }
+    &:after{
+      @include setSize(right, 115);
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 73);
+    @include setSize(top, 140);
+    @include setSize(width, 88);
+    background: #946270;
+    &:before{
+      @include setSize(height, 33, 73);
+      background: #c8829f;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 51, 73);
+      @include setSize(width, 58, 88);
+      background: #ffffff;
+      content: '';
+      top: 0;
+    }
+  }
+}

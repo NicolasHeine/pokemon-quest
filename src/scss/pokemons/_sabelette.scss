@@ -79,18 +79,18 @@
     @extend %full;
     &:before,
     &:after{
-      @include setSize(height, 45);
-      @include setSize(width, 49);
+      @include setSize(height, 49);
+      @include setSize(width, 45);
       background: #dec360;
       bottom: 0;
       content: '';
     }
     &:before{
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 57.1% 100%, 57.1% 28.9%, 0 28.9%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 62.2% 100%, 62.2% 24.5%, 0 24.5%);
       left: 0;
     }
     &:after{
-      clip-path: polygon(0 0, 100% 0, 100% 28.9%, 42.9% 28.9%, 42.9% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 24.5%, 37.8% 24.5%, 37.8% 100%, 0 100%);
       right: 0;
     }
   }
