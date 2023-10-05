@@ -1,0 +1,110 @@
+.nidoranm{
+  background: #c698c3;
+  &__horn{
+    @extend %centerX;
+    @include setSize(height, 57);
+    @include setSize(width, 54);
+    background: #895e8e;
+    top: 0;
+    &:before{
+      @include setSize(height, 32, 57);
+      background: #b586b5;
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 20, 57);
+      @include setSize(width, 34, 54);
+      background: #c698c3;
+      content: '';
+      top: 0;
+    }
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 56);
+    @include setSize(top, 52);
+    @include setSize(width, 74);
+    background: #ffffff;
+    &:before{
+      @include setSize(width, 53, 74);
+      content: '';
+      height: 100%;
+      top: 0;
+    }
+    &:after{
+      @include setSize(height, 39, 56);
+      @include setSize(width, 9, 74);
+      background: #cb9b96;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 18);
+      clip-path: polygon(0 0, 100% 100%, 0 100%);
+      &:before{
+        background: linear-gradient(90deg, #aa615a 0%, #aa615a 28.3%, #470d15 28.3%, #470d15 100%);
+        right: 0;
+      }
+      &:after{
+        @include setSize(right, 38, 74);
+      }
+    }
+    &.--right{
+      @include setSize(right, 18);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%);
+      &:before{
+        background: linear-gradient(270deg, #aa615a 0%, #aa615a 28.3%, #470d15 28.3%, #470d15 100%);
+        left: 0;
+      }
+      &:after{
+        @include setSize(left, 38, 74);
+      }
+    }
+  }
+  &__nose{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 9);
+      @include setSize(top, 114);
+      @include setSize(width, 7);
+      background: #755b73;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 109);
+    }
+    &:after{
+      @include setSize(right, 109);
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 72);
+    @include setSize(top, 146);
+    @include setSize(width, 88);
+    background: #946270;
+    &:before{
+      @include setSize(height, 32, 72);
+      background: #c8829f;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 50, 72);
+      @include setSize(width, 58, 88);
+      background: #ffffff;
+      content: '';
+      top: 0;
+    }
+  }
+}
