@@ -1,0 +1,81 @@
+.melofee{
+  background: #f7d8db;
+  &__hair{
+    @include setSize(height, 51);
+    @include setSize(left, 18);
+    @include setSize(width, 166);
+    background: #eccdd0;
+    clip-path: polygon(100% 0, 100% 100%, 17.5% 100%, 0 54.9%, 10.8% 25.5%, 25.9% 66.7%, 83.7% 66.7%, 83.7% 0);
+    top: 0;
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 49);
+    @include setSize(top, 80);
+    @include setSize(width, 21);
+    background: linear-gradient(180deg, #eff0ef 0%, #eff0ef 24.5%, #1e0405 24.5%, #1e0405 73.5%, #4f7a9f 73.5%, #4f7a9f 100%);
+    &:before{
+      @include setSize(height, 58, 49);
+      @include setSize(top, -5, 49);
+      @include setSize(width, 14, 21);
+      background: #efd0d3;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 56);
+      &:before{
+        @include setSize(right, 35, 21);
+        clip-path: polygon(0 0, 100% 0, 100% 8.6%, 42.8% 8.6%, 42.8% 91.4%, 100% 91.4%, 100% 100%, 0 100%);
+      }
+    }
+    &.--right{
+      @include setSize(right, 56);
+      &:before{
+        @include setSize(left, 35, 21);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 91.4%, 57.2% 91.4%, 57.2% 8.6%, 0 8.6%);
+      }
+    }
+  }
+  &__jowl{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 29);
+      @include setSize(top, 143);
+      @include setSize(width, 37);
+      background: #e7c5d6;
+      content: '';
+    }
+    &:before{
+      left: 0;
+    }
+    &:after{
+      right: 0;
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 72);
+    @include setSize(top, 142);
+    @include setSize(width, 84);
+    background: #bd96aa;
+    &:before{
+      @include setSize(height, 33, 72);
+      background: #e4c8d6;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    &:after{
+      @include setSize(height, 21, 72);
+      @include setSize(width, 20, 84);
+      background: #eff0ef;
+      content: '';
+      right: 0;
+      top: 0;
+    }
+  }
+}
