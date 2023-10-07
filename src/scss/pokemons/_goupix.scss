@@ -1,0 +1,74 @@
+.goupix{
+  background: #c88e6d;
+  &__hair{
+    @extend %centerX;
+    @include setSize(height, 75);
+    @include setSize(width, 156);
+    background: #de8242;
+    clip-path: polygon(0 0, 100% 0, 100% 45.3%, 92.3% 56%, 69.2% 56%, 69.2% 93.3%, 65.4% 100%, 34.6% 100%, 30.8% 93.3%, 30.8% 56%, 7.7% 56%, 0 45.3%);
+    top: 0;
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 61);
+    @include setSize(top, 65);
+    @include setSize(width, 62);
+    background: #65463c;
+    &:before{
+      @include setSize(height, 20, 61);
+      @include setSize(top, 4, 61);
+      @include setSize(width, 17, 62);
+      background: #ffffff;
+      content: '';
+    }
+    &:after{
+      @include setSize(height, 22, 61);
+      @include setSize(width, 39, 62);
+      background: #705247;
+      bottom: 0;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 20);
+      &:before{
+        @include setSize(right, 11, 62);
+      }
+      &:after{
+        @include setSize(left, 7, 62);
+      }
+    }
+    &.--right{
+      @include setSize(right, 20);
+      &:before{
+        @include setSize(left, 11, 62);
+      }
+      &:after{
+        @include setSize(right, 7, 62);
+      }
+    }
+  }
+  &__nose{
+    @extend %centerX;
+    @include setSize(height, 24);
+    @include setSize(top, 122);
+    @include setSize(width, 36);
+    background: #4c413f;
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 40);
+    @include setSize(top, 184);
+    @include setSize(width, 56);
+    background: #9c7e7e;
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 19, 40);
+      @include setSize(width, 40, 56);
+      background: #e7c3ce;
+      bottom: 0;
+      content: '';
+    }
+  }
+}
