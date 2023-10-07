@@ -1,0 +1,54 @@
+.melodelfe{
+  background: #f7d7c8;
+  &__hair{
+    @extend %centerX;
+    @include setSize(height, 47);
+    @include setSize(width, 144);
+    background: #e7c9ba;
+    clip-path: polygon(72.2% 0, 100% 0, 100% 76.6%, 93% 100%, 9% 100%, 0 74.5%, 0 48.9%, 72.2% 48.9%);
+    top: 0;
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 51);
+    @include setSize(top, 86);
+    @include setSize(width, 20);
+    background: linear-gradient(180deg, #ffffff 0%, #ffffff 25.5%, #260400 25.5%, #260400 74.5%, #6b6560 74.5%, #6b6560 100%);
+    &:before{
+      @include setSize(top, 1, 51);
+      @include setSize(width, 10, 20);
+      background: #ecccbd;
+      content: '';
+      height: 100%;
+    }
+    &.--left{
+      @include setSize(left, 65);
+      &:before{
+        @include setSize(right, 35, 20);
+      }
+    }
+    &.--right{
+      @include setSize(right, 65);
+      &:before{
+        @include setSize(left, 35, 20);
+      }
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 53);
+    @include setSize(top, 154);
+    @include setSize(width, 94);
+    background: #ba9094;
+    &:before{
+      @include setSize(height, 26, 53);
+      background: #e4aeb2;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+  }
+}
