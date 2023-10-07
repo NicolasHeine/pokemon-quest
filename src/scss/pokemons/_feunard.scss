@@ -1,0 +1,77 @@
+.feunard{
+  background: #f4eca5;
+  &__hair{
+    @extend %centerX;
+    @include setSize(height, 39);
+    @include setSize(width, 112);
+    background: #f1e58c;
+    top: 0;
+  }
+  &__hear{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 39);
+      @include setSize(width, 35);
+      background: #d6c994;
+      content: '';
+      top: 0;
+    }
+    &:before{
+      @include setSize(left, 16);
+    }
+    &:after{
+      @include setSize(right, 16);
+    }
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 54);
+    @include setSize(top, 86);
+    @include setSize(width, 69);
+    background: #d3735a;
+    &:before{
+      @include setSize(height, 47, 54);
+      @include setSize(width, 28, 69);
+      background: #e97e63;
+      content: '';
+      top: 0;
+    }
+    &:after{
+      @include setSize(height, 25, 54);
+      @include setSize(width, 25, 69);
+      background: #fff0ec;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 18);
+      clip-path: polygon(0 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(left, 21, 69);
+      }
+      &:after{
+        @include setSize(left, 13, 69);
+      }
+    }
+    &.--right{
+      @include setSize(right, 18);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(right, 21, 69);
+      }
+      &:after{
+        @include setSize(right, 13, 69);
+      }
+    }
+  }
+  &__nose{
+    @extend %centerX;
+    @include setSize(height, 23);
+    @include setSize(top, 143);
+    @include setSize(width, 32);
+    background: #393931;
+  }
+}
