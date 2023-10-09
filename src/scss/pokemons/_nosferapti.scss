@@ -1,0 +1,51 @@
+.nosferapti{
+  background: #478cb5;
+  &__hear{
+    @include setSize(height, 37);
+    background: linear-gradient(90deg, #845b81 0%, #845b81 17.2%, #478cb5 17.2%, #478cb5 27.3%, #a78ec8 27.3%, #a78ec8 72.7%, #478cb5 72.7%, #478cb5 82.8%, #845b81 82.8%, #845b81 100%);
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 163);
+    @include setSize(top, 75);
+    @include setSize(width, 220);
+    background: #3c3f42;
+  }
+  &__teeth{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 36, 163);
+      @include setSize(width, 25, 220);
+      background: #dedfe9;
+      content: '';
+    }
+    &.--top{
+      &:before,
+      &:after{
+        top: 0;
+      }
+      &:before{
+        @include setSize(left, 51, 220);
+      }
+      &:after{
+        @include setSize(right, 51, 220);
+      }
+    }
+    &.--bottom{
+      &:before,
+      &:after{
+        bottom: 0;
+      }
+      &:before{
+        @include setSize(left, 25, 220);
+      }
+      &:after{
+        @include setSize(right, 25, 220);
+      }
+    }
+  }
+}
