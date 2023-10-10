@@ -1,0 +1,48 @@
+.mystherbe{
+  background: #57829c;
+  &__leaf{
+    @include setSize(height, 58);
+    background: #529344;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 25);
+    @include setSize(top, 111);
+    @include setSize(width, 17);
+    background: #d07368;
+    &:before{
+      @include setSize(height, 9, 25);
+      background: #f4a296;
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+    &.--left{
+      @include setSize(left, 63);
+    }
+    &.--right{
+      @include setSize(right, 63);
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 33);
+    @include setSize(top, 147);
+    @include setSize(width, 58);
+    background: #c6778c;
+    &:before{
+      @include setSize(height, 16, 33);
+      background: #e488a2;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+  }
+}
