@@ -1,0 +1,47 @@
+.rafflesia{
+  background: #607399;
+  &__leaf{
+    @include setSize(height, 40);
+    background: #d86678;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 26);
+    @include setSize(top, 111);
+    @include setSize(width, 26);
+    background: #8c494a;
+    &:before{
+      @extend %center;
+      @include setSize(height, 17, 26);
+      @include setSize(width, 17, 26);
+      background: #d68a89;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 60);
+    }
+    &.--right{
+      @include setSize(right, 60);
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 35);
+    @include setSize(top, 146);
+    @include setSize(width, 74);
+    background: #4c2223;
+    &:before{
+      @include setSize(height, 9, 35);
+      background: #7b3839;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+  }
+}
