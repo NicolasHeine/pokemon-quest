@@ -58,7 +58,7 @@ table {
   transform: translate(-50%, -50%) translate3d(0, 0, 0);
 }
 
-.paras__mouth, .rafflesia__mouth, .ortide__mouth, .mystherbe__mouth, .nosferalto__mouth, .nosferalto__eye:before, .nosferalto__hear:before, .nosferapti__mouth, .grodoudou__mouth:after, .grodoudou__mouth:before, .grodoudou__mouth, .grodoudou__hair:before, .grodoudou__hair, .rondoudou__mouth, .feunard__nose, .feunard__hair, .goupix__mouth:before, .goupix__mouth, .goupix__nose, .goupix__hair, .melodelfe__mouth, .melodelfe__hair, .melofee__mouth, .nidoking__mouth:after, .nidoking__mouth:before, .nidoking__horn:before, .nidoking__horn, .nidorino__mouth:after, .nidorino__mouth:before, .nidorino__mouth, .nidorino__horn:before, .nidorino__horn, .nidoranm__mouth:after, .nidoranm__mouth, .nidoranm__horn:after, .nidoranm__horn, .nidoqueen__mouth:after, .nidoqueen__mouth:before, .nidoqueen__top:before, .nidoqueen__top, .nidorina__mouth:after, .nidorina__mouth:before, .nidorina__mouth, .nidoranf__mouth:after, .nidoranf__mouth, .sabelette__nose, .sabelette__top, .raichu__mouth:before, .raichu__mouth, .raichu__nose, .pikachu__mouth:before, .pikachu__mouth, .pikachu__nose, .arbok__bottom, .arbok__spot:after, .arbok__spot:before, .arbok__top, .rapasdepic__beak, .piafabec__beak:after, .piafabec__beak:before, .piafabec__beak, .rattatac__tooth:before, .rattatac__tooth, .rattatac__mouth:after, .rattatac__mouth:before, .rattatac__mouth, .rattata__tooth:before, .rattata__tooth, .rattata__mouth:after, .rattata__mouth:before, .roucarnage__beak:after, .roucarnage__beak:before, .roucarnage__beak, .roucoups__beak:after, .roucoups__beak:before, .roucoups__beak, .roucool__beak:after, .roucool__beak:before, .roucool__beak, .roucool__top:after, .roucool__top:before, .coconfort__body:before, .coconfort__body:after, .aspicot__nose, .aspicot__horn:before, .papillusion__nose, .chrysacier__eye:before, .chenipan__eye:after, .tortank__tooth__top, .tortank__mouth:before, .tortank__mouth, .tortank__nose, .tortank__eye span:before, .tortank__top, .carabaffe__shell:before, .carabaffe__mouth:after, .carabaffe__mouth:before, .carabaffe__mouth, .carapuce__mouth:after, .carapuce__mouth:before, .carapuce__mouth, .dracaufeu__tooth__bottom, .dracaufeu__tooth__top, .dracaufeu__mouth:before, .dracaufeu__mouth, .reptincel__tooth__bottom, .reptincel__tooth__top, .reptincel__mouth:after, .reptincel__mouth:before, .reptincel__mouth, .reptincel__eye span:before, .salameche__tooth__bottom, .salameche__tooth__top, .salameche__mouth:before, .salameche__mouth, .salameche__eye:before, .florizarre__mouth:after, .florizarre__eye span:before, .florizarre__eye span, .florizarre__flower__base span:after, .florizarre__flower__base span, .florizarre__flower__base:before, .florizarre__flower__tree, .herbizarre__mouth:after, .herbizarre__mouth:before, .herbizarre__mouth, .herbizarre__eyes, .herbizarre__top:before, .herbizarre__top, .bulbizarre__mouth:before, .bulbizarre__mouth, .bulbizarre__eyes, .bulbizarre__top:before, .bulbizarre__top {
+.parasect__mouth:before, .parasect__mouth, .paras__mouth, .rafflesia__mouth, .ortide__mouth, .mystherbe__mouth, .nosferalto__mouth, .nosferalto__eye:before, .nosferalto__hear:before, .nosferapti__mouth, .grodoudou__mouth:after, .grodoudou__mouth:before, .grodoudou__mouth, .grodoudou__hair:before, .grodoudou__hair, .rondoudou__mouth, .feunard__nose, .feunard__hair, .goupix__mouth:before, .goupix__mouth, .goupix__nose, .goupix__hair, .melodelfe__mouth, .melodelfe__hair, .melofee__mouth, .nidoking__mouth:after, .nidoking__mouth:before, .nidoking__horn:before, .nidoking__horn, .nidorino__mouth:after, .nidorino__mouth:before, .nidorino__mouth, .nidorino__horn:before, .nidorino__horn, .nidoranm__mouth:after, .nidoranm__mouth, .nidoranm__horn:after, .nidoranm__horn, .nidoqueen__mouth:after, .nidoqueen__mouth:before, .nidoqueen__top:before, .nidoqueen__top, .nidorina__mouth:after, .nidorina__mouth:before, .nidorina__mouth, .nidoranf__mouth:after, .nidoranf__mouth, .sabelette__nose, .sabelette__top, .raichu__mouth:before, .raichu__mouth, .raichu__nose, .pikachu__mouth:before, .pikachu__mouth, .pikachu__nose, .arbok__bottom, .arbok__spot:after, .arbok__spot:before, .arbok__top, .rapasdepic__beak, .piafabec__beak:after, .piafabec__beak:before, .piafabec__beak, .rattatac__tooth:before, .rattatac__tooth, .rattatac__mouth:after, .rattatac__mouth:before, .rattatac__mouth, .rattata__tooth:before, .rattata__tooth, .rattata__mouth:after, .rattata__mouth:before, .roucarnage__beak:after, .roucarnage__beak:before, .roucarnage__beak, .roucoups__beak:after, .roucoups__beak:before, .roucoups__beak, .roucool__beak:after, .roucool__beak:before, .roucool__beak, .roucool__top:after, .roucool__top:before, .coconfort__body:before, .coconfort__body:after, .aspicot__nose, .aspicot__horn:before, .papillusion__nose, .chrysacier__eye:before, .chenipan__eye:after, .tortank__tooth__top, .tortank__mouth:before, .tortank__mouth, .tortank__nose, .tortank__eye span:before, .tortank__top, .carabaffe__shell:before, .carabaffe__mouth:after, .carabaffe__mouth:before, .carabaffe__mouth, .carapuce__mouth:after, .carapuce__mouth:before, .carapuce__mouth, .dracaufeu__tooth__bottom, .dracaufeu__tooth__top, .dracaufeu__mouth:before, .dracaufeu__mouth, .reptincel__tooth__bottom, .reptincel__tooth__top, .reptincel__mouth:after, .reptincel__mouth:before, .reptincel__mouth, .reptincel__eye span:before, .salameche__tooth__bottom, .salameche__tooth__top, .salameche__mouth:before, .salameche__mouth, .salameche__eye:before, .florizarre__mouth:after, .florizarre__eye span:before, .florizarre__eye span, .florizarre__flower__base span:after, .florizarre__flower__base span, .florizarre__flower__base:before, .florizarre__flower__tree, .herbizarre__mouth:after, .herbizarre__mouth:before, .herbizarre__mouth, .herbizarre__eyes, .herbizarre__top:before, .herbizarre__top, .bulbizarre__mouth:before, .bulbizarre__mouth, .bulbizarre__eyes, .bulbizarre__top:before, .bulbizarre__top {
   left: 50%;
   transform: translateX(-50%) translate3d(0, 0, 0);
 }
@@ -68,7 +68,7 @@ table {
   transform: translateY(-50%) translate3d(0, 0, 0);
 }
 
-.paras__teeth, .paras__nose, .paras__eyes, .paras__flowers, .rafflesia__eyes, .ortide__eyes, .mystherbe__eyes, .nosferalto__eyes, .nosferalto__hears, .nosferapti__teeth, .grodoudou__eyes, .rondoudou__eyes, .feunard__eyes, .feunard__hear, .goupix__eyes, .melodelfe__eyes, .melofee__jowl, .melofee__eyes, .nidoking__teeth, .nidoking__nose, .nidoking__cernes, .nidoking__eyes, .nidorino__teeth, .nidorino__nose, .nidorino__cernes, .nidorino__eyes, .nidoranm__nose, .nidoranm__eyes, .nidoqueen__nose, .nidoqueen__cernes, .nidoqueen__eyes, .nidorina__tooth, .nidorina__nose, .nidorina__cernes, .nidorina__eyes, .nidoranf__nose, .nidoranf__eyes, .sablaireau__eyes, .sablaireau__ears, .sabelette__bottom, .sabelette__eyes, .raichu__jowl, .raichu__eyes, .pikachu__jowl, .pikachu__eyes, .arbok__spots, .rapasdepic__eyes, .piafabec__eyes, .rattatac__nose, .rattatac__eyes, .rattata__nose, .rattata__eyes, .roucarnage__side, .roucarnage__eyes, .roucoups__side, .roucoups__eyes, .roucool__eyes, .dardargnan__eyes, .dardargnan__antenna, .coconfort__side, .coconfort__eyes, .aspicot__eyes, .papillusion__wings, .papillusion__paws, .papillusion__eyes, .chrysacier__side, .tortank__tooth__bottom, .tortank__tooth, .tortank__cernes, .tortank__eyes, .carabaffe__tooth, .carabaffe__nose, .carabaffe__cernes, .carabaffe__eyes, .carapuce__nose, .carapuce__eyes, .dracaufeu__nose, .dracaufeu__cernes, .dracaufeu__eyes, .reptincel__nose, .reptincel__spots, .reptincel__eyes, .salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
+.parasect__eyes, .paras__teeth, .paras__nose, .paras__eyes, .paras__flowers, .rafflesia__eyes, .ortide__eyes, .mystherbe__eyes, .nosferalto__eyes, .nosferalto__hears, .nosferapti__teeth, .grodoudou__eyes, .rondoudou__eyes, .feunard__eyes, .feunard__hear, .goupix__eyes, .melodelfe__eyes, .melofee__jowl, .melofee__eyes, .nidoking__teeth, .nidoking__nose, .nidoking__cernes, .nidoking__eyes, .nidorino__teeth, .nidorino__nose, .nidorino__cernes, .nidorino__eyes, .nidoranm__nose, .nidoranm__eyes, .nidoqueen__nose, .nidoqueen__cernes, .nidoqueen__eyes, .nidorina__tooth, .nidorina__nose, .nidorina__cernes, .nidorina__eyes, .nidoranf__nose, .nidoranf__eyes, .sablaireau__eyes, .sablaireau__ears, .sabelette__bottom, .sabelette__eyes, .raichu__jowl, .raichu__eyes, .pikachu__jowl, .pikachu__eyes, .arbok__spots, .rapasdepic__eyes, .piafabec__eyes, .rattatac__nose, .rattatac__eyes, .rattata__nose, .rattata__eyes, .roucarnage__side, .roucarnage__eyes, .roucoups__side, .roucoups__eyes, .roucool__eyes, .dardargnan__eyes, .dardargnan__antenna, .coconfort__side, .coconfort__eyes, .aspicot__eyes, .papillusion__wings, .papillusion__paws, .papillusion__eyes, .chrysacier__side, .tortank__tooth__bottom, .tortank__tooth, .tortank__cernes, .tortank__eyes, .carabaffe__tooth, .carabaffe__nose, .carabaffe__cernes, .carabaffe__eyes, .carapuce__nose, .carapuce__eyes, .dracaufeu__nose, .dracaufeu__cernes, .dracaufeu__eyes, .reptincel__nose, .reptincel__spots, .reptincel__eyes, .salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
   left: 0;
   height: 100%;
   top: 0;
@@ -4311,6 +4311,68 @@ table {
 .paras__teeth.--bottom:after {
   bottom: 0;
   right: 0;
+}
+
+.parasect {
+  background: #e7964c;
+}
+.parasect__shroom {
+  height: calc(157 * 100% / 256);
+  background: #cb7d99;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.parasect__shroom:before {
+  height: calc(39 * 100% / 157);
+  top: calc(75 * 100% / 157);
+  width: calc(30 * 100% / 256);
+  background: #efc421;
+  clip-path: polygon(0 0, 80% 0, 100% 12.8%, 100% 87.2%, 80% 100%, 0 100%);
+  content: "";
+  left: 0;
+}
+.parasect__shroom:after {
+  height: calc(48 * 100% / 157);
+  left: calc(61 * 100% / 256);
+  width: calc(108 * 100% / 256);
+  background: #efc421;
+  clip-path: polygon(0 0, 100% 0, 100% 89.6%, 94.4% 100%, 5.6% 100%, 0 89.6%);
+  content: "";
+  top: 0;
+}
+.parasect__shroom span {
+  height: calc(46 * 100% / 157);
+  top: calc(40 * 100% / 157);
+  width: calc(43 * 100% / 256);
+  background: #efc421;
+  clip-path: polygon(0 10.9%, 13.9% 0, 100% 0, 100% 100%, 13.9% 100%, 0 89.1%);
+  right: 0;
+}
+.parasect__eye {
+  height: calc(66 * 100% / 256);
+  top: calc(106 * 100% / 256);
+  width: calc(66 * 100% / 256);
+  background: #d0d5e7;
+}
+.parasect__eye.--left {
+  left: calc(43 * 100% / 256);
+}
+.parasect__eye.--right {
+  right: calc(43 * 100% / 256);
+}
+.parasect__mouth {
+  height: calc(33 * 100% / 256);
+  top: calc(200 * 100% / 256);
+  width: calc(116 * 100% / 256);
+  background: #392512;
+}
+.parasect__mouth:before {
+  height: calc(18 * 100% / 33);
+  width: calc(88 * 100% / 116);
+  background: #68424f;
+  bottom: 0;
+  content: "";
 }
 
 /*# sourceMappingURL=style.css.map */
