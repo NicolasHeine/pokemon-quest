@@ -1,0 +1,132 @@
+.aeromite{
+  background: linear-gradient(180deg, #ece1ef 0%, #ece1ef 19.5%, #cbc3ce 19.5%, #cbc3ce 31.25%, #ece1ef 31.25%, #ece1ef 56.4%, #cbc3ce 56.4%, #cbc3ce 68.4%, #ece1ef 68.4%, #ece1ef 100%);
+  &__wings{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 45);
+      @include setSize(width, 12);
+      background: #cbc3ce;
+      content: '';
+      top: 0;
+    }
+    &:before{
+      @include setSize(left, 83);
+    }
+    &:after{
+      @include setSize(right, 83);
+    }
+  }
+  &__body{
+    @extend %centerX;
+    @include setSize(width, 168);
+    background: #a290bd;
+    clip-path: polygon(15.5% 0, 84.5% 0, 72.6% 13.7%, 95.2% 45.5%, 100% 50%, 100% 100%, 0 100%, 0 50%, 4.8% 45.5%, 27.4% 13.7%);
+    height: 100%;
+    top: 0;
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 84);
+    @include setSize(top, 35);
+    @include setSize(width, 82);
+    background: #d6e1f9;
+    &:before{
+      @include setSize(height, 27, 84);
+      background: #ecf1f9;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    span{
+      @extend %centerY;
+      @include setSize(height, 46, 84);
+      @include setSize(width, 45, 82);
+      background: #2b2529;
+      &:before{
+        @extend %centerX;
+        @include setSize(height, 13, 46);
+        @include setSize(width, 31, 45);
+        background: #4c474a;
+        bottom: 0;
+        content: '';
+      }
+      &:after{
+        @include setSize(height, 23, 46);
+        @include setSize(top, -14, 45);
+        @include setSize(width, 21, 45);
+        background: #ffffff;
+        content: '';
+      }
+    }
+    &.--left{
+      @include setSize(left, 20);
+      span{
+        @include setSize(left, 21, 82);
+        &:after{
+          @include setSize(left, 15, 45);
+        }
+      }
+    }
+    &.--right{
+      @include setSize(right, 20);
+      span{
+        @include setSize(right, 21, 82);
+        &:after{
+          @include setSize(right, 15, 45);
+        }
+      }
+    }
+  }
+  &__nose{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 27);
+      @include setSize(top, 116);
+      @include setSize(width, 17);
+      background: #ececec;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 96);
+    }
+    &:after{
+      @include setSize(right, 96);
+    }
+  }
+  &__paws{
+    @extend %full;
+    span{
+      @extend %full;
+      &:before,
+      &:after{
+        @include setSize(height, 23);
+        @include setSize(width, 60);
+        background: #d3cbc3;
+        content: '';
+      }
+      &:before{
+        @include setSize(left, 35);
+      }
+      &:after{
+        @include setSize(right, 35);
+      }
+      &.--top{
+        &:before,
+        &:after{
+          @include setSize(top, 160);
+        }
+      }
+      &.--bottom{
+        &:before,
+        &:after{
+          @include setSize(top, 208);
+        }
+      }
+    }
+  }
+}
