@@ -1,0 +1,117 @@
+.triopikeur{
+  $t: &;
+  background: #d6b36d;
+  &__head{
+    &.--top{
+      @include setSize(height, 127);
+      @include setSize(left, 47);
+      @include setSize(width, 159);
+      background: #a5846b;
+      top: 0;
+      #{$t}{
+        &__eye{
+          @include setSize(height, 36, 127);
+          @include setSize(top, 21, 127);
+          @include setSize(width, 17, 159);
+          &.--left{
+            @include setSize(left, 41, 159);
+          }
+          &.--right{
+            @include setSize(right, 41, 159);
+          }
+        }
+        &__nose{
+          @extend %centerX;
+          @include setSize(height, 46, 127);
+          @include setSize(top, 68, 127);
+          @include setSize(width, 77, 159);
+        }
+      }
+    }
+    &.--bottom{
+      @include setSize(height, 129);
+      @include setSize(width, 128);
+      bottom: 0;
+      #{$t}{
+        &__eye{
+          @include setSize(height, 36, 129);
+          @include setSize(top, 21, 129);
+          @include setSize(width, 17, 128);
+        }
+        &__nose{
+          @include setSize(height, 46, 129);
+          @include setSize(top, 68, 129);
+          @include setSize(width, 77, 128);
+        }
+      }
+    }
+    &.--left{
+      background: #ad8c73;
+      left: 0;
+      #{$t}{
+        &__eye{
+          &.--left{
+            @include setSize(left, 17, 128);
+          }
+          &.--right{
+            @include setSize(right, 34, 128);
+          }
+        }
+        &__nose{
+          @include setSize(left, 17, 128);
+        }
+      }
+    }
+    &.--right{
+      background: #b5947b;
+      right: 0;
+      #{$t}{
+        &__eye{
+          &.--left{
+            @include setSize(left, 34, 128);
+          }
+          &.--right{
+            @include setSize(right, 17, 128);
+          }
+        }
+        &__nose{
+          @include setSize(right, 17, 128);
+        }
+      }
+    }
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    background: #232121;
+    &:before{
+      @include setSize(height, 10, 36);
+      background: #39322e;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 9, 36);
+      @include setSize(top, 2, 36);
+      @include setSize(width, 10, 17);
+      background: #fcfdfc;
+      content: '';
+    }
+  }
+  &__nose{
+    background: #e4aece;
+    clip-path: polygon(7.8% 0, 92.2% 0, 100% 8.7%, 100% 91.3%, 92.2% 100%, 7.8% 100%, 0 91.3%, 0 8.7%);
+    &:before{
+      @include setSize(height, 11, 46);
+      @include setSize(left, 12, 77);
+      @include setSize(top, 11, 46);
+      @include setSize(width, 21, 77);
+      background: #f9ecf4;
+      content: '';
+    }
+  }
+}
