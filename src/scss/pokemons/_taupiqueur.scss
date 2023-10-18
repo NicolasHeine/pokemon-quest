@@ -1,0 +1,50 @@
+.taupiqueur{
+  background: #b5947b;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 76);
+    @include setSize(top, 30);
+    @include setSize(width, 35);
+    background: #232121;
+    &:before{
+      @include setSize(height, 16, 76);
+      background: #39322e;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 19, 76);
+      @include setSize(top, 5, 76);
+      @include setSize(width, 21, 35);
+      background: #fcfdfc;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 49);
+    }
+    &.--right{
+      @include setSize(right, 49);
+    }
+  }
+  &__nose{
+    @extend %centerX;
+    @include setSize(height, 98);
+    @include setSize(top, 128);
+    @include setSize(width, 158);
+    background: #e4aece;
+    clip-path: polygon(7.6% 0, 92.4% 0, 100% 10.2%, 100% 89.8%, 92.4% 100%, 7.6% 100%, 0 89.8%, 0 10.2%);
+    &:before{
+      @include setSize(height, 22, 98);
+      @include setSize(left, 24, 158);
+      @include setSize(top, 20, 98);
+      @include setSize(width, 42, 158);
+      background: #f9ecf4;
+      content: '';
+    }
+  }
+}
