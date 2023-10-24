@@ -1,0 +1,68 @@
+.psykokwak{
+  background: #63b6fc;
+  &__hair{
+    @extend %centerX;
+    @include setSize(bottom, 141);
+    @include setSize(height, 102);
+    @include setSize(width, 136);
+    background: #474747;
+    clip-path: polygon(27.9% 100%, 0 46%, 0 41.1%, 11% 29.4%, 14.7% 29.4%, 40.4% 75.5%, 40.4% 2.9%, 41.9% 0, 58.1% 0, 59.6% 2.9%, 59.6% 75.5%, 85.3% 29.4%, 89% 29.4%, 100% 41.1%, 100% 46%, 72.1% 100%);
+  }
+  &__head{
+    @include setSize(height, 141);
+    background: #f9d970;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 46);
+    @include setSize(top, 160);
+    @include setSize(width, 67);
+    background: #f4f7f7;
+    &:before{
+      @include setSize(height, 12, 46);
+      @include setSize(top, 16, 46);
+      @include setSize(width, 11, 67);
+      background: #363533;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 24);
+      &:before{
+        @include setSize(left, 29, 67);
+      }
+    }
+    &.--right{
+      @include setSize(right, 24);
+      &:before{
+        @include setSize(right, 29, 67);
+      }
+    }
+  }
+  &__beak{
+    @extend %centerX;
+    @include setSize(height, 63);
+    @include setSize(width, 176);
+    background: #ecdcc0;
+    bottom: 0;
+    clip-path: polygon(35.2% 0, 64.8% 0, 64.8% 33.3%, 100% 33.3%, 100% 100%, 0 100%, 0 33.3%, 35.2% 33.3%);
+    &:before,
+    &:after{
+      @include setSize(height, 15, 63);
+      @include setSize(top, 6, 63);
+      @include setSize(width, 6, 176);
+      background: #8c8673;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 76, 176);
+    }
+    &:after{
+      @include setSize(right, 76, 176);
+    }
+  }
+}

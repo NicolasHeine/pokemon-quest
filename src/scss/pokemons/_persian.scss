@@ -78,13 +78,13 @@
   }
   &__mouth{
     @extend %centerX;
-    @include setSize(height, 43);
+    @include setSize(height, 53);
     @include setSize(top, 161);
     @include setSize(width, 148);
     background: #af7d91;
     z-index: 1;
     &:before{
-      @include setSize(height, 15, 43);
+      @include setSize(height, 15, 53);
       background: #ce9cb2;
       bottom: 0;
       content: '';
@@ -92,7 +92,7 @@
       width: 100%;
     }
     &:after{
-      @include setSize(height, 11, 43);
+      @include setSize(height, 11, 53);
       background: #f7e8bd;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 58.1% 100%, 50% 0, 41.9% 100%, 0 100%);
       content: '';
@@ -106,7 +106,7 @@
     @extend %full;
     &:before,
     &:after{
-      @include setSize(height, 27, 43);
+      @include setSize(height, 27, 53);
       @include setSize(width, 17, 148);
       background: #efefe7;
       content: '';
