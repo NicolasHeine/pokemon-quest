@@ -1,0 +1,86 @@
+.ferosinge{
+  background: #ecdbc6;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 67);
+    @include setSize(top, 55);
+    @include setSize(width, 91);
+    background: #f1f1f1;
+    &:before{
+      @include setSize(width, 24, 91);
+      background: #cb9484;
+      content: '';
+      height: 100%;
+      top: 0;
+    }
+    &:after{
+      @include setSize(height, 20, 67);
+      @include setSize(top, 40, 67);
+      @include setSize(width, 10, 91);
+      background: #39322e;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 23);
+      clip-path: polygon(0 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(left, 36, 91);
+      }
+      &:after{
+        @include setSize(left, 43, 91);
+      }
+    }
+    &.--right{
+      @include setSize(right, 23);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(right, 36, 91);
+      }
+      &:after{
+        @include setSize(right, 43, 91);
+      }
+    }
+  }
+  &__cernes{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(bottom, 134);
+      @include setSize(width, 6);
+      background: #c3b4a2;
+      content: '';
+    }
+    &:before{
+      @include setSize(height, 24);
+      @include setSize(left, 114);
+    }
+    &:after{
+      @include setSize(height, 39);
+      @include setSize(right, 114);
+    }
+  }
+  &__nose{
+    @extend %centerX;
+    @include setSize(height, 76);
+    @include setSize(top, 122);
+    @include setSize(width, 110);
+    background: #d38c78;
+    clip-path: polygon(7.3% 0, 92.7% 0, 100% 10.5%, 100% 89.5%, 92.7% 100%, 7.3% 100%, 0 89.5%, 0 10.5%);
+    &:before,
+    &:after{
+      @include setSize(height, 32, 76);
+      @include setSize(top, 20, 76);
+      @include setSize(width, 8, 110);
+      background: #39322e;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 32, 110);
+    }
+    &:after{
+      @include setSize(right, 32, 110);
+    }
+  }
+}
