@@ -1,0 +1,98 @@
+.caninos{
+  $c: &;
+  background: #e9a360;
+  &__hair{
+    @extend %centerX;
+    @include setSize(height, 43);
+    @include setSize(width, 48);
+    background: #f7e5bd;
+    top: 0;
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(bottom, 152);
+    @include setSize(height, 59);
+    @include setSize(width, 65);
+    background: #ffffff;
+    &:before{
+      @include setSize(width, 38, 65);
+      background: linear-gradient(180deg, #1b2433 0%, #1b2433 84.7%, #4a4754 84.7%, #4a4754 100%);
+      content: '';
+      height: 100%;
+      top: 0;
+    }
+    &:after{
+      @include setSize(height, 53, 59);
+      @include setSize(width, 16, 65);
+      background: #181e2b;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 22);
+      clip-path: polygon(0 0, 100% 52.5%, 100% 100%, 0 100%);
+      &:before{
+        right: 0;
+      }
+      &:after{
+        @include setSize(left, 39, 65);
+      }
+      #{$c}__pupil{
+        @include setSize(left, 46, 65);
+      }
+    }
+    &.--right{
+      @include setSize(right, 22);
+      clip-path: polygon(0 52.5%, 100% 0, 100% 100%, 0 100%);
+      &:before{
+        left: 0;
+      }
+      &:after{
+        @include setSize(right, 39, 65);
+      }
+      #{$c}__pupil{
+        @include setSize(right, 46, 65);
+      }
+    }
+  }
+  &__pupil{
+    @include setSize(height, 38, 59);
+    @include setSize(width, 14, 65);
+    background: #ffffff;
+    top: 0;
+    z-index: 1;
+  }
+  &__nose{
+    @extend %centerX;
+    @include setSize(height, 30);
+    @include setSize(top, 99);
+    @include setSize(width, 50);
+    background: #333639;
+    z-index: 1;
+  }
+  &__mouth{
+    @include setSize(height, 152);
+    background: #f7e5bd;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    &:before{
+      @extend %centerX;
+      @include setSize(bottom, 35, 152);
+      @include setSize(height, 42, 152);
+      @include setSize(width, 220);
+      background: #917375;
+      content: '';
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(bottom, 35, 152);
+      @include setSize(height, 20, 152);
+      @include setSize(width, 162);
+      background: #ffacb2;
+      content: '';
+    }
+  }
+}
