@@ -1,0 +1,87 @@
+.colossinge{
+  background: #ecdbc6;
+  &__sign{
+    @include setSize(height, 54);
+    @include setSize(left, 164);
+    @include setSize(top, 15);
+    @include setSize(width, 58);
+    background: #c3b4a5;
+    clip-path: polygon(29.3% 0, 70.7% 0, 70.7% 27.8%, 100% 27.8%, 100% 72.2%, 70.7% 72.2%, 70.7% 100%, 29.3% 100%, 29.3% 72.2%, 0 72.2%, 0 27.8%, 29.3% 27.8%);
+    &:before{
+      @extend %full;
+      background: #ecdbc6;
+      content: '';
+      clip-path: polygon(43.1% 0, 56.9% 0, 56.9% 42.6%, 100% 42.6%, 100% 57.4%, 56.9% 57.4%, 56.9% 100%, 43.1% 100%, 43.1% 57.4%, 0 57.4%, 0 42.6%, 43.1% 42.6%);
+    }
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 64);
+    @include setSize(top, 67);
+    @include setSize(width, 74);
+    background: #f1f1f1;
+    &:before{
+      @include setSize(height, 53, 64);
+      @include setSize(width, 11, 74);
+      background: #33302b;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 29);
+      clip-path: polygon(0 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(left, 40, 74);
+      }
+    }
+    &.--right{
+      @include setSize(right, 29);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(right, 40, 74);
+      }
+    }
+  }
+  &__cernes{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(bottom, 125);
+      @include setSize(width, 8);
+      background: #dbc9b7;
+      content: '';
+    }
+    &:before{
+      @include setSize(height, 31);
+      @include setSize(left, 104);
+    }
+    &:after{
+      @include setSize(height, 44);
+      @include setSize(right, 104);
+    }
+  }
+  &__nose{
+    @extend %centerX;
+    @include setSize(height, 79);
+    @include setSize(top, 131);
+    @include setSize(width, 114);
+    background: #d38c78;
+    clip-path: polygon(8.8% 0, 91.2% 0, 100% 12.7%, 100% 87.3%, 91.2% 100%, 8.8% 100%, 0 87.3%, 0 12.7%);
+    &:before,
+    &:after{
+      @include setSize(height, 30, 79);
+      @include setSize(top, 24, 79);
+      @include setSize(width, 13, 114);
+      background: #754f42 ;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 31, 114);
+    }
+    &:after{
+      @include setSize(right, 31, 114);
+    }
+  }
+}
