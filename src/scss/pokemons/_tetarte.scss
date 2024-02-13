@@ -1,0 +1,111 @@
+.tetarte{
+  $t: &;
+  background: #6593d0;
+  &__head{
+    @extend %centerX;
+    @include setSize(height, 48);
+    @include setSize(width, 80);
+    background: #3f66ba;
+    top: 0;
+    &:before,
+    &:after{
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    &:before{
+      @include setSize(height, 22, 48);
+      background: #6b9bdb;
+    }
+    &:after{
+      @include setSize(height, 2, 48);
+      background: #6396d6;
+    }
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 60);
+    @include setSize(top, 19);
+    @include setSize(width, 60);
+    background: #ffffff;
+    &.--left{
+      @include setSize(left, 15);
+      #{$t}__pupil{
+        &:before{
+          @include setSize(left, 6, 43);
+        }
+        &:after{
+          @include setSize(right, 7, 43);
+        }
+      }
+    }
+    &.--right{
+      @include setSize(right, 15);
+      #{$t}__pupil{
+        &:before{
+          @include setSize(right, 6, 43);
+        }
+        &:after{
+          @include setSize(left, 7, 43);
+        }
+      }
+    }
+  }
+  &__pupil{
+    @extend %center;
+    @include setSize(height, 43, 60);
+    @include setSize(width, 43, 60);
+    background: #180e10;
+    &:before{
+      @include setSize(height, 12, 43);
+      @include setSize(width, 26, 43);
+      background: #231c1b;
+      bottom: 0;
+      content: '';
+    }
+    &:after{
+      @include setSize(height, 14, 43);
+      @include setSize(top, 5, 43);
+      @include setSize(width, 14, 43);
+      background: #ffffff;
+      content: '';
+    }
+  }
+  &__nose{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 14);
+      @include setSize(top, 72);
+      @include setSize(width, 9);
+      background: #5d88c2;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 111);
+    }
+    &:after{
+      @include setSize(right, 111);
+    }
+  }
+  &__spiral{
+    @extend %centerX;
+    @include setSize(height, 161);
+    @include setSize(width, 214);
+    background: #dee1ef;
+    bottom: 0;
+    clip-path: polygon(0 8.07%, 5.14% 0, 94.86% 0, 100% 8.07%, 100% 100%, 0 100%);
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 133, 161);
+      @include setSize(width, 160, 214);
+      background: #362629;
+      bottom: 0;
+      content: '';
+      clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%, 88.75% 100%, 88.75% 14.29%, 11.25% 14.29%, 11.25% 92.48%, 66.25% 92.48%, 66.25% 44.36%, 33.75% 44.36%, 33.75% 60.9%, 52.5% 60.9%, 52.5% 76.69%, 23.125% 76.69%, 23.125% 28.57%, 77.5% 28.57%, 77.5% 100%);
+    }
+  }
+}
