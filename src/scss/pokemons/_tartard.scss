@@ -1,0 +1,93 @@
+.tartard{
+  background: #6593d0;
+  &__head{
+    @extend %centerX;
+    @include setSize(height, 52);
+    @include setSize(width, 76);
+    background: #3f66ba;
+    top: 0;
+    &:before{
+      @include setSize(height, 26, 52);
+      background: #6b9bdb;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 62);
+    @include setSize(top, 34);
+    @include setSize(width, 62);
+    background: #ffffff;
+    &:before{
+      @include setSize(height, 47, 62);
+      @include setSize(width, 18, 62);
+      background: #180e10;
+      content: '';
+      top: 0;
+    }
+    &:after{
+      @include setSize(height, 28, 62);
+      background: #5d88c0;
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+    &.--left{
+      @include setSize(left, 15);
+      &:before{
+        @include setSize(right, 15, 62);
+      }
+      &:after{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 42.86%);
+      }
+    }
+    &.--right{
+      @include setSize(right, 15);
+      &:before{
+        @include setSize(left, 15, 62);
+      }
+      &:after{
+        clip-path: polygon(0 0, 100% 0, 100% 42.86%, 0 100%);
+      }
+    }
+  }
+  &__nose{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 17);
+      @include setSize(top, 87);
+      @include setSize(width, 7);
+      background: #5d88c0;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 108);
+    }
+    &:after{
+      @include setSize(right, 108);
+    }
+  }
+  &__spiral{
+    @include setSize(height, 137);
+    background: #dee1ef;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 121, 137);
+      @include setSize(width, 200);
+      background: #362629;
+      bottom: 0;
+      clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%, 87.5% 100%, 87.5% 19.01%, 13% 19.01%, 13% 100%, 65% 100%, 65% 54.54%, 35% 54.54%, 35% 70.25%, 55% 70.25%, 55% 90.08%, 22.5% 90.08%, 22.5% 33.88%, 77.5% 33.88%, 77.5% 100%);
+      content: '';
+    }
+  }
+}
