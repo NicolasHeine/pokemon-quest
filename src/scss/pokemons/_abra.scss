@@ -1,0 +1,42 @@
+.abra{
+  background: #f7dd4a;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 50);
+    @include setSize(top, 88);
+    @include setSize(width, 71);
+    background: #524e3c;
+    &.--left{
+      @include setSize(left, 23);
+      clip-path: polygon(0 20%, 5.63% 0, 100% 50%, 100% 100%, 85.92% 100%, 85.92% 62%);
+    }
+    &.--right{
+      @include setSize(right, 23);
+      clip-path: polygon(100% 20%, 14.08% 62%, 14.08% 100%, 0 100%, 0 50%, 94.37% 0);
+    }
+  }
+  &__nose{
+    @extend %centerX;
+    @include setSize(height, 67);
+    @include setSize(top, 151);
+    @include setSize(width, 102);
+    background: #f4e4b5;
+    clip-path: polygon(10.78% 0, 89.22% 0, 100% 14.93%, 100% 79.1%, 89.22% 100%, 10.78% 100%, 0 79.1%, 0 14.93%);
+    &:before,
+    &:after{
+      @include setSize(height, 15, 67);
+      @include setSize(top, 38, 67);
+      @include setSize(width, 7, 102);
+      background: #dec784;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 35, 102);
+    }
+    &:after{
+      @include setSize(right, 35, 102);
+    }
+  }
+}
