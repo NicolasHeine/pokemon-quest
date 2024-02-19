@@ -1,0 +1,107 @@
+.kadabra{
+  background: #f1d947;
+  &__star{
+    @extend %centerX;
+    @include setSize(height, 65);
+    @include setSize(top, 10);
+    @include setSize(width, 68);
+    background: #efb39c;
+    clip-path: polygon(50% 0, 70.06% 33.85%, 100% 41.54%, 77.94% 64.71%, 79.41% 100%, 50% 81.54%, 20.59% 100%, 22.06% 64.71%, 0 41.54%, 29.94% 33.85%);
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 55);
+    @include setSize(top, 49);
+    @include setSize(width, 84);
+    background: #ffffff;
+    &:before{
+      @include setSize(height, 47, 55);
+      @include setSize(width, 11, 84);
+      background: #42413f;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 17);
+      clip-path: polygon(0 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(left, 43, 84);
+      }
+    }
+    &.--right{
+      @include setSize(right, 17);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(right, 43, 84);
+      }
+    }
+  }
+  &__cernes{
+    @extend %full;
+    z-index: 2;
+    &:before,
+    &:after{
+      @include setSize(height, 155);
+      @include setSize(top, 32);
+      @include setSize(width, 95);
+      background: #e7cd3c;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 17);
+      clip-path: polygon(0 0, 100% 41.94%, 100% 100%, 88.42% 100%, 88.42% 45.81%, 0 10.97%);
+    }
+    &:after{
+      @include setSize(right, 17);
+      clip-path: polygon(100% 0, 100% 10.97%, 11.58% 45.81%, 11.58% 100%, 0 100%, 0 41.94%);
+    }
+  }
+  &__nose{
+    @extend %centerX;
+    @include setSize(bottom, 12);
+    @include setSize(height, 95);
+    @include setSize(width, 98);
+    background: #f1d947;
+    clip-path: polygon(0 0, 100% 0, 100% 86.32%, 89.8% 100%, 10.2% 100%, 0 86.32%);
+    z-index: 1;
+    &:before,
+    &:after{
+      @include setSize(height, 14, 95);
+      @include setSize(top, 61, 95);
+      @include setSize(width, 8, 98);
+      background: #d6c342;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 23, 98);
+    }
+    &:after{
+      @include setSize(right, 23, 98);
+    }
+  }
+  &__mustache{
+    @include setSize(height, 107);
+    background: #7e6a65;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    &:before{
+      @include setSize(height, 78, 107);
+      background: #f1d947;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 52, 107);
+      @include setSize(width, 196);
+      background: #7e6a65;
+      bottom: 0;
+      content: '';
+    }
+  }
+}
