@@ -1,0 +1,96 @@
+.machoc{
+  background: #b4ccd5;
+  &__hair{
+    @extend %centerX;
+    @include setSize(height, 43);
+    @include setSize(width, 130);
+    background: #d6cdc3;
+    top: 0;
+    &:before,
+    &:after{
+      @include setSize(width, 20, 130);
+      background: #b4ccd5;
+      content: '';
+      height: 100%;
+    }
+    &:before{
+      @include setSize(left, 30, 130);
+    }
+    &:after{
+      @include setSize(right, 30, 130);
+    }
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 91);
+    @include setSize(top, 51);
+    @include setSize(width, 58);
+    background: #ffffff;
+    &:before{
+      @include setSize(height, 80, 91);
+      @include setSize(width, 40, 58);
+      background: linear-gradient(180deg, #d36e6b 0%, #d36e6b 73.75%, #e47775 73.75%, #e47775 100%);
+      bottom: 0;
+      content: '';
+    }
+    &:after{
+      @include setSize(height, 47, 91);
+      @include setSize(top, 29, 91);
+      @include setSize(width, 18, 58);
+      background: #392523;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 22);
+      &:before{
+        right: 0;
+      }
+      &:after{
+        @include setSize(left, 31, 58);
+      }
+    }
+    &.--right{
+      @include setSize(right, 22);
+      &:before{
+        left: 0;
+      }
+      &:after{
+        @include setSize(right, 31, 58);
+      }
+    }
+  }
+  &__nose{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 14);
+      @include setSize(top, 140);
+      @include setSize(width, 7);
+      background: #99acb5;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 112);
+    }
+    &:after{
+      @include setSize(right, 112);
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 64);
+    @include setSize(top, 166);
+    @include setSize(width, 172);
+    background: #998c94;
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 28, 64);
+      @include setSize(width, 131, 172);
+      background: #dbaec3;
+      bottom: 0;
+      content: '';
+    }
+  }
+}
