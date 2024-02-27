@@ -1,0 +1,55 @@
+.boustiflor{
+  background: #eceb5d;
+  &__spot{
+    @include setSize(height, 37);
+    @include setSize(left, 72);
+    @include setSize(top, 9);
+    @include setSize(width, 38);
+    background: #a5ae3f;
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 73);
+    @include setSize(top, 65);
+    @include setSize(width, 73);
+    background: #f9fdf9;
+    &:before{
+      @extend %center;
+      @include setSize(height, 41, 73);
+      @include setSize(width, 41, 73);
+      background: #393939;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 21);
+    }
+    &.--right{
+      @include setSize(right, 21);
+    }
+  }
+  &__mouth{
+    @include setSize(height, 98);
+    background: #dbb8b5;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    &:before{
+      @include setSize(height, 75, 98);
+      background: #d0b0ad;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 36, 98);
+      @include setSize(width, 208);
+      background: #292621;
+      bottom: 0;
+      content: '';
+    }
+  }
+}
