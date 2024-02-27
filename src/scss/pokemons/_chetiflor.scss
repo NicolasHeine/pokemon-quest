@@ -1,0 +1,62 @@
+.chetiflor{
+  background: #eceb5d;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 38);
+    @include setSize(top, 51);
+    @include setSize(width, 28);
+    background: #2e2a29;
+    &:before{
+      @include setSize(height, 14, 38);
+      @include setSize(width, 15, 28);
+      background: #fcfbfc;
+      content: '';
+      top: 0;
+    }
+    &:after{
+      @include setSize(height, 7, 38);
+      background: #575757;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    &.--left{
+      @include setSize(left, 49);
+      &:before{
+        @include setSize(left, 7, 28);
+      }
+    }
+    &.--right{
+      @include setSize(right, 49);
+      &:before{
+        @include setSize(right, 7, 28);
+      }
+    }
+  }
+  &__mouth{
+    @include setSize(height, 91);
+    background: #dbb8b5;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    &:before{
+      @include setSize(height, 76, 91);
+      background: #d0b0ad;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 45, 91);
+      @include setSize(width, 186);
+      background: #292621;
+      bottom: 0;
+      content: '';
+    }
+  }
+}
