@@ -1,0 +1,101 @@
+.empiflor{
+  background: #efef65;
+  &__leaf{
+    @include setSize(height, 69);
+    background: #8cc984;
+    left: 0;
+    top: 0;
+    width: 100%;
+    &:before{
+      @include setSize(height, 30, 69);
+      background: #7eb375;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 27, 69);
+      @include setSize(width, 17);
+      background: #78af73;
+      content: '';
+      top: 0;
+    }
+  }
+  &__mouth{
+    @include setSize(height, 102);
+    @include setSize(top, 69);
+    background: #d0b0ad;
+    left: 0;
+    width: 100%;
+    &:before{
+      @include setSize(height, 48, 102);
+      background: #d6b6b2;
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 35, 102);
+      @include setSize(width, 234);
+      background: #292621;
+      content: '';
+      top: 0;
+    }
+  }
+  &__tooth{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 17, 102);
+      @include setSize(top, 18, 102);
+      @include setSize(width, 29);
+      background: #f9fdf9;
+      content: '';
+      z-index: 1;
+    }
+    &:before{
+      @include setSize(left, 48);
+    }
+    &:after{
+      @include setSize(right, 48);
+    }
+  }
+  &__eyes{
+    @extend %centerX;
+    @include setSize(height, 38);
+    @include setSize(top, 171);
+    @include setSize(width, 206);
+    &:before{
+      @include setSize(height, 15, 38);
+      background: #4c4d21;
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+  }
+  &__eye{
+    @include setSize(width, 75, 206);
+    background: #f9fdf9;
+    height: 100%;
+    top: 0;
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 21, 38);
+      @include setSize(width, 9, 75);
+      background: #393939;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      left: 0;
+    }
+    &.--right{
+      right: 0;
+    }
+  }
+}
