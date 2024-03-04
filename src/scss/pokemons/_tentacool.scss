@@ -1,0 +1,70 @@
+.tentacool{
+  background: #54a4d0;
+  &__spot{
+    @extend %centerX;
+    @include setSize(height, 98);
+    @include setSize(top, 16);
+    @include setSize(width, 84);
+    background: #c6517b;
+    clip-path: polygon(10.71% 0, 89.29% 0, 100% 8.16%, 100% 91.84%, 89.29% 100%, 10.71% 100%, 0 91.84%, 0 8.16%);
+    &__shadow{
+      @extend %center;
+      @include setSize(height, 90, 98);
+      @include setSize(width, 74, 84);
+      background: #b5344a;
+      clip-path: polygon(10.81% 0, 89.19% 0, 100% 8.89%, 100% 91.11%, 89.19% 100%, 10.81% 100%, 0 91.11%, 0 8.89%);
+      &:before{
+        @include setSize(height, 21, 90);
+        @include setSize(left, 18, 74);
+        @include setSize(width, 21, 74);
+        @include setSize(top, 8, 90);
+        background: #ffe1ef;
+        content: '';
+      }
+      &:after{
+        @extend %centerX;
+        @include setSize(height, 37, 90);
+        @include setSize(width, 56, 74);
+        background: #d07b99;
+        bottom: 0;
+        content: '';
+        clip-path: polygon(7.14% 0, 92.86% 0, 100% 13.51%, 100% 100%, 0 100%, 0 13.51%);
+      }
+    }
+  }
+  &__eyes{
+    @include setSize(height, 118);
+    background: #4a94ba;
+    bottom: 0;
+    clip-path: polygon(0 36.44%, 30.86% 36.44%, 30.86% 0, 34.77% 0, 34.77% 36.44%, 46.48% 65.25%, 53.52% 65.25%, 65.23% 36.44%, 65.23% 0, 69.14% 0, 69.14% 36.44%, 100% 36.44%, 100% 43.22%, 93.75% 43.22%, 93.75% 72.88%, 51.56% 72.88%, 51.56% 100%, 48.44% 100%, 48.44% 72.88%, 6.25% 72.88%, 6.25% 43.22%, 0 43.22%);
+    left: 0;
+    width: 100%;
+  }
+  &__eye{
+    @include setSize(height, 28, 118);
+    @include setSize(top, 51, 118);
+    @include setSize(width, 74);
+    background: #ecf3f9;
+    &:before{
+      @include setSize(height, 15, 28);
+      @include setSize(width, 10, 74);
+      background: #212c31;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 24);
+      clip-path: polygon(0 0, 79.73% 0, 100% 57.14%, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(left, 32, 74);
+      }
+    }
+    &.--right{
+      @include setSize(right, 24);
+      clip-path: polygon(20.27% 0, 100% 0, 100% 100%, 0 100%, 0 57.14%);
+      &:before{
+        @include setSize(right, 32, 74);
+      }
+    }
+  }
+}
