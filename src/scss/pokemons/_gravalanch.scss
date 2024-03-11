@@ -1,0 +1,84 @@
+.gravalanch{
+  background: #a2a291;
+  &__head{
+    @include setSize(height, 79);
+    background: #a5a494;
+    clip-path: polygon(0 0, 100% 0, 100% 77.22%, 88.67% 100%, 88.67% 44.3%, 85.55% 36.71%, 65.23% 36.71%, 62.89% 44.3%, 62.89% 100%, 37.11% 100%, 37.11% 44.3%, 34.77% 36.71%, 14.45% 36.71%, 11.33% 44.3%, 11.33% 100%, 0 77.22%);
+    left: 0;
+    top: 0;
+    width: 100%;
+    &:before{
+      @include setSize(height, 64, 79);
+      background: #999889;
+      bottom: 0;
+      clip-path: polygon(0 100%, 0 54.56%, 11.33% 76.56%, 11.33% 9.37%, 14.45% 0, 34.77% 0, 37.11% 9.37%, 37.11% 76.56%, 62.89% 75.56%, 62.89% 9.37%, 65.23% 0, 85.55% 0, 88.67% 9.37%, 88.67% 76.56%, 100% 54.56%, 100% 100%);
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(bottom, 87);
+    @include setSize(height, 48);
+    @include setSize(width, 89);
+    background: #efedef;
+    &:before{
+      @include setSize(height, 42, 48);
+      @include setSize(width, 11, 89);
+      background: #292823;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 19);
+      clip-path: polygon(0 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(left, 50, 89);
+      }
+    }
+    &.--right{
+      @include setSize(right, 19);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(right, 50, 89);
+      }
+    }
+  }
+  &__cernes{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(bottom, 87);
+      @include setSize(width, 6);
+      background: #969789;
+      content: '';
+    }
+    &:before{
+      @include setSize(height, 40);
+      @include setSize(left, 108);
+    }
+    &:after{
+      @include setSize(height, 29);
+      @include setSize(right, 108);
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 28);
+    @include setSize(top, 193);
+    @include setSize(width, 168);
+    background: #bd8899;
+    clip-path: polygon(0 0, 100% 0, 97.62% 100%, 2.38% 100%);
+    &:before{
+      @include setSize(height, 12, 28);
+      background: #efaabd;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+  }
+}
