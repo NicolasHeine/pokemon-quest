@@ -1,0 +1,152 @@
+.grolem{
+  $g: &;
+  background: #4a413c;
+  &__rocks{
+    @extend %full;
+  }
+  &__rock{
+    @extend %full;
+    &:before,
+    &:after{
+      background: #7b7e75;
+      content: '';
+    }
+    &.--top{
+      &:before{
+        @include setSize(height, 22);
+        @include setSize(width, 75);
+        left: 0;
+        top: 0;
+      }
+      &:after{
+        @include setSize(height, 22);
+        @include setSize(left, 106);
+        @include setSize(width, 101);
+        top: 0;
+      }
+    }
+    &.--side{
+      &:before{
+        @include setSize(height, 127);
+        @include setSize(top, 51);
+        @include setSize(width, 20);
+        left: 0;
+      }
+      &:after{
+        @include setSize(height, 207);
+        @include setSize(width, 20);
+        right: 0;
+        top: 0;
+      }
+    }
+    &.--bottom{
+      &:before{
+        @include setSize(height, 48);
+        @include setSize(width, 135);
+        bottom: 0;
+        clip-path: polygon(0 0, 14.81% 0, 14.81% 58.33%, 100% 58.33%, 100% 100%, 0 100%);
+        left: 0;
+      }
+      &:after{
+        @include setSize(height, 20);
+        @include setSize(width, 89);
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+  &__face{
+    @extend %center;
+    @include setSize(height, 170);
+    @include setSize(width, 188);
+    background: #968881;
+    clip-path: polygon(5.85% 0, 94.15% 0, 100% 7.06%, 100% 92.94%, 94.15% 100%, 5.85% 100%, 0 92.94%, 0 7.06%);
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 27);
+    @include setSize(top, 91);
+    @include setSize(width, 56);
+    background: #e9e8e9;
+    &:before{
+      @include setSize(width, 35, 56);
+      background: #d3796b;
+      content: '';
+      height: 100%;
+      top: 0;
+    }
+    &:after{
+      @include setSize(height, 20, 27);
+      @include setSize(width, 10, 56);
+      background: #472823;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 47);
+      clip-path: polygon(0 0, 66.07% 0, 100% 100%, 25% 100%);
+      &:before{
+        right: 0;
+      }
+      &:after{
+        @include setSize(left, 32, 56);
+      }
+      #{$g}__pupil{
+        @include setSize(left, 21, 56);
+      }
+    }
+    &.--right{
+      @include setSize(right, 47);
+      clip-path: polygon(33.93% 0, 100% 0, 75% 100%, 0 100%);
+      &:before{
+        left: 0;
+      }
+      &:after{
+        @include setSize(right, 32, 56);
+      }
+      #{$g}__pupil{
+        @include setSize(right, 21, 56);
+      }
+    }
+  }
+  &__pupil{
+    @include setSize(height, 12, 27);
+    @include setSize(width, 18, 56);
+    background: #e18273;
+    bottom: 0;
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 45);
+    @include setSize(top, 146);
+    @include setSize(width, 164);
+    background: #99717e;
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 28, 45);
+      @include setSize(width, 98, 164);
+      background: #c38ca2;
+      bottom: 0;
+      content: '';
+    }
+  }
+  &__tooth{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 14, 45);
+      @include setSize(width, 16, 164);
+      background: #c3c5cb;
+      bottom: 0;
+      content: ''
+    }
+    &:before{
+      @include setSize(left, 10, 164);
+    }
+    &:after{
+      @include setSize(right, 10, 164);
+    }
+  }
+}
