@@ -1,0 +1,86 @@
+.galopa{
+  background: #f7f1c8;
+  &__fire{
+    @extend %centerX;
+    @include setSize(height, 39);
+    @include setSize(width, 214);
+    background: linear-gradient(90deg, #ce766b 0%, #ce766b 14.49%, #f7f1c8 14.49%, #f7f1c8 85.51%, #ce766b 85.51%, #ce766b 100%);
+    top: 0;
+    &:before,
+    &:after{
+      @include setSize(width, 20, 214);
+      background: #e46633;
+      content: '';
+      height: 100%;
+      top: 0;
+    }
+    &:before{
+      @include setSize(left, 53, 214);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 7.55% 100%);
+    }
+    &:after{
+      @include setSize(right, 53, 214);
+      clip-path: polygon(0 0, 100% 0, 92.45% 100%, 0 100%);
+    }
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 51);
+    @include setSize(top, 90);
+    @include setSize(width, 80);
+    background: #f7f7f7;
+    &:before{
+      @include setSize(width, 52, 80);
+      background: linear-gradient(180deg, #ce766b 0%, #ce766b 86.27%, #e18073 86.27%, #e18073 100%);
+      content: '';
+      height: 100%;
+      top: 0;
+    }
+    &:after{
+      @include setSize(height, 37, 51);
+      @include setSize(width, 15, 80);
+      background: #f7f8f7;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 17);
+      clip-path: polygon(0 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(left, 18, 80);
+      }
+      &:after{
+        @include setSize(left, 37, 80);
+      }
+    }
+    &.--right{
+      @include setSize(right, 17);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(right, 18, 80);
+      }
+      &:after{
+        @include setSize(right, 37, 80);
+      }
+    }
+  }
+  &__nose{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(bottom, 26);
+      @include setSize(height, 24);
+      @include setSize(width, 12);
+      background: #d6cd8e;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 100);
+    }
+    &:after{
+      @include setSize(right, 100);
+    }
+  }
+}
