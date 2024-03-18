@@ -1,0 +1,94 @@
+.ramoloss{
+  background: #dea6b2;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 65);
+    @include setSize(top, 41);
+    @include setSize(width, 65);
+    background: #f4f5f7;
+    &:before{
+      @include setSize(height, 12, 65);
+      @include setSize(top, 17, 65);
+      @include setSize(width, 12, 65);
+      background: #313233;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 23);
+      &:before{
+        @include setSize(left, 28, 65);
+      }
+    }
+    &.--right{
+      @include setSize(right, 23);
+      &:before{
+        @include setSize(right, 28, 65);
+      }
+    }
+  }
+  &__nose{
+    @extend %centerX;
+    @include setSize(height, 126);
+    @include setSize(top, 106);
+    @include setSize(width, 230);
+    background: #d3c7ad;
+    clip-path: polygon(4.35% 0, 95.65% 0, 100% 7.94%, 100% 94.44%, 96.96% 100%, 3.04% 100%, 0 94.44%, 0 7.94%);
+    &:before,
+    &:after{
+      @include setSize(height, 16, 126);
+      @include setSize(top, 33, 126);
+      @include setSize(width, 6, 230);
+      background: #b7ab96;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 100, 230);
+    }
+    &:after{
+      @include setSize(right, 100, 230);
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 56);
+    @include setSize(top, 160);
+    @include setSize(width, 206);
+    background: #967984;
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 22, 56);
+      @include setSize(width, 134, 206);
+      background: #aa8896;
+      bottom: 0;
+      content: '';
+    }
+    &:after{
+      @include setSize(height, 10, 56);
+      background: #d3c7ad;
+      clip-path: polygon(0 0, 100% 0, 91.75% 100%, 8.25% 100%);
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+  }
+  &__tooth{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 20, 56);
+      @include setSize(width, 22, 206);
+      background: #e9ebef;
+      content: '';
+      top: 0;
+    }
+    &:before{
+      @include setSize(left, 23, 206);
+    }
+    &:after{
+      @include setSize(right, 23, 206);
+    }
+  }
+}
