@@ -1,0 +1,43 @@
+.magneti{
+  background: #b2d1db;
+  &__eye{
+    @extend %centerX;
+    @include setSize(height, 124);
+    @include setSize(top, 33);
+    @include setSize(width, 124);
+    background: #f7f9fc;
+    &:before{
+      @extend %center;
+      @include setSize(height, 18, 124);
+      @include setSize(width, 18, 124);
+      background: #605f60;
+      content: '';
+    }
+  }
+  &__screw{
+    @include setSize(height, 54);
+    @include setSize(top, 172);
+    @include setSize(width, 54);
+    background: #cbc9cb;
+    &:before,
+    &:after{
+      @extend %center;
+      background: #8e8c8c;
+      content: '';
+    }
+    &:before{
+      @include setSize(height, 14, 54);
+      @include setSize(width, 42, 54);
+    }
+    &:after{
+      @include setSize(height, 42, 54);
+      @include setSize(width, 14, 54);
+    }
+    &.--left{
+      @include setSize(left, 23);
+    }
+    &.--right{
+      @include setSize(right, 23);
+    }
+  }
+}
