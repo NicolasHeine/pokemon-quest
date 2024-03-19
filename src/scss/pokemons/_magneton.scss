@@ -1,0 +1,107 @@
+.magneton{
+  $m: &;
+  background: #ffd55d;
+  &__head{
+    background: #b2d1db;
+    &.--top{
+      @extend %centerX;
+      @include setSize(height, 132);
+      @include setSize(width, 142);
+      top: 0;
+      &:after{
+        @include setSize(height, 7, 132);
+        background: #aac5d0;
+        bottom: 0;
+        content: '';
+        left: 0;
+        width: 100%;
+      }
+      #{$m}__eye{
+        @extend %centerX;
+        @include setSize(height, 66, 132);
+        @include setSize(top, 20, 132);
+        @include setSize(width, 66, 142);
+      }
+      #{$m}__screw{
+        @include setSize(height, 29, 132);
+        @include setSize(top, 93, 132);
+        @include setSize(width, 29, 142);
+        &.--left{
+          @include setSize(left, 16, 142);
+        }
+        &.--right{
+          @include setSize(right, 16, 142);
+        }
+      }
+    }
+    &.--left,
+    &.--right{
+      @include setSize(height, 124);
+      @include setSize(width, 128);
+      bottom: 0;
+      #{$m}__eye{
+        @include setSize(height, 66, 124);
+        @include setSize(top, 36, 124);
+        @include setSize(width, 66, 128);
+      }
+      #{$m}__screw{
+        @include setSize(height, 29, 124);
+        @include setSize(top, 84, 124);
+        @include setSize(width, 29, 128);
+      }
+    }
+    &.--left{
+      left: 0;
+      #{$m}__eye{
+        @include setSize(left, 17, 128);
+      }
+      #{$m}__screw{
+        @include setSize(left, 91, 128);
+      }
+    }
+    &.--right{
+      right: 0;
+      &:after{
+        @include setSize(left, -4, 128);
+        @include setSize(width, 8, 128);
+        background: #aac5d0;
+        height: 100%;
+        content: '';
+        top: 0;
+      }
+      #{$m}__eye{
+        @include setSize(right, 17, 128);
+      }
+      #{$m}__screw{
+        @include setSize(right, 91, 128);
+      }
+    }
+  }
+  &__eye{
+    background: #ffffff;
+    &:before{
+      @extend %center;
+      @include setSize(height, 10, 66);
+      @include setSize(width, 10, 66);
+      background: #605f60;
+      content: '';
+    }
+  }
+  &__screw{
+    background: #cbc9cb;
+    &:before,
+    &:after{
+      @extend %center;
+      background: #8e8c8c;
+      content: '';
+    }
+    &:before{
+      @include setSize(height, 22, 29);
+      @include setSize(width, 8, 29);
+    }
+    &:after{
+      @include setSize(height, 8, 29);
+      @include setSize(width, 22, 29);
+    }
+  }
+}
