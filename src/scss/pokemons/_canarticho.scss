@@ -1,0 +1,76 @@
+.canarticho{
+  background: #a7938c;
+  &__eyebrow{
+    @extend %centerX;
+    @include setSize(height, 83);
+    @include setSize(width, 132);
+    background: #39322b;
+    clip-path: polygon(0 0, 23.48% 0, 50% 57.83%, 76.52% 0, 100% 0, 62.88% 100%, 37.21% 100%);
+    top: 0;
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 80);
+    @include setSize(top, 45);
+    @include setSize(width, 64);
+    background: #ffffff;
+    &:before{
+      @include setSize(height, 66, 80);
+      @include setSize(top, 8, 80);
+      @include setSize(width, 19, 64);
+      background: linear-gradient(180deg, #29211e 0%, #29211e 74.24%, #4f4744 74.24%, #4f4744 100%);
+      content: '';
+    }
+    &:after{
+      @include setSize(height, 17, 80);
+      @include setSize(top, 11, 80);
+      @include setSize(width, 9, 64);
+      background: #ffffff;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 23);
+      &:before{
+        @include setSize(left, 32, 64);
+      }
+      &:after{
+        @include setSize(left, 38, 64);
+      }
+    }
+    &.--right{
+      @include setSize(right, 23);
+      &:before{
+        @include setSize(right, 32, 64);
+      }
+      &:after{
+        @include setSize(right, 38, 64);
+      }
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 140);
+    @include setSize(top, 98);
+    @include setSize(width, 232);
+    background: #f7c52e;
+    clip-path: polygon(0 19.29%, 35.78% 19.29%, 35.78% 0, 64.22% 0, 64.22% 19.29%, 100% 19.29%, 100% 100%, 0 100%);
+    &:before{
+      @extend %centerX;
+      @include setSize(bottom, 31, 140);
+      @include setSize(height, 36, 140);
+      @include setSize(width, 192, 232);
+      background: #703636;
+      content: '';
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(bottom, 31, 140);
+      @include setSize(height, 21, 140);
+      @include setSize(width, 124, 232);
+      background: #ba5b63;
+      content: '';
+    }
+  }
+}
