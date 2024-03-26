@@ -1,0 +1,99 @@
+.dodrio{
+  background: #c6e9ec;
+  &:before,
+  &:after{
+    @include setSize(height, 178);
+    @include setSize(top, 41);
+    @include setSize(width, 22);
+    background: #c39368;
+    content: '';
+    position: absolute;
+  }
+  &:before{
+    clip-path: polygon(0 0, 63.64% 0, 100% 4.49%, 100% 95.51%, 63.64% 100%, 0 100%);
+    left: 0;
+  }
+  &:after{
+    clip-path: polygon(0 4.49%, 36.36% 0, 100% 0, 100% 100%, 36.36% 100%, 0 95.51%);
+    right: 0;
+  }
+  &__head{
+    @extend %centerX;
+    @include setSize(height, 178);
+    @include setSize(top, 41);
+    @include setSize(width, 182);
+    background: #c39368;
+    clip-path: polygon(0 4.49%, 4.4% 0, 95.6% 0, 100% 4.49%, 100% 95.51%, 95.6% 100%, 95.6% 120.79%, 4.4% 120.79%, 4.4% 100%, 0 95.51%);
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 38, 178);
+      @include setSize(width, 50, 182);
+      background: #c8b299;
+      content: '';
+      top: 100%;
+    }
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 27, 178);
+    @include setSize(top, 61, 178);
+    @include setSize(width, 50, 182);
+    background: #fff5ef;
+    &:before{
+      @include setSize(width, 8, 50);
+      background: #393839;
+      content: '';
+      height: 100%;
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 30, 182);
+      clip-path: polygon(0 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(left, 34, 50);
+      }
+    }
+    &.--right{
+      @include setSize(right, 30, 182);
+      clip-path: polygon(0 100%, 100% 0, 100% 100%);
+      &:before{
+        @include setSize(right, 34, 50);
+      }
+    }
+  }
+  &__cernes{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(bottom, 90, 178);
+      @include setSize(width, 4, 182);
+      background: #ad825a;
+      content: '';
+    }
+    &:before{
+      @include setSize(height, 20, 178);
+      @include setSize(left, 81, 182);
+    }
+    &:after{
+      @include setSize(height, 12, 178);
+      @include setSize(right, 81, 182);
+    }
+  }
+  &__nose{
+    @extend %centerX;
+    @include setSize(height, 40, 178);
+    @include setSize(top, 99, 178);
+    @include setSize(width, 52, 182);
+    background: #ecd3b5;
+  }
+  &__eyebrow{
+    @extend %centerX;
+    @include setSize(height, 97);
+    @include setSize(width, 84);
+    background: #5d5b5d;
+    clip-path: polygon(0 0, 35.71% 0, 50% 69.07%, 64.29% 0, 100% 0, 80.95% 95.87%, 75% 100%, 25% 100%, 19.05% 95.87%);
+    top: 0;
+  }
+}
