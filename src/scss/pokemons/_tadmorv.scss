@@ -1,0 +1,62 @@
+.tadmorv{
+  background: #bda0c8;
+  &__spot{
+    @include setSize(height, 28);
+    @include setSize(top, 44);
+    @include setSize(width, 155);
+    background: #6d577e;
+    right: 0;
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 66);
+    @include setSize(top, 26);
+    @include setSize(width, 61);
+    background: #f7f1f7;
+    &:before{
+      @include setSize(height, 20, 66);
+      @include setSize(top, 9, 66);
+      @include setSize(width, 18, 61);
+      background: #444147;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 21);
+      &:before{
+        @include setSize(left, 31, 61);
+      }
+    }
+    &.--right{
+      @include setSize(right, 21);
+      &:before{
+        @include setSize(right, 31, 61);
+      }
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 136);
+    @include setSize(width, 186);
+    background: #262221;
+    bottom: 0;
+    &:before{
+      @include setSize(height, 64, 136);
+      background: #9494a2;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    &:after{
+      @include setSize(height, 8, 136);
+      background: #bda0c8;
+      clip-path: polygon(0 0, 100% 0, 95.16% 100%, 4.84% 100%);
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+  }
+}
