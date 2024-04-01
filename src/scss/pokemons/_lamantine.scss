@@ -1,0 +1,98 @@
+.lamantine{
+  $l: &;
+  background: #e9ecf1;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 62);
+    @include setSize(top, 45);
+    @include setSize(width, 45);
+    background: #291e18;
+    &:before{
+      @include setSize(height, 13, 62);
+      @include setSize(width, 31, 45);
+      background: #816f63;
+      bottom: 0;
+      content: '';
+      z-index: 1;
+    }
+    &:after{
+      @include setSize(height, 18, 62);
+      @include setSize(top, 2, 62);
+      @include setSize(width, 18, 45);
+      background: #ffffff;
+      bottom: 0;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 21);
+      &:before{
+        @include setSize(left, 8, 62);
+      }
+      &:after{
+        @include setSize(left, 19, 62);
+      }
+      #{$l}__pupil{
+        @include setSize(left, 14, 62);
+      }
+    }
+    &.--right{
+      @include setSize(right, 21);
+      &:before{
+        @include setSize(right, 8, 62);
+      }
+      &:after{
+        @include setSize(right, 19, 62);
+      }
+      #{$l}__pupil{
+        @include setSize(right, 14, 62);
+      }
+    }
+  }
+  &__pupil{
+    @include setSize(height, 55, 62);
+    @include setSize(width, 21, 45);
+    background: #211915;
+    bottom: 0;
+  }
+  &__nose{
+    @extend %centerX;
+    @include setSize(height, 7);
+    @include setSize(top, 100);
+    @include setSize(width, 38);
+    background: #2e2e31;
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 62);
+    @include setSize(top, 165);
+    @include setSize(width, 198);
+    background: #6b565d;
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 37, 62);
+      @include setSize(width, 144, 198);
+      background: #9c6d68;
+      bottom: 0;
+      content: '';
+    }
+  }
+  &__tooth{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 36, 62);
+      @include setSize(width, 28, 198);
+      background: #ffffff;
+      content: '';
+      top: 0;
+    }
+    &:before{
+      @include setSize(left, 15, 198);
+    }
+    &:after{
+      @include setSize(right, 15, 198);
+    }
+  }
+}
