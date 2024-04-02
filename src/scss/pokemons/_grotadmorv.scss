@@ -1,0 +1,88 @@
+.grotadmorv{
+  background: #ad9cb5;
+  &__spot{
+    @extend %full;
+    &:before{
+      @include setSize(height, 22);
+      @include setSize(top, 35);
+      background: #7e717e;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    &:after{
+      @include setSize(height, 30);
+      background: #7e717e;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 14);
+    @include setSize(top, 48);
+    @include setSize(width, 54);
+    background: #e9e8ef;
+    &:before{
+      @include setSize(height, 9, 14);
+      @include setSize(width, 9, 54);
+      background: #444147;
+      content: '';
+      top: 0;
+    }
+    &:after{
+      @include setSize(height, 22, 14);
+      @include setSize(top, -13, 14);
+      @include setSize(width, 17, 54);
+      background: #63596b;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 19);
+      &:before{
+        @include setSize(left, 34, 54);
+      }
+      &:after{
+        clip-path: polygon(64.71% 0, 100% 0, 100% 90.91%, 88.24% 100%, 0 100%, 0 77.27%, 52.94% 77.27%, 64.71% 68.18%);
+        left: 100%;
+      }
+    }
+    &.--right{
+      @include setSize(right, 19);
+      &:before{
+        @include setSize(right, 34, 54);
+      }
+      &:after{
+        clip-path: polygon(0 0, 35.29% 0, 39.29% 68.18%, 47.06% 77.27%, 100% 77.27%, 100% 100%, 11.76% 100%, 0 90.91%);
+        right: 100%;
+      }
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 114);
+    @include setSize(top, 86);
+    @include setSize(width, 216);
+    background: #312e2e;
+    &:before{
+      @include setSize(height, 41, 114);
+      background: #9494a2;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    &:after{
+      @include setSize(left, 170, 216);
+      @include setSize(width, 22, 216);
+      background: #ad9cb5;
+      content: '';
+      height: 100%;
+      top: 0;
+    }
+  }
+}
