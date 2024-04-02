@@ -1,0 +1,50 @@
+.kokiyas{
+  background: #948bc0;
+  &__shell{
+    @extend %centerX;
+    @include setSize(height, 135);
+    @include setSize(width, 188);
+    background: linear-gradient(90deg, #8980b2 0%, #8980b2 6.38%, #948bc0 6.38%, #948bc0 46.81%, #8980b2 46.81%, #8980b2 53.19%, #948bc0 53.19%, #948bc0 93.62%, #8980b2 93.62%, #8980b2 100%);
+    top: 0;
+  }
+  &__eyes{
+    @include setSize(height, 87);
+    @include setSize(top, 135);
+    background: #393836;
+    left: 0;
+    width: 100%;
+  }
+  &__eye{
+    @extend %centerY;
+    @include setSize(height, 55, 87);
+    @include setSize(width, 55);
+    background: #f4f4f7;
+    &:before{
+      @extend %center;
+      @include setSize(height, 7, 55);
+      @include setSize(width, 7, 55);
+      background: #3f4147;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 22);
+    }
+    &.--right{
+      @include setSize(right, 22);
+    }
+  }
+  &__tongue{
+    @extend %centerX;
+    @include setSize(height, 62);
+    @include setSize(width, 54);
+    background: #deb0b7;
+    bottom: 0;
+    &:before{
+      @extend %centerX;
+      @include setSize(width, 8, 54);
+      background: #b28e94;
+      content: '';
+      height: 100%;
+    }
+  }
+}
