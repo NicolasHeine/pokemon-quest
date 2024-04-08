@@ -1,0 +1,82 @@
+.crustabri{
+  background: #b2b8c0;
+  &__shell{
+    @extend %center;
+    @include setSize(height, 224);
+    @include setSize(width, 224);
+    background: #848494;
+    &:before,
+    &:after{
+      @include setSize(height, 16, 224);
+      @include setSize(width, 12, 224);
+      background: #848494;
+      bottom: 100%;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 63, 224);
+    }
+    &:after{
+      @include setSize(right, 63, 224);
+    }
+  }
+  &__head{
+    @extend %center;
+    @include setSize(height, 190);
+    @include setSize(width, 190);
+    background: #605796;
+    clip-path: polygon(0 5.79%, 5.79% 0, 94.21% 0, 100% 5.79%, 100% 94.21%, 94.21% 100%, 5.79% 100%, 0 94.21%);
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 61);
+    @include setSize(top, 75);
+    @include setSize(width, 62);
+    background: #e9e8e9;
+    &:before{
+      @include setSize(height, 52, 61);
+      @include setSize(width, 8, 62);
+      background: #3c3a3c;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 46);
+      clip-path: polygon(0 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(left, 35, 62);
+      }
+    }
+    &.--right{
+      @include setSize(right, 46);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(right, 35, 62);
+      }
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 19);
+    @include setSize(top, 155);
+    @include setSize(width, 140);
+    background: #e7e8e9;
+    clip-path: polygon(0 0, 100% 0, 96.43% 100%, 3.57% 100%);
+    &:before,
+    &:after{
+      @include setSize(width, 7, 140);
+      background: #474547;
+      content: '';
+      height: 100%;
+      top: 0;
+    }
+    &:before{
+      @include setSize(left, 76, 140);
+    }
+    &:after{
+      @include setSize(left, 106, 140);
+    }
+  }
+}
