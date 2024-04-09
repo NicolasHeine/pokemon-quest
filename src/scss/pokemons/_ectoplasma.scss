@@ -1,0 +1,41 @@
+.ectoplasma{
+  background: #756f94;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 58);
+    @include setSize(top, 58);
+    @include setSize(width, 70);
+    background: #e1887e;
+    &:before{
+      @include setSize(height, 50, 58);
+      @include setSize(width, 10, 70);
+      background: #292421;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 38);
+      clip-path: polygon(0 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(left, 38, 70);
+      }
+    }
+    &.--right{
+      @include setSize(right, 38);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(right, 38, 70);
+      }
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 83);
+    @include setSize(top, 109);
+    @include setSize(width, 230);
+    background: linear-gradient(90deg, #e7e3f4 0%, #e7e3f4 9.57%, #adaab5 9.57%, #adaab5 12.61%, #e7e3f4 12.61%, #e7e3f4 28.26%, #adaab5 28.26%, #adaab5 31.3%, #e7e3f4 31.3%, #e7e3f4 48.7%, #adaab5 48.7%, #adaab5 51.3%, #e7e3f4 51.3%, #e7e3f4 68.7%, #adaab5 68.7%, #adaab5 71.8%, #e7e3f4 71.8%, #e7e3f4 87.39%, #adaab5 87.39%, #adaab5 90.43%, #e7e3f4 90.43%, #e7e3f4 100%);
+    clip-path: polygon(0 0, 6.52% 30.12%, 93.48% 30.12%, 100% 0, 100% 100%, 0 100%);
+  }
+}
