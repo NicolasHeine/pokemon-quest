@@ -1,0 +1,49 @@
+.spectrum{
+  background: #756f94;
+  &__eyes{
+    @extend %full
+  }
+  &__eye{
+    @include setSize(height, 68);
+    @include setSize(top, 51);
+    @include setSize(width, 84);
+    background: #ffffff;
+    &:before{
+      @include setSize(height, 59, 68);
+      @include setSize(width, 8, 84);
+      background: #232029;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 19);
+      clip-path: polygon(0 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(left, 48, 84);
+      }
+    }
+    &.--right{
+      @include setSize(right, 19);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(right, 48, 84);
+      }
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 74);
+    @include setSize(top, 138);
+    @include setSize(width, 230);
+    background: #945f75;
+    clip-path: polygon(0 0, 4.78% 13.51%, 13.91% 13.51%, 13.91% 41.89%, 26.09% 41.89%, 26.09% 13.51%, 34.35% 13.51%, 34.35% 41.89%, 46.52% 41.89%, 46.52% 13.51%, 53.48% 13.51%, 53.48% 41.89%, 65.65% 41.89%, 65.65% 13.51%, 73.91% 13.51%, 73.91% 41.89%, 86.09% 41.89%, 86.09% 13.51%, 95.22% 13.51%, 100% 0, 100% 100%, 86.09% 100%, 86.09% 78.38%, 76.09% 78.38%, 76.09% 100%, 70.43% 100%, 70.43% 78.38%, 60.43% 78.38%, 60.43% 100%, 55.22% 100%, 55.22% 78.38%, 44.78% 78.38%, 44.78% 100%, 39.57% 100%, 39.57% 78.38%, 29.57% 78.38%, 29.58% 100%, 23.91% 100%, 23.91% 78.38%, 13.91% 78.38%, 13.91% 100%, 0 100%);
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 30, 74);
+      @include setSize(width, 190, 230);
+      background: #a77991;
+      bottom: 0;
+      content: '';
+    }
+  }
+}
