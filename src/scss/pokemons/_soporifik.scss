@@ -1,0 +1,87 @@
+.soporifik{
+  background: #f4d96d;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 24);
+    @include setSize(top, 48);
+    @include setSize(width, 66);
+    background: #e7cb6b;
+    clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%);
+    &:before{
+      @extend %center;
+      @include setSize(height, 16, 24);
+      @include setSize(width, 50, 66);
+      background: #f7f5f7;
+      clip-path: polygon(15.69% 0, 84.31% 0, 100% 100%, 0 100%);
+      content: '';
+    }
+    &:after{
+      @include setSize(height, 6, 24);
+      @include setSize(top, 4, 24);
+      @include setSize(width, 6, 65);
+      background: #291c18;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 10);
+      &:after{
+        @include setSize(left, 38, 65);
+      }
+    }
+    &.--right{
+      @include setSize(right, 10);
+      &:after{
+        @include setSize(right, 38, 65);
+      }
+    }
+  }
+  &__nose{
+    @extend %centerX;
+    @include setSize(height, 122);
+    @include setSize(width, 104);
+    background: #f4d96d;
+    clip-path: polygon(0 0, 100% 0, 100% 91.8%, 92.31% 100%, 7.69% 100%, 0 91.8%);
+    top: 0;
+    z-index: 1;
+    &:before,
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 15, 122);
+      @include setSize(width, 74, 104);
+      background: #e7cd68;
+      content: '';
+    }
+    &:before{
+      @include setSize(top, 25, 122);
+    }
+    &:after{
+      @include setSize(top, 71, 122);
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 64);
+    @include setSize(top, 80);
+    @include setSize(width, 206);
+    background: #91666b;
+    clip-path: polygon(0 0, 2.91% 9.38%, 97.09% 9.38%, 100% 0, 100% 100%, 0 100%);
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 33, 64);
+      @include setSize(width, 168, 206);
+      background: #bd8e94;
+      bottom: 0;
+      content: '';
+    }
+  }
+  &__body{
+    @include setSize(height, 71);
+    background: #7b736d;
+    bottom: 0;
+    clip-path: polygon(0 0, 10.55% 0, 12.5% 8.45%, 12.5% 39.44%, 15.23% 47.89%, 34.38% 47.89%, 36.72% 39.44%, 36.72% 8.45%, 38.67% 0, 61.33% 0, 63.28% 8.45%, 63.28% 39.44%, 65.62% 47.89%, 84.77% 47.89%, 87.5% 39.44%, 87.5% 8.45%, 89.45% 0, 100% 0, 100% 100%, 0 100%);
+    left: 0;
+    width: 100%;
+  }
+}
