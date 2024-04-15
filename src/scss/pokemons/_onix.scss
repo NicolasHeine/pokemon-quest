@@ -1,0 +1,83 @@
+.onix{
+  background: #adabb2;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 33);
+    @include setSize(top, 74);
+    @include setSize(width, 76);
+    background: #ffffff;
+    z-index: 2;
+    &:before{
+      @include setSize(height, 27, 33);
+      @include setSize(width, 9, 76);
+      background: #313133;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 19);
+      clip-path: polygon(0 0, 100% 42.42%, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(left, 55, 76);
+      }
+    }
+    &.--right{
+      @include setSize(right, 19);
+      clip-path: polygon(0 42.42%, 100% 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(right, 55, 76);
+      }
+    }
+  }
+  &__nose{
+    @extend %centerX;
+    @include setSize(height, 31);
+    @include setSize(top, 88);
+    @include setSize(width, 66);
+    background: #b2b0b7;
+    z-index: 2;
+    &:before,
+    &:after{
+      @include setSize(width, 14, 66);
+      background: #a5a3aa;
+      bottom: 0;
+      content: '';
+    }
+    &:before{
+      @include setSize(height, 69, 31);
+      clip-path: polygon(50% 0, 100% 0, 100% 62.32%, 50% 62.32%, 50% 100%, 0 100%, 0 55.07%, 50% 55.07%);
+      left: 0;
+    }
+    &:after{
+      @include setSize(height, 56, 31);
+      clip-path: polygon(0 0, 50% 0, 50% 44.64%, 100% 44.64%, 100% 100%, 50% 100%, 50% 53.57%, 0 53.57%);
+      right: 0;
+    }
+  }
+  &__mouth{
+    @include setSize(height, 137);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 36, 137);
+      @include setSize(top, 52, 137);
+      @include setSize(width, 236);
+      background: #54514f;
+      clip-path: polygon(0 0, 9.75% 0, 9.75% 22.22%, 27.12% 22.22%, 27.12% 0, 36.44% 0, 42.8% 55.56%, 57.2% 55.56%, 63.56% 0, 72.88% 0, 72.88% 22.22%, 90.25% 22.22%, 90.25% 0, 100% 0, 100% 100%, 66.53% 100%, 63.98% 72.22%, 36.02% 72.22%, 33.47% 100%, 0 100%);
+      content: '';
+    }
+    &:after{
+      @include setSize(height, 12, 137);
+      background: #b2b0b7;
+      bottom: 100%;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+  }
+}
