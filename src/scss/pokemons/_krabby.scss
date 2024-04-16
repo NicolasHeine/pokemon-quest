@@ -1,0 +1,50 @@
+.krabby{
+  background: #63b6fc;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 52);
+    @include setSize(top, 72);
+    @include setSize(width, 74);
+    background: #fcfcff;
+    z-index: 1;
+    &:before{
+      @include setSize(height, 10, 52);
+      @include setSize(top, 18, 52);
+      @include setSize(width, 11, 74);
+      background: #4a4a4a;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 21);
+      clip-path: polygon(0 0, 85.14% 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(left, 39, 74);
+      }
+    }
+    &.--right{
+      @include setSize(right, 21);
+      clip-path: polygon(14.86% 0, 100% 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(right, 39, 74);
+      }
+    }
+  }
+  &__body{
+    @include setSize(height, 116);
+    background: #ecdddb;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    &:before{
+      @include setSize(bottom, 66, 116);
+      @include setSize(height, 168, 116);
+      background: #d38c4f;
+      clip-path: polygon(0 36.9%, 21.48% 36.9%, 21.48% 2.98%, 22.66% 0, 34.38% 0, 35.55% 2.98%, 35.55% 36.9%, 64.45% 36.9%, 64.45% 2.98%, 65.62% 0, 77.34% 0, 78.52% 2.98%, 78.52% 36.9%, 100% 36.9%, 100% 70.24%, 89.84% 70.24%, 88.28% 72.62%, 88.28% 92.26%, 58.2% 92.26%, 50% 100%, 41.8% 92.26%, 11.72% 92.26%, 11.72% 72.62%, 10.16% 70.24%, 0 70.24%);
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+  }
+}
