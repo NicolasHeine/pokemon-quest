@@ -1,0 +1,75 @@
+.noeunoeuf{
+  background: #f1dfde;
+  &__crack{
+    @include setSize(height, 52);
+    background: #f4e4e4;
+    left: 0;
+    top: 0;
+    width: 100%;
+    &:before{
+      @include setSize(height, 116, 52);
+      @include setSize(left, 113);
+      @include setSize(width, 116);
+      background: #c0b0b2;
+      clip-path: polygon(0 0, 26.72% 0, 26.72% 12.07%, 73.28% 12.07%, 73.28% 0, 100% 0, 100% 100%, 73.28% 100%, 73.28% 29.31%, 0 29.31%);
+      content: '';
+      top: 0;
+    }
+  }
+  &__eyes{
+    @extend %full;
+    z-index: 1;
+  }
+  &__eye{
+    @include setSize(height, 53);
+    @include setSize(top, 92);
+    @include setSize(width, 93);
+    background: #decfce;
+    &:before{
+      @include setSize(height, 40, 53);
+      @include setSize(top, 6, 53);
+      @include setSize(width, 74, 93);
+      background: #efedf4;
+      content: '';
+    }
+    &:after{
+      @include setSize(height, 13, 53);
+      @include setSize(top, 30, 53);
+      @include setSize(width, 10, 93);
+      background: #423839;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 19);
+      clip-path: polygon(0 0, 6.45% 0, 100% 86.79%, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(left, 5, 93);
+        clip-path: polygon(0 0, 100% 100%, 0 100%);
+      }
+      &:after{
+        @include setSize(left, 50, 93);
+        clip-path: polygon(0 0, 100% 38.46%, 100% 100%, 0 100%);
+      }
+    }
+    &.--right{
+      @include setSize(right, 19);
+      clip-path: polygon(93.55% 0, 100% 0, 100% 100%, 0 100%, 0 86.79%);
+      &:before{
+        @include setSize(right, 5, 93);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%);
+      }
+      &:after{
+        @include setSize(right, 50, 93);
+        clip-path: polygon(0 38.46%, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 31);
+    @include setSize(top, 182);
+    @include setSize(width, 78);
+    background: #a59394;
+    clip-path: polygon(10.26% 0, 89.74% 0, 100% 100%, 0 100%);
+  }
+}
