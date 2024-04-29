@@ -1,0 +1,96 @@
+.noadkoko{
+  background: #a79c91;
+  &__leaf{
+    @include setSize(height, 40);
+    background: #579363;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  &__side{
+    @extend %full;
+    &:before,
+    &:after{
+      @extend %centerY;
+      @include setSize(height, 202);
+      @include setSize(width, 22);
+      background: #efebb7;
+      content: '';
+    }
+    &:before{
+      clip-path: polygon(0 0, 54.55% 0, 100% 4.95%, 100% 95.05%, 54.55% 100%, 0 100%);
+      left: 0;
+    }
+    &:after{
+      clip-path: polygon(45.45% 0, 100% 0, 100% 100%, 45.45% 100%, 0 95.05%, 0 4.95%);
+      right: 0;
+    }
+  }
+  &__head{
+    @extend %center;
+    @include setSize(height, 202);
+    @include setSize(width, 182);
+    background: #efebb7;
+    clip-path: polygon(0 4.95%, 5.49% 0, 94.51% 0, 100% 4.95%, 100% 95.05%, 94.51% 100%, 5.49% 100%, 0 95.05%);
+  }
+  &__eye{
+    @include setSize(height, 32, 202);
+    @include setSize(top, 36, 202);
+    @include setSize(width, 48, 182);
+    background: #ffffff;
+    &:before{
+      @include setSize(height, 13, 32);
+      @include setSize(width, 11, 48);
+      background: #474636;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 23, 182);
+      clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(left, 23, 48);
+      }
+    }
+    &.--right{
+      @include setSize(right, 23, 182);
+      clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(right, 23, 48);
+      }
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 78);
+    @include setSize(top, 114);
+    @include setSize(width, 118);
+    background: #aa8384;
+    clip-path: polygon(0 0, 100% 0, 94.92% 100%, 5.08% 100%);
+    &:before{
+      @include setSize(height, 47, 78);
+      background: #c8a6aa;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+  }
+  &__tooth{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 14, 78);
+      @include setSize(width, 15, 118);
+      background: #ffffff;
+      content: '';
+      top: 0;
+    }
+    &:before{
+      @include setSize(left, 15, 118);
+    }
+    &:after{
+      @include setSize(right, 15, 118);
+    }
+  }
+}
