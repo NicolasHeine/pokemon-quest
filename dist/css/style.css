@@ -8954,4 +8954,65 @@ table {
   right: calc(15 * 100% / 118);
 }
 
+.osselait {
+  background: #ba845a;
+}
+.osselait__head {
+  width: calc(242 * 100% / 256);
+  background: #cecdce;
+  bottom: 0;
+  clip-path: polygon(89.95% 0, 89.95% 17.58%, 34.71% 17.58%, 30.58% 21.48%, 30.58% 44.14%, 5.79% 44.14%, 0 47.66%, 0 82.03%, 4.96% 85.94%, 32.23% 85.94%, 32.23% 100%, 100% 100%, 100% 0);
+  height: 100%;
+  right: 0;
+}
+.osselait__head:before {
+  height: calc(38 * 100% / 256);
+  left: calc(32 * 100% / 242);
+  top: calc(160 * 100% / 256);
+  width: calc(38 * 100% / 242);
+  background: #2b2423;
+  clip-path: polygon(10.53% 0, 89.47% 0, 100% 10.53%, 100% 89.47%, 89.47% 100%, 10.53% 100%, 0 89.47%, 0 10.53%);
+  content: "";
+}
+.osselait__head:after {
+  height: calc(36 * 100% / 256);
+  width: calc(131 * 100% / 242);
+  background: #d6b47e;
+  bottom: 0;
+  content: "";
+  right: 0;
+}
+.osselait__hole {
+  height: calc(92 * 100% / 256);
+  left: calc(140 * 100% / 256);
+  top: calc(89 * 100% / 256);
+  width: calc(100 * 100% / 256);
+  background: #d6b47e;
+  clip-path: polygon(12% 0, 88% 0, 100% 11.96%, 100% 88.04%, 88% 100%, 12% 100%, 0 88.04%, 0 11.96%);
+}
+.osselait__eye {
+  height: calc(65 * 100% / 256);
+  left: calc(146 * 100% / 256);
+  top: calc(99 * 100% / 256);
+  width: calc(81 * 100% / 256);
+  background: #fffcf9;
+  clip-path: polygon(0 78.46%, 100% 0, 100% 100%, 0 100%);
+}
+.osselait__eye:before {
+  left: calc(7 * 100% / 81);
+  width: calc(45 * 100% / 81);
+  background: linear-gradient(180deg, #2b2423 0%, #2b2423 86.15%, #313439 86.15%, #313439 100%);
+  content: "";
+  height: 100%;
+  top: 0;
+}
+.osselait__eye:after {
+  height: calc(49 * 100% / 65);
+  left: calc(22 * 100% / 81);
+  width: calc(11 * 100% / 81);
+  background: #fffcf9;
+  content: "";
+  top: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
