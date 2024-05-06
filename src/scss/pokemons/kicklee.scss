@@ -1,0 +1,47 @@
+.kicklee{
+  background: #b29c94;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 40);
+    @include setSize(top, 75);
+    @include setSize(width, 90);
+    background: #363a39;
+    &:before,
+    &:after{
+      content: '';
+      top: 0;
+    }
+    &:before{
+      @include setSize(height, 31, 40);
+      @include setSize(width, 27, 90);
+      background: #eff0ef;
+    }
+    &:after{
+      @include setSize(height, 22, 40);
+      @include setSize(width, 12, 90);
+      background: #292c2b;
+    }
+    &.--left{
+      @include setSize(left, 18);
+      clip-path: polygon(0 0, 60% 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(left, 35, 90);
+      }
+      &:after{
+        @include setSize(left, 42, 90);
+      }
+    }
+    &.--right{
+      @include setSize(right, 18);
+      clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(right, 35, 90);
+      }
+      &:after{
+        @include setSize(right, 42, 90);
+      }
+    }
+  }
+}
