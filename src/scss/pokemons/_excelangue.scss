@@ -1,0 +1,74 @@
+.excelangue{
+  background: #f4b8c0;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 33);
+    @include setSize(top, 38);
+    @include setSize(width, 28);
+    background: #262131;
+    &:before,
+    &:after{
+      @extend %centerX;
+      content: '';
+    }
+    &:before{
+      @include setSize(height, 10, 33);
+      @include setSize(width, 16, 28);
+      background: #ffffff;
+      top: 0;
+    }
+    &:after{
+      @include setSize(height, 11, 33);
+      @include setSize(width, 22, 28);
+      background: #4f5168;
+      bottom: 0;
+    }
+    &.--left{
+      @include setSize(left, 23);
+    }
+    &.--right{
+      @include setSize(right, 23);
+    }
+  }
+  &__nose{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 16);
+      @include setSize(top, 79);
+      @include setSize(width, 6);
+      background: #ba8c91;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 112);
+    }
+    &:after{
+      @include setSize(right, 112);
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 87);
+    @include setSize(top, 103);
+    @include setSize(width, 224);
+    background: #aa8899;
+    &:before,
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 108, 87);
+      @include setSize(top, 46, 87);
+      content: '';
+    }
+    &:before{
+      @include setSize(width, 186, 224);
+      background: #e4c1ce;
+    }
+    &:after{
+      @include setSize(width, 12, 224);
+      background: #c0a3ad;
+    }
+  }
+}
