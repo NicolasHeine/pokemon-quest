@@ -1,0 +1,89 @@
+.tygnon{
+  background: #a79781;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 73);
+    @include setSize(top, 43);
+    @include setSize(width, 70);
+    background: #ffffff;
+    &:before{
+      @include setSize(width, 32, 70);
+      background: linear-gradient(180deg, #15242e 0%, #15242e 82.19%, #234152 82.19%, #234152 100%);
+      content: '';
+      height: 100%;
+      top: 0;
+    }
+    &:after{
+      @include setSize(height, 41, 73);
+      @include setSize(width, 12, 70);
+      background: #ffffff;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 20);
+      clip-path: polygon(0 0, 100% 47.95%, 100% 100%, 0 100%);
+      &:before{
+        right: 0;
+      }
+      &:after{
+        @include setSize(right, 6, 70);
+      }
+    }
+    &.--right{
+      @include setSize(right, 20);
+      clip-path: polygon(0 47.95%, 100% 0, 100% 100%, 0 100%);
+      &:before{
+        left: 0;
+      }
+      &:after{
+        @include setSize(left, 6, 70);
+      }
+    }
+  }
+  &__body{
+    @include setSize(height, 68);
+    background: #c8c3d8;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    &:before,
+    &:after{
+      @extend %centerX;
+      bottom: 100%;
+      content: '';
+    }
+    &:before{
+      @include setSize(height, 42, 68);
+      @include setSize(width, 170);
+      background: #8c7d6b;
+    }
+    &:after{
+      @include setSize(height, 34, 68);
+      @include setSize(width, 154);
+      background: #a79781;
+    }
+  }
+  &__hands{
+    @include setSize(height, 83);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    &:before,
+    &:after{
+      @include setSize(width, 70);
+      background: #ce695a;
+      content: '';
+      height: 100%;
+      top: 0;
+    }
+    &:before{
+      left: 0;
+    }
+    &:after{
+      right: 0;
+    }
+  }
+}
