@@ -1,0 +1,88 @@
+.smogo{
+  background: #9993ba;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 30);
+    @include setSize(top, 20);
+    @include setSize(width, 66);
+    background: #ffffff;
+    clip-path: polygon(9.09% 0, 90.91% 0, 100% 100%, 0 100%);
+    &:before{
+      @include setSize(height, 11, 30);
+      @include setSize(top, 2, 30);
+      @include setSize(width, 7, 66);
+      background: #312e3c;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 31);
+      &:before{
+        @include setSize(left, 35, 66);
+      }
+    }
+    &.--right{
+      @include setSize(right, 31);
+      &:before{
+        @include setSize(right, 35, 66);
+      }
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 24);
+    @include setSize(top, 72);
+    @include setSize(width, 220);
+    background: #9c6e78;
+    clip-path: polygon(0 0, 100% 0, 97.73% 100%, 2.27% 100%);
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 14, 24);
+      @include setSize(width, 142, 220);
+      background: #c88b9c;
+      bottom: 0;
+      content: '';
+    }
+  }
+  &__tooth{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 16, 24);
+      @include setSize(width, 16, 220);
+      background: #ffffff;
+      content: '';
+      top: 0;
+    }
+    &:before{
+      @include setSize(left, 12, 220);
+    }
+    &:after{
+      @include setSize(right, 12, 220);
+    }
+  }
+  &__cross{
+    @extend %centerX;
+    @include setSize(height, 50);
+    @include setSize(top, 114);
+    @include setSize(width, 72);
+    background: #e1ddd6;
+    &:before{
+      @extend %center;
+      @include setSize(height, 18, 50);
+      @include setSize(width, 38, 72);
+      background: #9993ba;
+      content: '';
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 79, 50);
+      @include setSize(top, 47, 50);
+      @include setSize(width, 128, 72);
+      background: #e1ddd6;
+      clip-path: polygon(0 17.72%, 7.81% 0, 50% 40.51%, 92.19% 0, 100% 17.72%, 63.28% 53.16%, 92.97% 81.01%, 85.94% 100%, 50% 64.56%, 14.06% 100%, 7.03% 81.01%, 36.72% 53.16%);
+      content: '';
+    }
+  }
+}
