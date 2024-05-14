@@ -1,0 +1,174 @@
+.smogogo{
+  background: #a598b5;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 20);
+    @include setSize(top, 22);
+    @include setSize(width, 58);
+    background: #ffffff;
+    &:before{
+      @include setSize(height, 10, 20);
+      @include setSize(width, 8, 58);
+      background: #47413f;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 34);
+      &:before{
+        @include setSize(left, 39, 58);
+      }
+    }
+    &.--right{
+      @include setSize(right, 34);
+      &:before{
+        @include setSize(right, 39, 58);
+      }
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 23);
+    @include setSize(top, 62);
+    @include setSize(width, 196);
+    background: #9c6e78;
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 9, 23);
+      @include setSize(width, 140, 196);
+      background: #af798e;
+      bottom: 0;
+      content: '';
+    }
+  }
+  &__tooth{
+    @extend %full;
+    &:before,
+    &:after{
+      background: #ffffff;
+      content: '';
+    }
+    &.--top{
+      &:before,
+      &:after{
+        @include setSize(height, 9, 23);
+        @include setSize(width, 32, 196);
+        top: 0;
+      }
+      &:before{
+        @include setSize(left, 54, 196);
+      }
+      &:after{
+        @include setSize(right, 54, 196);
+      }
+    }
+    &.--bottom{
+      &:before,
+      &:after{
+        @include setSize(height, 34, 23);
+        @include setSize(width, 22, 196);
+        bottom: 0;
+      }
+      &:before{
+        @include setSize(left, 10, 196);
+      }
+      &:after{
+        @include setSize(right, 10, 196);
+      }
+    }
+  }
+  &__cross{
+    @include setSize(height, 50);
+    @include setSize(left, 43);
+    @include setSize(top, 114);
+    @include setSize(width, 72);
+    background: #e1ddd6;
+    &:before{
+      @extend %center;
+      @include setSize(height, 18, 50);
+      @include setSize(width, 38, 72);
+      background: #9993ba;
+      content: '';
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 79, 50);
+      @include setSize(top, 47, 50);
+      @include setSize(width, 128, 72);
+      background: #e1ddd6;
+      clip-path: polygon(0 17.72%, 7.81% 0, 50% 40.51%, 92.19% 0, 100% 17.72%, 63.28% 53.16%, 92.97% 81.01%, 85.94% 100%, 50% 64.56%, 14.06% 100%, 7.03% 81.01%, 36.72% 53.16%);
+      content: '';
+    }
+  }
+  &__side{
+    @include setSize(height, 76);
+    @include setSize(left, 155);
+    @include setSize(top, 134);
+    @include setSize(width, 88);
+    &__eyes{
+      @extend %full;
+    }
+    &__eye{
+      @include setSize(height, 14, 76);
+      @include setSize(width, 29, 88);
+      background: #ffffff;
+      top: 0;
+      &:before{
+        @include setSize(height, 6, 14);
+        @include setSize(width, 6, 29);
+        background: #4a4142;
+        content: '';
+        top: 0;
+      }
+      &.--left{
+        @include setSize(left, 4, 88);
+        &:before{
+          @include setSize(left, 16, 29);
+        }
+      }
+      &.--right{
+        @include setSize(right, 4, 88);
+        &:before{
+          @include setSize(right, 16, 29);
+        }
+      }
+    }
+    &__mouth{
+      @include setSize(height, 5, 76);
+      @include setSize(top, 23, 76);
+      background: #8c829c;
+      left: 0;
+      width: 100%;
+      &:before,
+      &:after{
+        @include setSize(height, 9, 5);
+        @include setSize(width, 9, 88);
+        background: #ffffff;
+        content: '';
+        top: 100%;
+      }
+      &:before{
+        left: 0;
+      }
+      &:after{
+        right: 0;
+      }
+    }
+    &__cross{
+      @extend %centerX;
+      @include setSize(height, 33, 76);
+      @include setSize(width, 46, 88);
+      background: #e1ddd6;
+      bottom: 0;
+      &:before{
+        @extend %center;
+        @include setSize(height, 15, 33);
+        @include setSize(width, 24, 46);
+        background: #a598b5;
+        content: '';
+      }
+    }
+  }
+}
