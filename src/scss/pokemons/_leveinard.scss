@@ -1,3 +1,64 @@
 .leveinard{
-  
+  background: #f9c9d3;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 40);
+    @include setSize(top, 36);
+    @include setSize(width, 16);
+    background: #182026;
+    &:before,
+    &:after{
+      @include setSize(height, 7, 40);
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    &:before{
+      background: #fefefe;
+      top: 0;
+    }
+    &:after{
+      background: #5a9aba;
+      bottom: 0;
+    }
+    &.--left{
+      @include setSize(left, 67);
+    }
+    &.--right{
+      @include setSize(right, 67);
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 42);
+    @include setSize(top, 98);
+    @include setSize(width, 88);
+    background: #734e57;
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 22, 42);
+      @include setSize(width, 46, 88);
+      background: #e497a5;
+      bottom: 0;
+      content: '';
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 10, 42);
+      @include setSize(top, 60, 42);
+      @include setSize(width, 36, 88);
+      background: #f4c1cb;
+      content: '';
+    }
+  }
+  &__body{
+    @extend %centerX;
+    @include setSize(height, 56);
+    @include setSize(width, 200);
+    background: #efe9d8;
+    bottom: 0;
+    clip-path: polygon(0 21.43%, 5% 0, 95% 0, 100% 21.43%, 100% 100%, 0 100%);
+  }
 }
