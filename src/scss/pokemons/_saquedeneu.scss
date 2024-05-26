@@ -1,0 +1,99 @@
+.saquedeneu{
+  background: #6898b7;
+  &__face{
+    @extend %centerX;
+    @include setSize(height, 140);
+    @include setSize(top, 55);
+    @include setSize(width, 210);
+    background: #4a4747;
+    clip-path: polygon(0 22.14%, 4.76% 15.71%, 31.43% 15.71%, 36.67% 8.57%, 36.67% 0, 62.86% 0, 95.24% 15.71%, 100% 22.14%, 100% 92.86%, 95.24% 100%, 4.76% 100%, 0 92.86%);
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 62);
+    @include setSize(top, 97);
+    @include setSize(width, 62);
+    background: #f4f1f4;
+    &:before{
+      @include setSize(height, 11, 62);
+      @include setSize(width, 11, 62);
+      @include setSize(top, 26, 62);
+      background: #393839;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 46);
+      &:before{
+        @include setSize(left, 24, 62);
+      }
+    }
+    &.--right{
+      @include setSize(right, 46);
+      &:before{
+        @include setSize(right, 24, 62);
+      }
+    }
+  }
+  &__top{
+    @include setSize(height, 77);
+    left: 0;
+    top: 0;
+    width: 100%;
+    &:before{
+      @include setSize(height, 42, 77);
+      @include setSize(width, 121);
+      background: #70a3c3;
+      clip-path: polygon(0 0, 100% 0, 100% 78.58%, 90.91% 100%, 0 100%);
+      content: '';
+      left: 0;
+      top: 0;
+    }
+    &:after{
+      @include setSize(width, 101);
+      background: #70a3c3;
+      clip-path: polygon(0 0, 42.57% 0, 42.57% 45.45%, 100% 45.45%, 100% 100%, 12.87% 100%, 0 87.01%);
+      content: '';
+      height: 100%;
+      right: 0;
+      top: 0;
+    }
+  }
+  &__right{
+    @include setSize(height, 121);
+    @include setSize(width, 23);
+    background: #70a3c3;
+    bottom: 0;
+    clip-path: polygon(0 9.09%, 47.83% 0, 100% 0, 100% 100%, 0 100%);
+    right: 0;
+  }
+  &__bottom{
+    @include setSize(height, 84);
+    @include setSize(width, 193);
+    background: #70a3c3;
+    bottom: 0;
+    clip-path: polygon(0 60.71%, 36.27% 60.71%, 36.27% 14.29%, 41.45% 0, 95.34% 0, 100% 14.29%, 100% 100%, 78.24% 100%, 78.24% 46.43%, 56.99% 46.43%, 56.99% 100%, 0 100%);
+    left: 0;
+  }
+  &__left{
+    @include setSize(height, 118);
+    @include setSize(top, 86);
+    @include setSize(width, 23);
+    &:before,
+    &:after{
+      background: #70a3c3;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    &:before{
+      @include setSize(height, 46, 118);
+      top: 0;
+    }
+    &:after{
+      @include setSize(height, 43, 118);
+      bottom: 0;
+    }
+  }
+}
