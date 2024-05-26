@@ -53,6 +53,25 @@ body{
     @media screen and (min-width: 1600px){
       grid-template-columns: repeat(5, calc((var(--pokemonSize) * 1px) + 20px));
     }
+    &:after{
+      content: '';
+      display: block;
+      height: 1px;
+      margin-top: -1px;
+      grid-column: 1;
+      @media screen and (min-width: 650px){
+        grid-column: 1 / span 2;
+      }
+      @media screen and (min-width: 1000px){
+        grid-column: 1 / span 3;
+      }
+      @media screen and (min-width: 1250px){
+        grid-column: 1 / span 4;
+      }
+      @media screen and (min-width: 1600px){
+        grid-column: 1 / span 5;
+      }
+    }
   }
 }
 
