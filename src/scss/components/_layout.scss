@@ -2,15 +2,64 @@
   --pokemonSize: 256;
 }
 
+body{
+  background: linear-gradient(180deg, #681c10 0%, #681c10 50%, #969897 50%, #969897 100%);
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  height: 100vh;
+  padding: 10px;
+}
+
 .pokedex{
-  gap: 10px;
-  display: grid;
-  grid-template-columns: repeat(7, calc(var(--pokemonSize) * 1px));
+  background: #f2edd7;
+  border-radius: 10px;
+  height: 100%;
+  padding: 15px;
+  scrollbar-color: #681c10 #969897;
+  scrollbar-width: thin;
+  &__container{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #969897;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #681c10;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: #681c10;
+    }
+  }
+  &__grid{
+    column-gap: 12px;
+    display: grid;
+    grid-template-columns: calc((var(--pokemonSize) * 1px) + 20px);
+    row-gap: 25px;
+    @media screen and (min-width: 650px){
+      grid-template-columns: repeat(2, calc((var(--pokemonSize) * 1px) + 20px));
+    }
+    @media screen and (min-width: 1000px){
+      grid-template-columns: repeat(3, calc((var(--pokemonSize) * 1px) + 20px));
+    }
+    @media screen and (min-width: 1250px){
+      grid-template-columns: repeat(4, calc((var(--pokemonSize) * 1px) + 20px));
+    }
+    @media screen and (min-width: 1600px){
+      grid-template-columns: repeat(5, calc((var(--pokemonSize) * 1px) + 20px));
+    }
+  }
 }
 
 .pokemon{
+  font-size: 20px;
   &:last-child{
-    grid-column: 4;
+    grid-column: 3;
     grid-row: 1;
   }
   &__block{
@@ -26,7 +75,22 @@
       transition: .3s;
     }
   }
+  &__number{
+    background: #fffcfd;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: inline-flex;
+    font-weight: 700;
+    padding: 5px 10px 0;
+  }
+  &__container{
+    background: #fffcfd;
+    border-radius: 7.8%;
+    border-top-left-radius: 0;
+    padding: 10px;
+  }
   &__title{
+    margin-top: 5px;
     text-align: center;
   }
 }
