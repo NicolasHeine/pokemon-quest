@@ -1,0 +1,86 @@
+.poissoroy{
+  background: #63b6fc;
+  &__horn{
+    @include setSize(height, 21);
+    @include setSize(left, 71);
+    @include setSize(width, 63);
+    background: #e7d5bd;
+    top: 0;
+  }
+  &__fin{
+    @include setSize(height, 21);
+    @include setSize(width, 75);
+    background: #e4e5ec;
+    right: 0;
+    top: 0;
+    &:before{
+      @include setSize(left, 45, 75);
+      @include setSize(width, 16, 75);
+      background: #ced1d6;
+      content: '';
+      height: 100%;
+      top: 0;
+    }
+  }
+  &__body{
+    @include setSize(height, 235);
+    @include setSize(width, 217);
+    background: linear-gradient(90deg, #e1734f 0%, #e1734f 82.03%, #474644 82.03%, #474644 100%);
+    bottom: 0;
+    clip-path: polygon(7.83% 0, 100% 0, 100% 100%, 0 100%, 0 8.09%);
+    right: 0;
+    &:before,
+    &:after{
+      background: #474644;
+      content: '';
+    }
+    &:before{
+      @include setSize(height, 25, 235);
+      @include setSize(left, 76, 217);
+      @include setSize(top, 157, 235);
+      @include setSize(width, 83, 217);
+    }
+    &:after{
+      @include setSize(height, 24, 235);
+      @include setSize(left, 66, 217);
+      @include setSize(top, 198, 235);
+      @include setSize(width, 66, 217);
+    }
+  }
+  &__nose{
+    @include setSize(height, 80);
+    @include setSize(left, 14);
+    @include setSize(top, 130);
+    @include setSize(width, 25);
+    background: #e7bacb;
+  }
+  &__eye{
+    @include setSize(height, 94);
+    @include setSize(left, 91);
+    @include setSize(top, 73);
+    @include setSize(width, 94);
+    background: #ffffff;
+  }
+  &__pupil{
+    @extend %center;
+    @include setSize(height, 70, 94);
+    @include setSize(width, 70, 94);
+    background: #313031;
+    &:before{
+      @include setSize(height, 23, 70);
+      @include setSize(left, 13, 70);
+      @include setSize(top, 8, 70);
+      @include setSize(width, 23, 70);
+      background: #ffffff;
+      content: '';
+    }
+    &:after{
+      @include setSize(height, 22, 70);
+      @include setSize(left, 21, 70);
+      @include setSize(width, 39, 70);
+      background: #524f4f;
+      bottom: 0;
+      content: '';
+    }
+  }
+}
