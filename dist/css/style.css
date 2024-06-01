@@ -58,7 +58,7 @@ table {
   box-sizing: border-box;
 }
 
-.stari__pupil, .stari__eye, .stari__star, .poissoroy__pupil, .poissirene__mouth:before, .hypotrempe__nose:before, .smogogo__side__cross:before, .smogogo__cross:before, .smogo__cross:before, .noadkoko__head, .soporifik__eye:before, .fantominus__head, .crustabri__head, .crustabri__shell, .kokiyas__eye:before, .magneton__screw:before, .magneton__screw:after, .magneton__eye:before, .magneti__screw:before, .magneti__screw:after, .magneti__eye:before, .grolem__face, .tentacruel__spot__shadow, .tentacool__spot__shadow, .boustiflor__eye:before, .tetarte__pupil, .ptitard__mouth:before, .paras__eye span, .rafflesia__eye:before, .ortide__mouth:before, .chenipan__eye:before {
+.staross__pupil, .staross__eye, .staross__star, .staross__back, .stari__pupil, .stari__eye, .stari__star, .poissoroy__pupil, .poissirene__mouth:before, .hypotrempe__nose:before, .smogogo__side__cross:before, .smogogo__cross:before, .smogo__cross:before, .noadkoko__head, .soporifik__eye:before, .fantominus__head, .crustabri__head, .crustabri__shell, .kokiyas__eye:before, .magneton__screw:before, .magneton__screw:after, .magneton__eye:before, .magneti__screw:before, .magneti__screw:after, .magneti__eye:before, .grolem__face, .tentacruel__spot__shadow, .tentacool__spot__shadow, .boustiflor__eye:before, .tetarte__pupil, .ptitard__mouth:before, .paras__eye span, .rafflesia__eye:before, .ortide__mouth:before, .chenipan__eye:before {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) translate3d(0, 0, 0);
@@ -10517,6 +10517,47 @@ body {
   width: calc(15 * 100% / 92);
   background: #fcffff;
   content: "";
+}
+
+.staross {
+  background: #a59cb7;
+}
+.staross__back {
+  height: calc(176 * 100% / 256);
+  width: calc(176 * 100% / 256);
+  background: #f7db5d;
+}
+.staross__star {
+  height: calc(226 * 100% / 256);
+  width: calc(226 * 100% / 256);
+  background: #ffe873;
+  clip-path: polygon(0 45.56%, 1.33% 44.25%, 23.45% 44.25%, 23.45% 31.86%, 5.75% 13.72%, 5.75% 11.95%, 11.95% 5.75%, 13.72% 5.75%, 31.42% 23.45%, 44.25% 23.45%, 44.25% 1.33%, 45.56% 0, 54.44% 0, 55.75% 1.33%, 55.75% 23.45%, 68.58% 23.45%, 86.28% 5.75%, 88.05% 5.75%, 94.25% 11.95%, 94.25% 13.2%, 76.55% 31.86%, 76.55% 44.25%, 98.67% 44.25%, 100% 45.56%, 100% 54.44%, 98.67% 55.75%, 76.55% 55.75%, 76.55% 68.14%, 94.25% 86.28%, 94.25% 88.05%, 88.05% 94.25%, 86.28% 94.25%, 68.58% 76.55%, 55.75% 76.55%, 55.75% 98.67%, 54.44% 100%, 45.56% 100%, 44.25% 98.67%, 44.25% 76.55%, 31.42% 76.55%, 13.72% 94.25%, 11.95% 94.25%, 5.75% 88.05%, 5.75% 86.28%, 23.45% 68.14%, 23.45% 55.75%, 1.33% 55.75%, 0 54.44%);
+}
+.staross__eye {
+  height: calc(96 * 100% / 256);
+  width: calc(96 * 100% / 256);
+  background: #ff6184;
+  clip-path: polygon(9.38% 0, 90.62% 0, 100% 7.29%, 100% 92.71%, 90.62% 100%, 9.38% 100%, 0 92.71%, 0 7.29%);
+}
+.staross__pupil {
+  height: calc(82 * 100% / 96);
+  width: calc(82 * 100% / 96);
+  background: #d64e68;
+  clip-path: polygon(7.32% 0, 92.68% 0, 100% 6.1%, 100% 93.9%, 92.68% 100%, 7.32% 100%, 0 93.9%, 0 6.1%);
+}
+.staross__pupil:before, .staross__pupil:after {
+  background: #f7a0b2;
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.staross__pupil:before {
+  clip-path: polygon(52.44% 0, 100% 0, 0 100%, 0 50%);
+}
+.staross__pupil:after {
+  clip-path: polygon(23.17% 100%, 100% 24.39%, 100% 40.24%, 40.24% 100%);
 }
 
 /*# sourceMappingURL=style.css.map */
