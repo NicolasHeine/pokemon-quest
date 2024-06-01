@@ -58,7 +58,7 @@ table {
   box-sizing: border-box;
 }
 
-.poissoroy__pupil, .poissirene__mouth:before, .hypotrempe__nose:before, .smogogo__side__cross:before, .smogogo__cross:before, .smogo__cross:before, .noadkoko__head, .soporifik__eye:before, .fantominus__head, .crustabri__head, .crustabri__shell, .kokiyas__eye:before, .magneton__screw:before, .magneton__screw:after, .magneton__eye:before, .magneti__screw:before, .magneti__screw:after, .magneti__eye:before, .grolem__face, .tentacruel__spot__shadow, .tentacool__spot__shadow, .boustiflor__eye:before, .tetarte__pupil, .ptitard__mouth:before, .paras__eye span, .rafflesia__eye:before, .ortide__mouth:before, .chenipan__eye:before {
+.stari__pupil, .stari__eye, .stari__star, .poissoroy__pupil, .poissirene__mouth:before, .hypotrempe__nose:before, .smogogo__side__cross:before, .smogogo__cross:before, .smogo__cross:before, .noadkoko__head, .soporifik__eye:before, .fantominus__head, .crustabri__head, .crustabri__shell, .kokiyas__eye:before, .magneton__screw:before, .magneton__screw:after, .magneton__eye:before, .magneti__screw:before, .magneti__screw:after, .magneti__eye:before, .grolem__face, .tentacruel__spot__shadow, .tentacool__spot__shadow, .boustiflor__eye:before, .tetarte__pupil, .ptitard__mouth:before, .paras__eye span, .rafflesia__eye:before, .ortide__mouth:before, .chenipan__eye:before {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) translate3d(0, 0, 0);
@@ -10469,6 +10469,53 @@ body {
   width: calc(39 * 100% / 70);
   background: #524f4f;
   bottom: 0;
+  content: "";
+}
+
+.stari {
+  background: #91754f;
+}
+.stari__back {
+  height: calc(220 * 100% / 256);
+  width: calc(220 * 100% / 256);
+  background: #f7e568;
+  bottom: 0;
+  clip-path: polygon(0 0, 83.64% 0, 83.64% 68.18%, 100% 68.18%, 100% 83.64%, 50.91% 83.64%, 50.91% 100%, 32.73% 100%, 32.73% 83.64%, 0 83.64%);
+  right: 0;
+}
+.stari__star {
+  height: calc(204 * 100% / 256);
+  width: calc(226 * 100% / 256);
+  background: #fff16d;
+  clip-path: polygon(0 43.63%, 2.21% 41.67%, 21.24% 41.67%, 21.24% 28.92%, 5.31% 10.78%, 5.31% 8.33%, 12.83% 0, 15.49% 0, 31.42% 18.63%, 68.58% 18.63%, 84.51% 0, 87.17% 0, 94.69% 8.33%, 94.69% 10.78%, 78.76% 28.92%, 78.76% 41.67%, 97.79% 41.67%, 100% 43.63%, 100% 56.37%, 97.79% 58.33%, 78.76% 58.33%, 78.76% 71.08%, 94.69% 89.22%, 94.69% 91.67%, 87.17% 100%, 84.51% 100%, 68.58% 81.37%, 31.42% 81.37%, 15.49% 100%, 12.83% 100%, 5.31% 91.67%, 5.31% 89.22%, 21.24% 71.08%, 21.24% 58.33%, 2.21% 58.33%, 0 56.37%);
+}
+.stari__eye {
+  height: calc(110 * 100% / 256);
+  width: calc(110 * 100% / 256);
+  background: #ff5f81;
+  clip-path: polygon(10.91% 0, 89.09% 0, 100% 10.91%, 100% 89.09%, 89.09% 100%, 10.91% 100%, 0 89.09%, 0 10.91%);
+}
+.stari__pupil {
+  height: calc(92 * 100% / 110);
+  width: calc(92 * 100% / 110);
+  background: #d64e68;
+  clip-path: polygon(13.04% 0, 86.96% 0, 100% 13.04%, 100% 86.96%, 86.96% 100%, 13.04% 100%, 0 86.96%, 0 13.04%);
+  content: "";
+}
+.stari__pupil:before {
+  height: calc(33 * 100% / 92);
+  left: calc(12 * 100% / 92);
+  width: calc(33 * 100% / 92);
+  background: #fcffff;
+  content: "";
+  top: 0;
+}
+.stari__pupil:after {
+  height: calc(15 * 100% / 92);
+  left: calc(8 * 100% / 92);
+  top: calc(44 * 100% / 92);
+  width: calc(15 * 100% / 92);
+  background: #fcffff;
   content: "";
 }
 
