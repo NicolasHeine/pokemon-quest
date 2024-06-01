@@ -1,0 +1,71 @@
+.mmime{
+  background: #fce9ef;
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 65);
+    @include setSize(top, 53);
+    @include setSize(width, 42);
+    background: #ffffff;
+    &:before{
+      @include setSize(height, 23, 65);
+      @include setSize(top, 18, 65);
+      @include setSize(width, 13, 42);
+      background: #424142;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 63);
+      &:before{
+        @include setSize(left, 26, 42);
+      }
+    }
+    &.--right{
+      @include setSize(right, 63);
+      &:before{
+        @include setSize(right, 26, 42);
+      }
+    }
+  }
+  &__cheek{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 75);
+      @include setSize(top, 110);
+      @include setSize(width, 52);
+      background: #ef94aa;
+      content: '';
+    }
+    &:before{
+      left: 0;
+    }
+    &:after{
+      right: 0;
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 67);
+    @include setSize(top, 134);
+    @include setSize(width, 116);
+    background: #9c6f81;
+    &:before{
+      @include setSize(height, 3, 67);
+      background: #ffefef;
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 38, 67);
+      @include setSize(width, 80, 116);
+      background: #c692a5;
+      bottom: 0;
+      content: '';
+    }
+  }
+}
