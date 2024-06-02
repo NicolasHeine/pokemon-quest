@@ -1,0 +1,43 @@
+.metamorph{
+  background: #d3bbe7;
+  &__eyes{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 20);
+      @include setSize(top, 91);
+      @include setSize(width, 20);
+      background: #2b282e;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 40);
+    }
+    &:after{
+      @include setSize(right, 40);
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 33);
+    @include setSize(top, 125);
+    @include setSize(width, 214);
+    background: #c68c89;
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 10, 33);
+      @include setSize(width, 184, 214);
+      background: #d69894;
+      bottom: 0;
+      content: '';
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 12, 33);
+      @include setSize(width, 162, 214);
+      background: #d3bbe7;
+      content: '';
+      top: 0;
+    }
+  }
+}
