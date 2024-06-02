@@ -1,0 +1,83 @@
+.magicarpe{
+  background: #63b6fc;
+  &__nose{
+    @include setSize(height, 107);
+    @include setSize(right, 218);
+    @include setSize(top, 64);
+    @include setSize(width, 19);
+    background: #f7c4c3;
+  }
+  &__body{
+    @include setSize(width, 218);
+    background: #f77b57;
+    height: 100%;
+    right: 0;
+    top: 0;
+    &:after{
+      @include setSize(height, 122);
+      @include setSize(top, 118);
+      @include setSize(width, 176, 218);
+      background: #ffd16d;
+      clip-path: polygon(0 0, 47.16% 0, 50.57% 5.74%, 50.57% 81.97%, 52.84% 84.43%, 100% 84.43%, 100% 100%, 43.18% 100%, 40.91% 95.9%, 40.91% 19.67%, 37.5% 15.57%, 0 15.57%);
+      content: '';
+      right: 0;
+    }
+  }
+  &__eye{
+    @include setSize(height, 70);
+    @include setSize(left, 44, 218);
+    @include setSize(top, 15);
+    @include setSize(width, 70, 218);
+    background: #ffffff;
+    &:before{
+      @extend %center;
+      @include setSize(height, 11, 70);
+      @include setSize(width, 11, 70);
+      background: #363636;
+      content: '';
+    }
+  }
+  &__fin{
+    @include setSize(height, 100);
+    @include setSize(top, 58);
+    @include setSize(width, 64, 218);
+    background: #efe8e9;
+    right: 0;
+    &:before,
+    &:after{
+      @include setSize(height, 13, 100);
+      background: #b2afaf;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    &:before{
+      @include setSize(top, 25, 100);
+    }
+    &:after{
+      @include setSize(top, 61, 100);
+    }
+  }
+  &__bottom{
+    @include setSize(height, 65);
+    background: #c66347;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    &:before,
+    &:after{
+      @include setSize(height, 52, 65);
+      background: #f77b57;
+      bottom: 0;
+      content: '';
+    }
+    &:before{
+      @include setSize(width, 87, 218);
+      left: 0;
+    }
+    &:after{
+      @include setSize(width, 118, 218);
+      right: 0;
+    }
+  }
+}

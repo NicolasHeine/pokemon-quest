@@ -58,7 +58,7 @@ table {
   box-sizing: border-box;
 }
 
-.staross__pupil, .staross__eye, .staross__star, .staross__back, .stari__pupil, .stari__eye, .stari__star, .poissoroy__pupil, .poissirene__mouth:before, .hypotrempe__nose:before, .smogogo__side__cross:before, .smogogo__cross:before, .smogo__cross:before, .noadkoko__head, .soporifik__eye:before, .fantominus__head, .crustabri__head, .crustabri__shell, .kokiyas__eye:before, .magneton__screw:before, .magneton__screw:after, .magneton__eye:before, .magneti__screw:before, .magneti__screw:after, .magneti__eye:before, .grolem__face, .tentacruel__spot__shadow, .tentacool__spot__shadow, .boustiflor__eye:before, .tetarte__pupil, .ptitard__mouth:before, .paras__eye span, .rafflesia__eye:before, .ortide__mouth:before, .chenipan__eye:before {
+.magicarpe__eye:before, .staross__pupil, .staross__eye, .staross__star, .staross__back, .stari__pupil, .stari__eye, .stari__star, .poissoroy__pupil, .poissirene__mouth:before, .hypotrempe__nose:before, .smogogo__side__cross:before, .smogogo__cross:before, .smogo__cross:before, .noadkoko__head, .soporifik__eye:before, .fantominus__head, .crustabri__head, .crustabri__shell, .kokiyas__eye:before, .magneton__screw:before, .magneton__screw:after, .magneton__eye:before, .magneti__screw:before, .magneti__screw:after, .magneti__eye:before, .grolem__face, .tentacruel__spot__shadow, .tentacool__spot__shadow, .boustiflor__eye:before, .tetarte__pupil, .ptitard__mouth:before, .paras__eye span, .rafflesia__eye:before, .ortide__mouth:before, .chenipan__eye:before {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) translate3d(0, 0, 0);
@@ -11172,6 +11172,87 @@ body {
 }
 .tauros__nose:after {
   right: calc(26 * 100% / 116);
+}
+
+.magicarpe {
+  background: #63b6fc;
+}
+.magicarpe__nose {
+  height: calc(107 * 100% / 256);
+  right: calc(218 * 100% / 256);
+  top: calc(64 * 100% / 256);
+  width: calc(19 * 100% / 256);
+  background: #f7c4c3;
+}
+.magicarpe__body {
+  width: calc(218 * 100% / 256);
+  background: #f77b57;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+.magicarpe__body:after {
+  height: calc(122 * 100% / 256);
+  top: calc(118 * 100% / 256);
+  width: calc(176 * 100% / 218);
+  background: #ffd16d;
+  clip-path: polygon(0 0, 47.16% 0, 50.57% 5.74%, 50.57% 81.97%, 52.84% 84.43%, 100% 84.43%, 100% 100%, 43.18% 100%, 40.91% 95.9%, 40.91% 19.67%, 37.5% 15.57%, 0 15.57%);
+  content: "";
+  right: 0;
+}
+.magicarpe__eye {
+  height: calc(70 * 100% / 256);
+  left: calc(44 * 100% / 218);
+  top: calc(15 * 100% / 256);
+  width: calc(70 * 100% / 218);
+  background: #ffffff;
+}
+.magicarpe__eye:before {
+  height: calc(11 * 100% / 70);
+  width: calc(11 * 100% / 70);
+  background: #363636;
+  content: "";
+}
+.magicarpe__fin {
+  height: calc(100 * 100% / 256);
+  top: calc(58 * 100% / 256);
+  width: calc(64 * 100% / 218);
+  background: #efe8e9;
+  right: 0;
+}
+.magicarpe__fin:before, .magicarpe__fin:after {
+  height: calc(13 * 100% / 100);
+  background: #b2afaf;
+  content: "";
+  left: 0;
+  width: 100%;
+}
+.magicarpe__fin:before {
+  top: calc(25 * 100% / 100);
+}
+.magicarpe__fin:after {
+  top: calc(61 * 100% / 100);
+}
+.magicarpe__bottom {
+  height: calc(65 * 100% / 256);
+  background: #c66347;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.magicarpe__bottom:before, .magicarpe__bottom:after {
+  height: calc(52 * 100% / 65);
+  background: #f77b57;
+  bottom: 0;
+  content: "";
+}
+.magicarpe__bottom:before {
+  width: calc(87 * 100% / 218);
+  left: 0;
+}
+.magicarpe__bottom:after {
+  width: calc(118 * 100% / 218);
+  right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
