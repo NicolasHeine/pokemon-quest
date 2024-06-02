@@ -1,0 +1,67 @@
+.lokhlass{
+  background: #396fc0;
+  &__head{
+    @include setSize(width, 234);
+    background: #65b2de;
+    clip-path: polygon(0 14.45%, 5.13% 8.2%, 16.67% 8.2%, 16.67% 0, 47% 0, 47% 8.2%, 86.32% 8.2%, 86.32% 0, 100% 0, 100% 100%, 78.63% 100%, 78.63% 93.36%, 23.93% 93.36%, 18.38% 87.5%, 18.38% 76.18%, 35.9% 76.18%, 35.9% 64.45%, 71.37% 64.45%, 71.37% 58.2%, 0 58.2%);
+    height: 100%;
+    right: 0;
+    top: 0;
+    &:before{
+      @include setSize(height, 90);
+      @include setSize(top, 149);
+      @include setSize(width, 205, 234);
+      background: #d3cbba;
+      clip-path: polygon(0 0, 100% 0, 100% 82.22%, 89.76% 100%, 0 100%);
+      content: '';
+      left: 0;
+    }
+    &:after{
+      @include setSize(height, 46);
+      @include setSize(top, 149);
+      @include setSize(width, 167, 234);
+      background: #b26b73;
+      content: '';
+      left: 0;
+    }
+  }
+  &__eye{
+    @include setSize(height, 51);
+    @include setSize(left, 121);
+    @include setSize(top, 75);
+    @include setSize(width, 80);
+    background: #ffffff;
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 0 100%);
+    &:after{
+      @include setSize(height, 31, 51);
+      @include setSize(left, 25, 80);
+      @include setSize(width, 15, 80);
+      background: #ffffff;
+      content: '';
+      top: 0;
+    }
+  }
+  &__pupil{
+    @include setSize(width, 49, 80);
+    background: #393d42;
+    height: 100%;
+    left: 0;
+    top: 0;
+    &:before{
+      @include setSize(height, 13, 51);
+      @include setSize(width, 25, 49);
+      background: #4a4f52;
+      bottom: 0;
+      content: '';
+      right: 0;
+    }
+    &:after{
+      @include setSize(height, 44, 51);
+      @include setSize(left, 19, 49);
+      @include setSize(width, 16, 49);
+      background: #292d2e;
+      content: '';
+      top: 0;
+    }
+  }
+}
