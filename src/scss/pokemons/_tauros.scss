@@ -1,0 +1,87 @@
+.tauros{
+  background: #d6a460;
+  &__horn{
+    &.--top{
+      @extend %centerX;
+      @include setSize(height, 32);
+      @include setSize(top, 9);
+      @include setSize(width, 34);
+      background: #a5a7b5;
+      &:before{
+        @include setSize(height, 14, 32);
+        @include setSize(left, 7, 34);
+        @include setSize(top, 3, 32);
+        @include setSize(width, 14, 34);
+        background: #d3d4e7;
+        content: '';
+      }
+    }
+    &.--bottom{
+      @extend %centerX;
+      @include setSize(height, 54);
+      @include setSize(top, 70);
+      @include setSize(width, 54);
+      background: #a5a7b5;
+      &:before{
+        @include setSize(height, 23, 54);
+        @include setSize(left, 10, 54);
+        @include setSize(top, 5, 54);
+        @include setSize(width, 23, 54);
+        background: #d3d4e7;
+        content: '';
+      }
+    }
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 56);
+    @include setSize(top, 93);
+    @include setSize(width, 59);
+    background: #ffffff;
+    &:before{
+      @include setSize(height, 50, 56);
+      @include setSize(width, 13, 59);
+      background: #3c3a36;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 24);
+      clip-path: polygon(0 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(left, 28, 59);
+      }
+    }
+    &.--right{
+      @include setSize(right, 24);
+      clip-path: polygon(0 100%, 100% 0, 100% 100%);
+      &:before{
+        @include setSize(right, 28, 59);
+      }
+    }
+  }
+  &__nose{
+    @extend %centerX;
+    @include setSize(height, 88);
+    @include setSize(top, 161);
+    @include setSize(width, 116);
+    background: #898278;
+    clip-path: polygon(0 11.36%, 11.21% 0, 88.79% 0, 100% 11.36%, 100% 88.64%, 88.79% 100%, 11.21% 100%, 0 88.64%);
+    &:before,
+    &:after{
+      @include setSize(height, 5, 88);
+      @include setSize(top, 71, 88);
+      @include setSize(width, 18, 116);
+      background: #686157;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 26, 116);
+    }
+    &:after{
+      @include setSize(right, 26, 116);
+    }
+  }
+}
