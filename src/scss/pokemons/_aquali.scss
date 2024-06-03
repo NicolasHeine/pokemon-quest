@@ -1,0 +1,93 @@
+.aquali{
+  background: #86cde4;
+  &__top{
+    @extend %centerX;
+    @include setSize(height, 53);
+    @include setSize(width, 170);
+    background: #155f81;
+    clip-path: polygon(0 0, 100% 0, 58.24% 100%, 41.76% 100%);
+    top: 0;
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 62);
+    @include setSize(top, 69);
+    @include setSize(width, 66);
+    background: #1e0000;
+    &:before{
+      @include setSize(height, 19, 62);
+      @include setSize(width, 41, 66);
+      background: #3f2e57;
+      bottom: 0;
+      content: '';
+    }
+    &:after{
+      @include setSize(height, 30, 62);
+      @include setSize(width, 20, 66);
+      background: #ffffff;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 22);
+      clip-path: polygon(0 0, 100% 36.67%, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(left, 7, 66);
+      }
+      &:after{
+        @include setSize(left, 32, 66);
+      }
+    }
+    &.--right{
+      @include setSize(right, 22);
+      clip-path: polygon(0 36.67%, 100% 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(right, 7, 66);
+      }
+      &:after{
+        @include setSize(right, 32, 66);
+      }
+    }
+  }
+  &__nose{
+    @extend %centerX;
+    @include setSize(height, 13);
+    @include setSize(top, 130);
+    @include setSize(width, 18);
+    background: #121218;
+    content: '';
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 49);
+    @include setSize(top, 149);
+    @include setSize(width, 86);
+    background: #4c2531;
+    clip-path: polygon(0 16.33%, 39.53% 16.33%, 50% 0, 60.47% 16.33%, 100% 16.33%, 100% 100%, 0 100%);
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 18, 49);
+      @include setSize(width, 64, 86);
+      background: #a54154;
+      bottom: 0;
+      content: '';
+    }
+  }
+  &__bottom{
+    @include setSize(height, 29);
+    background: #e1d9e4;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    &:before{
+      @extend %centerX;
+      @include setSize(width, 28);
+      background: #d6cfdb;
+      content: '';
+      height: 100%;
+      top: 0;
+    }
+  }
+}
