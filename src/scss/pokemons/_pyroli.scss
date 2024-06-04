@@ -1,0 +1,83 @@
+.pyroli{
+  background: #ec804c;
+  &__hair{
+    @extend %centerX;
+    @include setSize(height, 70);
+    @include setSize(width, 172);
+    background: #f7e89f;
+    clip-path: polygon(0 0, 100% 0, 100% 87.14%, 96.51% 100%, 3.49% 100%, 0 87.14%);
+    top: 0;
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 58);
+    @include setSize(top, 82);
+    @include setSize(width, 62);
+    background: #1e0000;
+    &:before{
+      @include setSize(height, 16, 58);
+      @include setSize(width, 41, 62);
+      background: #002636;
+      bottom: 0;
+      content: '';
+    }
+    &:after{
+      @include setSize(height, 31, 58);
+      @include setSize(width, 18, 62);
+      background: #ffffff;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 21);
+      clip-path: polygon(0 0, 100% 31.03%, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(left, 10, 62);
+      }
+      &:after{
+        @include setSize(left, 30, 62);
+      }
+    }
+    &.--right{
+      @include setSize(right, 21);
+      clip-path: polygon(0 31.03%, 100% 0, 100% 100%, 0 100%);
+      &:before{
+        @include setSize(right, 10, 62);
+      }
+      &:after{
+        @include setSize(right, 30, 62);
+      }
+    }
+  }
+  &__nose{
+    @extend %centerX;
+    @include setSize(height, 17);
+    @include setSize(top, 140);
+    @include setSize(width, 22);
+    background: #1e1615;
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 42);
+    @include setSize(top, 166);
+    @include setSize(width, 144);
+    background: #4c2531;
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 21, 42);
+      @include setSize(width, 106, 144);
+      background: #a54154;
+      bottom: 0;
+      content: '';
+    }
+  }
+  &__bottom{
+    @include setSize(height, 31);
+    background: #f7e89f;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
