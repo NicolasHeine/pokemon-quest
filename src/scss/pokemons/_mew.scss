@@ -1,0 +1,65 @@
+.mew{
+  $m: &;
+  background: #f7d1de;
+  &__top{
+    @include setSize(height, 59);
+    background: #d8ace1;
+    clip-path: polygon(0 0, 100% 0, 100% 28.81%, 76.95% 28.81%, 74.22% 42.37%, 74.22% 100%, 25.78% 100%, 25.75% 42.37%, 23.05% 28.81%, 0 28.81%);
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 73);
+    @include setSize(top, 113);
+    @include setSize(width, 61);
+    background: #f7f1f1;
+    &.--left{
+      @include setSize(left, 19);
+      #{$m}__pupil{
+        right: 0;
+        &:before{
+          @include setSize(left, 13, 46);
+        }
+        &:after{
+          @include setSize(left, 25, 46);
+        }
+      }
+    }
+    &.--right{
+      @include setSize(right, 19);
+      #{$m}__pupil{
+        left: 0;
+        &:before{
+          @include setSize(right, 13, 46);
+        }
+        &:after{
+          @include setSize(right, 25, 46);
+        }
+      }
+    }
+  }
+  &__pupil{
+    @include setSize(height, 57, 73);
+    @include setSize(width, 46, 61);
+    background: linear-gradient(180deg, #5282b5 0%, #5282b5 80.7%, #789fc6 80.7%, #789fc6 100%);
+    bottom: 0;
+    &:before{
+      @include setSize(height, 32, 57);
+      @include setSize(top, 7, 57);
+      @include setSize(width, 20, 46);
+      background: #4c5360;
+      content: '';
+    }
+    &:after{
+      @include setSize(height, 16, 57);
+      @include setSize(top, 3, 57);
+      @include setSize(width, 15, 46);
+      background: #f7f1f1;
+      content: '';
+    }
+  }
+}

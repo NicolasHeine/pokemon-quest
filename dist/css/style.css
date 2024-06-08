@@ -74,7 +74,7 @@ table {
   transform: translateY(-50%) translate3d(0, 0, 0);
 }
 
-.mewtwo__nose, .mewtwo__cernes, .mewtwo__eyes, .dracolosse__nose, .dracolosse__eyes, .dracolosse__horns, .draco__side, .draco__eyes, .minidraco__eyes, .sulfura__eyes, .electhor__eyes, .artikodin__eyes, .ronflex__eyes, .ptera__tooth, .ptera__nose, .ptera__eyes, .kabutops__eyes, .kabuto__eyes, .amonistar__eyes, .amonita__bottom, .amonita__side, .amonita__eyes, .pyroli__eyes, .voltali__eyes, .aquali__eyes, .evoli__nose, .evoli__eyes, .metamorph__eyes, .leviator__tooth, .leviator__nose, .leviator__eyes, .tauros__eyes, .scarabrute__tooth, .scarabrute__shell, .scarabrute__eyes, .magmar__eyes, .elektek__tooth, .elektek__nose, .elektek__eyes, .lippoutou__eyes, .insecateur__tooth, .insecateur__nose, .insecateur__cernes, .insecateur__eyes, .mmime__cheek, .mmime__eyes, .poissirene__eyes, .hypocean__eyes, .hypocean__eyebrow, .hypotrempe__eyes, .kangourex__baby__eyes, .kangourex__tooth, .kangourex__nose, .kangourex__eyes, .saquedeneu__eyes, .leveinard__eyes, .rhinoferos__tooth, .rhinoferos__nose, .rhinoferos__cernes, .rhinoferos__eyes, .rhinocorne__tooth, .rhinocorne__nose, .rhinocorne__eyes, .smogogo__side__eyes, .smogogo__tooth, .smogogo__eyes, .smogo__tooth, .smogo__eyes, .excelangue__nose, .excelangue__eyes, .tygnon__eyes, .kicklee__eyes, .noadkoko__tooth, .noadkoko__side, .noeunoeuf__eyes, .electrode__eyes, .voltorbe__cernes, .voltorbe__eyes, .voltorbe__eyebrow, .krabboss__eyes, .krabby__eyes, .hypnomade__eyes, .soporifik__eyes, .onix__eyes, .ectoplasma__eyes, .spectrum__eyes, .fantominus__tooth, .fantominus__cerne, .fantominus__cernes, .fantominus__eyes, .crustabri__eyes, .grotadmorv__eyes, .grotadmorv__spot, .tadmorv__eyes, .lamantine__tooth, .lamantine__eyes, .otaria__tooth, .otaria__eyes, .otaria__eyebrow, .dodrio__cernes, .dodrio__eyes, .canarticho__eyes, .flagadoss__shell__tooth, .ramoloss__tooth, .ramoloss__eyes, .galopa__nose, .galopa__eyes, .ponyta__nose, .ponyta__eyes, .ponyta__fire, .grolem__tooth, .grolem__eyes, .grolem__rock, .grolem__rocks, .gravalanch__cernes, .gravalanch__eyes, .racaillou__eyeBrow, .racaillou__eyes, .empiflor__tooth, .boustiflor__eyes, .chetiflor__eyes, .mackogneur__eyes, .machopeur__tooth, .machopeur__nose, .machopeur__eyes, .machoc__nose, .machoc__eyes, .alakazam__spoons, .alakazam__cernes, .alakazam__eyes, .kadabra__cernes, .kadabra__eyes, .abra__eyes, .tartard__nose, .tartard__eyes, .tetarte__nose, .tetarte__eyes, .ptitard__eyes, .arcanin__tooth, .arcanin__eyes, .caninos__eyes, .colossinge__cernes, .colossinge__eyes, .colossinge__sign:before, .ferosinge__cernes, .ferosinge__eyes, .akwakwak__eyes, .psykokwak__eyes, .persian__teeth, .persian__eyes, .miaouss__teeth, .miaouss__eyes, .triopikeur__eyes, .taupiqueur__eyes, .aeromite__paws span, .aeromite__paws, .aeromite__nose, .aeromite__eyes, .aeromite__wings, .mimitoss__paws, .mimitoss__nose span, .mimitoss__eyes, .mimitoss__antenne, .parasect__eyes, .paras__teeth, .paras__nose, .paras__eyes, .paras__flowers, .rafflesia__eyes, .ortide__eyes, .mystherbe__eyes, .nosferalto__eyes, .nosferalto__hears, .nosferapti__teeth, .grodoudou__eyes, .rondoudou__eyes, .feunard__eyes, .feunard__hear, .goupix__eyes, .melodelfe__eyes, .melofee__jowl, .melofee__eyes, .nidoking__teeth, .nidoking__nose, .nidoking__cernes, .nidoking__eyes, .nidorino__teeth, .nidorino__nose, .nidorino__cernes, .nidorino__eyes, .nidoranm__nose, .nidoranm__eyes, .nidoqueen__nose, .nidoqueen__cernes, .nidoqueen__eyes, .nidorina__tooth, .nidorina__nose, .nidorina__cernes, .nidorina__eyes, .nidoranf__nose, .nidoranf__eyes, .sablaireau__eyes, .sablaireau__ears, .sabelette__bottom, .sabelette__eyes, .raichu__jowl, .raichu__eyes, .pikachu__jowl, .pikachu__eyes, .arbok__spots, .rapasdepic__eyes, .piafabec__eyes, .rattatac__nose, .rattatac__eyes, .rattata__nose, .rattata__eyes, .roucarnage__side, .roucarnage__eyes, .roucoups__side, .roucoups__eyes, .roucool__eyes, .dardargnan__eyes, .dardargnan__antenna, .coconfort__side, .coconfort__eyes, .aspicot__eyes, .papillusion__wings, .papillusion__paws, .papillusion__eyes, .chrysacier__side, .tortank__tooth__bottom, .tortank__tooth, .tortank__cernes, .tortank__eyes, .carabaffe__tooth, .carabaffe__nose, .carabaffe__cernes, .carabaffe__eyes, .carapuce__nose, .carapuce__eyes, .dracaufeu__nose, .dracaufeu__cernes, .dracaufeu__eyes, .reptincel__nose, .reptincel__spots, .reptincel__eyes, .salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
+.mew__eyes, .mewtwo__nose, .mewtwo__cernes, .mewtwo__eyes, .dracolosse__nose, .dracolosse__eyes, .dracolosse__horns, .draco__side, .draco__eyes, .minidraco__eyes, .sulfura__eyes, .electhor__eyes, .artikodin__eyes, .ronflex__eyes, .ptera__tooth, .ptera__nose, .ptera__eyes, .kabutops__eyes, .kabuto__eyes, .amonistar__eyes, .amonita__bottom, .amonita__side, .amonita__eyes, .pyroli__eyes, .voltali__eyes, .aquali__eyes, .evoli__nose, .evoli__eyes, .metamorph__eyes, .leviator__tooth, .leviator__nose, .leviator__eyes, .tauros__eyes, .scarabrute__tooth, .scarabrute__shell, .scarabrute__eyes, .magmar__eyes, .elektek__tooth, .elektek__nose, .elektek__eyes, .lippoutou__eyes, .insecateur__tooth, .insecateur__nose, .insecateur__cernes, .insecateur__eyes, .mmime__cheek, .mmime__eyes, .poissirene__eyes, .hypocean__eyes, .hypocean__eyebrow, .hypotrempe__eyes, .kangourex__baby__eyes, .kangourex__tooth, .kangourex__nose, .kangourex__eyes, .saquedeneu__eyes, .leveinard__eyes, .rhinoferos__tooth, .rhinoferos__nose, .rhinoferos__cernes, .rhinoferos__eyes, .rhinocorne__tooth, .rhinocorne__nose, .rhinocorne__eyes, .smogogo__side__eyes, .smogogo__tooth, .smogogo__eyes, .smogo__tooth, .smogo__eyes, .excelangue__nose, .excelangue__eyes, .tygnon__eyes, .kicklee__eyes, .noadkoko__tooth, .noadkoko__side, .noeunoeuf__eyes, .electrode__eyes, .voltorbe__cernes, .voltorbe__eyes, .voltorbe__eyebrow, .krabboss__eyes, .krabby__eyes, .hypnomade__eyes, .soporifik__eyes, .onix__eyes, .ectoplasma__eyes, .spectrum__eyes, .fantominus__tooth, .fantominus__cerne, .fantominus__cernes, .fantominus__eyes, .crustabri__eyes, .grotadmorv__eyes, .grotadmorv__spot, .tadmorv__eyes, .lamantine__tooth, .lamantine__eyes, .otaria__tooth, .otaria__eyes, .otaria__eyebrow, .dodrio__cernes, .dodrio__eyes, .canarticho__eyes, .flagadoss__shell__tooth, .ramoloss__tooth, .ramoloss__eyes, .galopa__nose, .galopa__eyes, .ponyta__nose, .ponyta__eyes, .ponyta__fire, .grolem__tooth, .grolem__eyes, .grolem__rock, .grolem__rocks, .gravalanch__cernes, .gravalanch__eyes, .racaillou__eyeBrow, .racaillou__eyes, .empiflor__tooth, .boustiflor__eyes, .chetiflor__eyes, .mackogneur__eyes, .machopeur__tooth, .machopeur__nose, .machopeur__eyes, .machoc__nose, .machoc__eyes, .alakazam__spoons, .alakazam__cernes, .alakazam__eyes, .kadabra__cernes, .kadabra__eyes, .abra__eyes, .tartard__nose, .tartard__eyes, .tetarte__nose, .tetarte__eyes, .ptitard__eyes, .arcanin__tooth, .arcanin__eyes, .caninos__eyes, .colossinge__cernes, .colossinge__eyes, .colossinge__sign:before, .ferosinge__cernes, .ferosinge__eyes, .akwakwak__eyes, .psykokwak__eyes, .persian__teeth, .persian__eyes, .miaouss__teeth, .miaouss__eyes, .triopikeur__eyes, .taupiqueur__eyes, .aeromite__paws span, .aeromite__paws, .aeromite__nose, .aeromite__eyes, .aeromite__wings, .mimitoss__paws, .mimitoss__nose span, .mimitoss__eyes, .mimitoss__antenne, .parasect__eyes, .paras__teeth, .paras__nose, .paras__eyes, .paras__flowers, .rafflesia__eyes, .ortide__eyes, .mystherbe__eyes, .nosferalto__eyes, .nosferalto__hears, .nosferapti__teeth, .grodoudou__eyes, .rondoudou__eyes, .feunard__eyes, .feunard__hear, .goupix__eyes, .melodelfe__eyes, .melofee__jowl, .melofee__eyes, .nidoking__teeth, .nidoking__nose, .nidoking__cernes, .nidoking__eyes, .nidorino__teeth, .nidorino__nose, .nidorino__cernes, .nidorino__eyes, .nidoranm__nose, .nidoranm__eyes, .nidoqueen__nose, .nidoqueen__cernes, .nidoqueen__eyes, .nidorina__tooth, .nidorina__nose, .nidorina__cernes, .nidorina__eyes, .nidoranf__nose, .nidoranf__eyes, .sablaireau__eyes, .sablaireau__ears, .sabelette__bottom, .sabelette__eyes, .raichu__jowl, .raichu__eyes, .pikachu__jowl, .pikachu__eyes, .arbok__spots, .rapasdepic__eyes, .piafabec__eyes, .rattatac__nose, .rattatac__eyes, .rattata__nose, .rattata__eyes, .roucarnage__side, .roucarnage__eyes, .roucoups__side, .roucoups__eyes, .roucool__eyes, .dardargnan__eyes, .dardargnan__antenna, .coconfort__side, .coconfort__eyes, .aspicot__eyes, .papillusion__wings, .papillusion__paws, .papillusion__eyes, .chrysacier__side, .tortank__tooth__bottom, .tortank__tooth, .tortank__cernes, .tortank__eyes, .carabaffe__tooth, .carabaffe__nose, .carabaffe__cernes, .carabaffe__eyes, .carapuce__nose, .carapuce__eyes, .dracaufeu__nose, .dracaufeu__cernes, .dracaufeu__eyes, .reptincel__nose, .reptincel__spots, .reptincel__eyes, .salameche__nose, .salameche__eyes, .florizarre__tooth, .herbizarre__mouth__tooth, .herbizarre__spot:before, .bulbizarre__mouth__tooth {
   left: 0;
   height: 100%;
   top: 0;
@@ -12770,6 +12770,68 @@ body {
 }
 .mewtwo__nose:after {
   right: calc(116 * 100% / 256);
+}
+
+.mew {
+  background: #f7d1de;
+}
+.mew__top {
+  height: calc(59 * 100% / 256);
+  background: #d8ace1;
+  clip-path: polygon(0 0, 100% 0, 100% 28.81%, 76.95% 28.81%, 74.22% 42.37%, 74.22% 100%, 25.78% 100%, 25.75% 42.37%, 23.05% 28.81%, 0 28.81%);
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.mew__eye {
+  height: calc(73 * 100% / 256);
+  top: calc(113 * 100% / 256);
+  width: calc(61 * 100% / 256);
+  background: #f7f1f1;
+}
+.mew__eye.--left {
+  left: calc(19 * 100% / 256);
+}
+.mew__eye.--left .mew__pupil {
+  right: 0;
+}
+.mew__eye.--left .mew__pupil:before {
+  left: calc(13 * 100% / 46);
+}
+.mew__eye.--left .mew__pupil:after {
+  left: calc(25 * 100% / 46);
+}
+.mew__eye.--right {
+  right: calc(19 * 100% / 256);
+}
+.mew__eye.--right .mew__pupil {
+  left: 0;
+}
+.mew__eye.--right .mew__pupil:before {
+  right: calc(13 * 100% / 46);
+}
+.mew__eye.--right .mew__pupil:after {
+  right: calc(25 * 100% / 46);
+}
+.mew__pupil {
+  height: calc(57 * 100% / 73);
+  width: calc(46 * 100% / 61);
+  background: linear-gradient(180deg, #5282b5 0%, #5282b5 80.7%, #789fc6 80.7%, #789fc6 100%);
+  bottom: 0;
+}
+.mew__pupil:before {
+  height: calc(32 * 100% / 57);
+  top: calc(7 * 100% / 57);
+  width: calc(20 * 100% / 46);
+  background: #4c5360;
+  content: "";
+}
+.mew__pupil:after {
+  height: calc(16 * 100% / 57);
+  top: calc(3 * 100% / 57);
+  width: calc(15 * 100% / 46);
+  background: #f7f1f1;
+  content: "";
 }
 
 /*# sourceMappingURL=style.css.map */
