@@ -177,9 +177,25 @@ body {
 .pokemon {
   font-size: 20px;
 }
-.pokemon:last-child {
-  grid-column: 3;
-  grid-row: 1;
+@media screen and (min-width: 650px) {
+  .pokemon:last-child {
+    grid-column: 1/span 2;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .pokemon:last-child {
+    grid-column: 2;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .pokemon:last-child {
+    grid-column: auto;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .pokemon:last-child {
+    grid-column: 3;
+  }
 }
 .pokemon__block {
   border-radius: 7.8%;
