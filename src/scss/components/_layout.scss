@@ -16,6 +16,7 @@ body{
   border-radius: 10px;
   height: 100%;
   padding: 15px;
+  position: relative;
   scrollbar-color: #681c10 #969897;
   scrollbar-width: thin;
   &__container{
@@ -71,6 +72,20 @@ body{
       @media screen and (min-width: 1600px){
         grid-column: 1 / span 5;
       }
+    }
+  }
+  &__github{
+    left: 10px;
+    position: absolute;
+    top: 10px;
+    a{
+      display: block;
+      text-decoration: none;
+    }
+    svg{
+      display: block;
+      height: auto;
+      width: 20px;
     }
   }
 }

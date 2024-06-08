@@ -99,6 +99,7 @@ body {
   border-radius: 10px;
   height: 100%;
   padding: 15px;
+  position: relative;
   scrollbar-color: #681c10 #969897;
   scrollbar-width: thin;
 }
@@ -172,6 +173,20 @@ body {
   .pokedex__grid:after {
     grid-column: 1/span 5;
   }
+}
+.pokedex__github {
+  left: 10px;
+  position: absolute;
+  top: 10px;
+}
+.pokedex__github a {
+  display: block;
+  text-decoration: none;
+}
+.pokedex__github svg {
+  display: block;
+  height: auto;
+  width: 20px;
 }
 
 .pokemon {
