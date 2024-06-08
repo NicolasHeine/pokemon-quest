@@ -1,0 +1,91 @@
+.sulfura{
+  $s: &;
+  background: #f4c96b;
+  &__hair{
+    @include setSize(height, 74);
+    @include setSize(left, 67);
+    @include setSize(width, 112);
+    background: #e46633;
+    clip-path: polygon(0 0, 100% 0, 100% 43.24%, 85.71% 43.24%, 85.71% 100%, 23.21% 100%, 23.21% 64.86%, 0 64.86%);
+    top: 0;
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 73);
+    @include setSize(top, 57);
+    @include setSize(width, 74);
+    background: #f1edff;
+    &.--left{
+      @include setSize(left, 21);
+      clip-path: polygon(0 0, 100% 100%, 0 100%);
+      #{$s}__pupil{
+        right: 0;
+        &:before{
+          left: 0;
+        }
+        &:after{
+          @include setSize(left, 20, 50);
+        }
+      }
+    }
+    &.--right{
+      @include setSize(right, 21);
+      clip-path: polygon(0 100%, 100% 0, 100% 100%);
+      #{$s}__pupil{
+        left: 0;
+        &:before{
+          right: 0;
+        }
+        &:after{
+          @include setSize(right, 20, 50);
+        }
+      }
+    }
+  }
+  &__pupil{
+    @include setSize(width, 50, 74);
+    background: #362a1b;
+    height: 100%;
+    top: 0;
+    &:before{
+      @include setSize(height, 14, 73);
+      @include setSize(width, 25, 50);
+      background: #473926;
+      bottom: 0;
+      content: '';
+    }
+    &:after{
+      @include setSize(height, 64, 73);
+      @include setSize(width, 11, 50);
+      background: #f1edff;
+      content: '';
+      top: 0;
+    }
+  }
+  &__beak{
+    @extend %centerX;
+    @include setSize(height, 100);
+    @include setSize(top, 110);
+    @include setSize(width, 74);
+    background: #a2807b;
+    clip-path: polygon(0 26%, 24.32% 26%, 24.32% 0, 75.68% 0, 75.68% 26%, 100% 26%, 100% 100%, 0 100%);
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 18, 100);
+      @include setSize(top, 61, 100);
+      @include setSize(width, 58, 74);
+      background: #704d5a;
+      content: '';
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 10, 100);
+      @include setSize(top, 69, 100);
+      @include setSize(width, 40, 74);
+      background: #94576d;
+      content: '';
+    }
+  }
+}
