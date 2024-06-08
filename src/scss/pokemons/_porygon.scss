@@ -1,0 +1,48 @@
+.porygon{
+  background: #e96373;
+  &__eye{
+    @include setSize(height, 90);
+    @include setSize(left, 130);
+    @include setSize(top, 21);
+    @include setSize(width, 90);
+    background: #ffffff;
+    &:before{
+      @extend %center;
+      @include setSize(height, 24, 90);
+      @include setSize(width, 24, 90);
+      background: #231218;
+      content: '';
+    }
+  }
+  &__left{
+    @include setSize(height, 198);
+    @include setSize(width, 68);
+    background: #cbc5ba;
+    clip-path: polygon(0 0, 100% 0, 80.88% 6.06%, 80.88% 100%, 0 100%);
+    left: 0;
+    top: 0;
+    &:before{
+      @include setSize(height, 133, 198);
+      background: #54b3b7;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+  }
+  &__bottom{
+    @include setSize(height, 58);
+    @include setSize(width, 155);
+    background: #cbc5ba;
+    bottom: 0;
+    left: 0;
+    &:before{
+      @include setSize(width, 58, 155);
+      background: #54b3b7;
+      bottom: 0;
+      content: '';
+      height: 100%;
+      right: 0;
+    }
+  }
+}
