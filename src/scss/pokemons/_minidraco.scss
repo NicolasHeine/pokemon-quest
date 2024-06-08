@@ -1,0 +1,71 @@
+.minidraco{
+  $m: &;
+  background: #adc4e7;
+  &__horn{
+    @extend %centerX;
+    @include setSize(height, 36);
+    @include setSize(top, 25);
+    @include setSize(width, 36);
+    background: #f4f3f1;
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 89);
+    @include setSize(top, 37);
+    @include setSize(width, 54);
+    background: #210918;
+    &:before{
+      @include setSize(height, 34, 89);
+      background: #441c3f;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    &.--left{
+      @include setSize(left, 19);
+      &:before{
+        clip-path: polygon(0 0, 50% 0, 50% 50%, 100% 50%, 100% 100%, 0 100%);
+      }
+      #{$m}__pupil{
+        &:before{
+          @include setSize(left, 6, 28);
+        }
+      }
+    }
+    &.--right{
+      @include setSize(right, 19);
+      &:before{
+        clip-path: polygon(0 50%, 50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%);
+      }
+      #{$m}__pupil{
+        &:before{
+          @include setSize(right, 6, 28);
+        }
+      }
+    }
+  }
+  &__pupil{
+    @extend %center;
+    @include setSize(height, 55, 89);
+    @include setSize(width, 28, 54);
+    background: #180610;
+    &:before{
+      @include setSize(height, 42, 55);
+      @include setSize(top, -13, 55);
+      @include setSize(width, 30, 28);
+      background: #e9e8e9;
+      content: '';
+    }
+  }
+  &__nose{
+    @extend %centerX;
+    @include setSize(height, 112);
+    @include setSize(top, 126);
+    @include setSize(width, 188);
+    background: #f4f3f1;
+    clip-path: polygon(0 8.93%, 5.32% 0, 94.68% 0, 100% 8.93%, 100% 88.39%, 96.81% 100%, 3.19% 100%, 0 88.39%);
+  }
+}
