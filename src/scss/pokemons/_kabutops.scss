@@ -1,0 +1,61 @@
+.kabutops{
+  background: #b78b54;
+  &__shell{
+    @include setSize(height, 226);
+    background: #a57d4c;
+    clip-path: polygon(0 0, 100% 0, 100% 38.05%, 64.06% 100%, 35.94% 100%, 0 38.05%);
+    left: 0;
+    top: 0;
+    width: 100%;
+    &:before{
+      @include setSize(height, 212, 226);
+      background: #b78b54;
+      clip-path: polygon(0 0, 100% 0, 100% 28.3%, 60.94% 100%, 39.06% 100%, 0 28.3%);
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 77);
+    @include setSize(top, 110);
+    @include setSize(width, 50);
+    background: #efedef;
+    &:before{
+      @include setSize(height, 66, 77);
+      @include setSize(width, 19, 50);
+      background: linear-gradient(180deg, #312829 0%, #312829 89.39%, #4f3f42 89.39%, #4f3f42 100%);
+      content: '';
+      top: 0;
+    }
+    &:after{
+      @include setSize(height, 49, 77);
+      @include setSize(width, 8, 50);
+      background: #efebef;
+      content: '';
+      top: 0;
+    }
+    &.--left{
+      @include setSize(left, 18);
+      &:before{
+        @include setSize(left, 19, 50);
+      }
+      &:after{
+        @include setSize(left, 26, 50);
+      }
+    }
+    &.--right{
+      @include setSize(right, 18);
+      &:before{
+        @include setSize(right, 19, 50);
+      }
+      &:after{
+        @include setSize(right, 26, 50);
+      }
+    }
+  }
+}
