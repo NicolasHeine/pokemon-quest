@@ -1,0 +1,96 @@
+.draco{
+  $d: &;
+  background: #7eacde;
+  &__horn{
+    @extend %centerX;
+    @include setSize(height, 57);
+    @include setSize(width, 58);
+    background: #f4f7f9;
+    top: 0;
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 94);
+    @include setSize(top, 33);
+    @include setSize(width, 61);
+    background: #230d18;
+    &:before{
+      @include setSize(height, 59, 94);
+      background: #6d2a4f;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    &.--left{
+      @include setSize(left, 21);
+      &:before{
+        clip-path: polygon(0 0, 50% 0, 50% 55.93%, 100% 55.93%, 100% 100%, 0 100%);
+      }
+      #{$d}__pupil{
+        &:before{
+          @include setSize(left, 15, 28);
+        }
+      }
+    }
+    &.--right{
+      @include setSize(right, 21);
+      &:before{
+        clip-path: polygon(0 55.93%, 50% 55.93%, 50% 0, 100% 0, 100% 100%, 0 100%);
+      }
+      #{$d}__pupil{
+        &:before{
+          @include setSize(right, 15, 28);
+        }
+      }
+    }
+  }
+  &__pupil{
+    @extend %center;
+    @include setSize(height, 57, 94);
+    @include setSize(width, 28, 61);
+    background: #1b0a12;
+    &:before{
+      @include setSize(height, 35, 57);
+      @include setSize(top, -11, 57);
+      @include setSize(width, 23, 28);
+      background: #ffffff;
+      content: '';
+    }
+  }
+  &__side{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 40);
+      @include setSize(width, 32);
+      background: #4a8aef;
+      bottom: 0;
+      content: '';
+    }
+    &:before{
+      left: 0;
+    }
+    &:after{
+      right: 0;
+    }
+  }
+  &__bottom{
+    @extend %centerX;
+    @include setSize(height, 40);
+    @include setSize(width, 132);
+    background: #3675b7;
+    bottom: 0;
+    clip-path: polygon(0 27.5%, 6.82% 0, 93.18% 0, 100% 27.5%, 100% 100%, 0 100%);
+    &:before{
+      @include setSize(height, 22, 40);
+      @include setSize(left, 25, 132);
+      @include setSize(width, 42, 132);
+      background: #b7d3ef;
+      bottom: 0;
+      content: '';
+    }
+  }
+}
