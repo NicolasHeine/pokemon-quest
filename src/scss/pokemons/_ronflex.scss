@@ -1,0 +1,57 @@
+.ronflex{
+  background: #ffebd3;
+  &__head{
+    @include setSize(height, 93);
+    background: #5aa0bd;
+    clip-path: polygon(0 0, 100% 0, 100% 70.97%, 68.36% 70.97%, 53.91% 100%, 46.09% 100%, 31.64% 70.97%, 0 70.97%);
+    left: 0;
+    top: 0;
+    width: 100%;
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 24, 93);
+      @include setSize(width, 158);
+      background: #35657a;
+      content: '';
+      top: 0;
+    }
+  }
+  &__eyes{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 9);
+      @include setSize(top, 120);
+      @include setSize(width, 72);
+      background: #5a5952;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 21);
+    }
+    &:after{
+      @include setSize(right, 21);
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 9);
+    @include setSize(top, 163);
+    @include setSize(width, 100);
+    background: #5a5952;
+    &:before,
+    &:after{
+      @include setSize(height, 12, 9);
+      @include setSize(width, 14, 100);
+      background: #f4f4f7;
+      bottom: 100%;
+      content: '';
+    }
+    &:before{
+      left: 0;
+    }
+    &:after{
+      right: 0;
+    }
+  }
+}
