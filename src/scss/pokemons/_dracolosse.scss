@@ -1,0 +1,106 @@
+.dracolosse{
+  $d: &;
+  background: #f1bc63;
+  &__horns{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 23);
+      @include setSize(width, 19);
+      background: #d8cdaa;
+      content: '';
+      top: 0;
+    }
+    &:before{
+      @include setSize(left, 58);
+    }
+    &:after{
+      @include setSize(right, 58);
+    }
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 77);
+    @include setSize(top, 50);
+    @include setSize(width, 58);
+    background: #f7f9f7;
+    &.--left{
+      @include setSize(left, 22);
+      #{$d}__pupil{
+        right: 0;
+        &:before{
+          @include setSize(left, 11, 44);
+        }
+        &:after{
+          @include setSize(left, 23, 44);
+        }
+      }
+    }
+    &.--right{
+      @include setSize(right, 22);
+      #{$d}__pupil{
+        left: 0;
+        &:before{
+          @include setSize(right, 11, 44);
+        }
+        &:after{
+          @include setSize(right, 23, 44);
+        }
+      }
+    }
+  }
+  &__pupil{
+    @include setSize(height, 65, 77);
+    @include setSize(width, 44, 58);
+    background: linear-gradient(180deg, #39322b 0%, #39322b 69.23%, #4f453c 69.23%, #4f453c 100%);
+    bottom: 0;
+    &:before{
+      @extend %centerY;
+      @include setSize(height, 39, 65);
+      @include setSize(width, 20, 44);
+      background: #211e1b;
+      content: '';
+    }
+    &:after{
+      @include setSize(height, 17, 65);
+      @include setSize(top, 6, 65);
+      @include setSize(width, 14, 44);
+      background: #f7f9f7;
+      content: '';
+    }
+  }
+  &__nose{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 14);
+      @include setSize(top, 168);
+      @include setSize(width, 6);
+      background: #ce9e52;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 104);
+    }
+    &:after{
+      @include setSize(right, 104);
+    }
+  }
+  &__mouth{
+    @extend %centerX;
+    @include setSize(height, 32);
+    @include setSize(top, 200);
+    @include setSize(width, 188);
+    background: #a76b6d;
+    &:before{
+      @extend %centerX;
+      @include setSize(height, 20, 32);
+      @include setSize(width, 146, 188);
+      background: #ef8278;
+      bottom: 0;
+      content: '';
+    }
+  }
+}
