@@ -1,0 +1,72 @@
+.kabuto{
+  background: #122133;
+  &__shell{
+    @include setSize(height, 76);
+    background: #bd9268;
+    left: 0;
+    top: 0;
+    width: 100%;
+    &:before,
+    &:after{
+      @include setSize(height, 23, 76);
+      @include setSize(top, 6, 76);
+      @include setSize(width, 23);
+      background: #1b1e23;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 33);
+    }
+    &:after{
+      @include setSize(right, 33);
+    }
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 55);
+    @include setSize(top, 91);
+    @include setSize(width, 59);
+    background: #e7aead;
+    &:before{
+      @extend %center;
+      @include setSize(height, 43, 55);
+      @include setSize(width, 45, 59);
+      background: #ec7581;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 24);
+    }
+    &.--right{
+      @include setSize(right, 24);
+    }
+  }
+  &__side{
+    @include setSize(height, 86);
+    @include setSize(width, 68);
+    bottom: 0;
+    &:before,
+    &:after{
+      background: #f1c57e;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    &:before{
+      @include setSize(height, 45, 86);
+      top: 0;
+    }
+    &:after{
+      @include setSize(height, 18, 86);
+      bottom: 0;
+    }
+    &.--left{
+      left: 0;
+    }
+    &.--right{
+      right: 0;
+    }
+  }
+}
