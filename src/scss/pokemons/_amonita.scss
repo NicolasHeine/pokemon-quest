@@ -1,0 +1,91 @@
+.amonita{
+  background: #78d1e7;
+  &__shell{
+    @include setSize(height, 159);
+    background: #e1ddb7;
+    clip-path: polygon(0 0, 100% 0, 100% 77.99%, 76.56% 77.99%, 76.56% 100%, 23.44% 100%, 23.44% 77.99%, 0 77.99%);
+    left: 0;
+    top: 0;
+    width: 100%;
+    &:before{
+      @include setSize(top, 26, 159);
+      @include setSize(height, 34, 159);
+      background: #d6d1ad;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+    &:after{
+      @include setSize(height, 16, 159);
+      background: #6bbcce;
+      bottom: 0;
+      content: '';
+      left: 0;
+      width: 100%;
+    }
+  }
+  &__eyes{
+    @extend %full;
+  }
+  &__eye{
+    @include setSize(height, 83);
+    @include setSize(top, 95);
+    @include setSize(width, 83);
+    background: #f4f1f4;
+    &:before{
+      @extend %center;
+      @include setSize(height, 57, 83);
+      @include setSize(width, 57, 83);
+      background: #3c3a3c;
+      content: '';
+    }
+    &:after{
+      @extend %centerX;
+      @include setSize(height, 12, 83);
+      @include setSize(top, 59, 83);
+      @include setSize(width, 57, 83);
+      background: #312e31;
+      content: '';
+    }
+    &.--left{
+      @include setSize(left, 15);
+    }
+    &.--right{
+      @include setSize(right, 15);
+    }
+  }
+  &__side{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 14);
+      @include setSize(top, 214);
+      @include setSize(width, 54);
+      background: #7bd8ef;
+      content: '';
+    }
+    &:before{
+      left: 0;
+    }
+    &:after{
+      right: 0;
+    }
+  }
+  &__bottom{
+    @extend %full;
+    &:before,
+    &:after{
+      @include setSize(height, 18);
+      @include setSize(top, 214);
+      @include setSize(width, 51);
+      background: #7bd8ef;
+      content: '';
+    }
+    &:before{
+      @include setSize(left, 69);
+    }
+    &:after{
+      @include setSize(right, 69);
+    }
+  }
+}
