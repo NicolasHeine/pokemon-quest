@@ -1,5 +1,5 @@
 # Pokémon Quest - CSS
 
-Make every Pokémon from the game "Pokémon Quest" in CSS
+<img alt="Preview" src="https://github.com/NicolasHeine/pokemon-quest/blob/master/preview.jpg?raw=true" />
 
-Liste des pokémons https://www.pokepedia.fr/Liste_des_Pok%C3%A9mon_dans_l%27ordre_du_Pok%C3%A9dex_de_Pok%C3%A9mon_Quest
+Tous les pokémons du jeu mobile Pokémon Quest refait en CSS
